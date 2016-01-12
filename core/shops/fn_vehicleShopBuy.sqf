@@ -2,7 +2,7 @@
 /*
 	File: fn_vehicleShopBuy.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Does something with vehicle purchasing.
 */
@@ -29,8 +29,9 @@ if(!(EQUAL(_license,"")) && {!(LICENSE_VALUE(_license,_shopSide))}) exitWith {hi
 _spawnPoints = SEL(life_veh_shop,1);
 _spawnPoint = "";
 
+
 if((SEL(life_veh_shop,0) == "med_air_hs")) then {
-	if(count(nearestObjects[(getMarkerPos _spawnPoints),["Air"],35]) == 0) exitWith {_spawnPoint = _spawnPoints};
+	_spawnPoint = "med_air_1";
 } else {
 	//Check if there is multiple spawn points and find a suitable spawnpoint.
 	if(EQUAL(typeName _spawnPoints,typeName [])) then {
@@ -39,10 +40,8 @@ if((SEL(life_veh_shop,0) == "med_air_hs")) then {
 	} else {
 		if(count(nearestObjects[(getMarkerPos _spawnPoints),["Car","Ship","Air"],5]) == 0) exitWith {_spawnPoint = _spawnPoints};
 	};
-};
-
-
-if(EQUAL(_spawnPoint,"")) exitWith {hint localize "STR_Shop_Veh_Block";};
+ };
+//if(EQUAL(_spawnPoint,"")) exitWith {hint localize "STR_Shop_Veh_Block";};
 SUB(CASH,_basePrice);
 hint format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText];
 
@@ -51,8 +50,8 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle = createVehicle [_className,[0,0,999],[], 0, "NONE"];
 	waitUntil {!isNil "_vehicle"}; //Wait?
 	_vehicle allowDamage false;
-	_hs = nearestObjects[getMarkerPos _spawnPoint,["Land_Hospital_side2_F"],50] select 0;
-	_vehicle setPosATL (_hs modelToWorld [-0.4,-4,12.65]);
+	_pos = (getMarkerPos _spawnPoint);
+	_vehicle setPosATL _pos;
 	_vehicle lock 2;
 	[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] call life_fnc_MP;
 	[_vehicle] call life_fnc_clearVehicleAmmo;
@@ -79,13 +78,13 @@ switch(playerSide) do {
 	case west: {
 		[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
 	};
-	
+
 	case civilian: {
 		if(EQUAL(SEL(life_veh_shop,2),"civ") && {_className == "B_Heli_Light_01_F"}) then {
 			[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
 		};
 	};
-	
+
 	case independent: {
 		[_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate;
 	};

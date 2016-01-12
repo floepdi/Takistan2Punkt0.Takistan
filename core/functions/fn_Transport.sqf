@@ -277,8 +277,8 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 							_p = _user getVariable "transport";
 								if (_p == 21) then
 								{
-									_reward = "rhs_weap_ak74m_folded";
-									if !((player canAddItemtoBackpack _reward) OR (PrimaryWeapon Player == "")) exitWith {hint "Mach zuerst Platz für eine Waffe, um die Belohnung entgegen zu nehmen"};
+									_reward = "hgun_mas_mak_F";
+									if !((player canAddItemtoBackpack _reward) OR (handgunWeapon  Player == "")) exitWith {hint "Mach zuerst Platz für eine Waffe, um die Belohnung entgegen zu nehmen"};
 										if ([false,"aklieferung",1] call life_fnc_handleInv) then
 										{
 											life_transport_in_progress = false;
@@ -288,19 +288,19 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 											ADD(life_gesamtexp,250);
 											[] call life_fnc_SetupLevel;
 											if (life_quest == 31) then {ADD(life_questinfo,1);};
-											[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + AK74M (Folded) <br /> + 250 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+											[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Handgun <br /> + 250 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 
-											if (PrimaryWeapon Player != "") then
+											if (handgunWeapon  Player != "") then
 											{
 												player addItemToBackpack _reward;
-												player addItemToUniform "rhs_30Rnd_545x39_AK";
-												player addItemToUniform "rhs_30Rnd_545x39_AK";
+												player addItemToUniform "8Rnd_mas_9x18_Mag";
+												player addItemToUniform "8Rnd_mas_9x18_Mag";
 											}
 											else
 											{
 												 player addWeapon _reward;
-												 player addItemToUniform "rhs_30Rnd_545x39_AK";
-												 player addItemToUniform "rhs_30Rnd_545x39_AK";
+												 player addItemToUniform "8Rnd_mas_9x18_Mag";
+												 player addItemToUniform "8Rnd_mas_9x18_Mag";
                       player createDiaryRecord["transportbuch",
 					[
 							"Transport-Buch",

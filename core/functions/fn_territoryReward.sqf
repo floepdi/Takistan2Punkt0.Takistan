@@ -24,7 +24,7 @@ if(!_over) then {
   			ADD(CASH,500);
   			ADD(life_gesamtexp,500);
 			  [format ["<t align='left'><t size='0.6' shadow='1'><t color='#9FF781'><br /> + 500$ <br/> + 500 EXP"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
-        if EQUAL(life_quest,33) then {ADD(life_questinfo,1);};
+        if (life_quest == 33) then {ADD(life_questinfo,1);};
 };
 [] call life_fnc_SetupLevel;
 };

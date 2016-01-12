@@ -201,7 +201,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=122;
+		items=123;
 		class Item0
 		{
 			side="WEST";
@@ -2185,7 +2185,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=45;
+				items=44;
 				class Item0
 				{
 					position[]={5281.4019,145.99036,6182.6045};
@@ -2372,83 +2372,71 @@ class Mission
 				};
 				class Item16
 				{
-					position[]={10718.514,383.01218,2353.4963};
-					azimut=264.95401;
-					special="NONE";
-					id=115;
-					side="WEST";
-					vehicle="B_Soldier_F";
-					skill=0.60000002;
-					text="h1_3_1_1";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Essenausgabe"",life_fnc_virt_menu,""cop""]; this addAction[""Kleidungsspind"",life_fnc_clothingMenu,""cop""];  this addAction[""Army Equipment"",life_fnc_weaponShopMenuCop,""army_equipment""];  this addAction[""Abzeichen-Waffenspind"",life_fnc_weaponShopMenuAbzeichen,""abzeichen""];   this addAction[""Recruit Ausrüstung"",life_fnc_weaponShopMenu,""coplevel1"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==1'];   this addAction[""Private Ausrüstung"",life_fnc_weaponShopMenu,""coplevel2"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==2'];   this addAction[""Private First Class Ausrüstung"",life_fnc_weaponShopMenu,""coplevel3"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==3'];   this addAction[""Specialist Ausrüstung"",life_fnc_weaponShopMenu,""coplevel4"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==4'];   this addAction[""Corporal Ausrüstung"",life_fnc_weaponShopMenu,""coplevel5"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==5'];  this addAction[""Sergeant Ausrüstung"",life_fnc_weaponShopMenu,""coplevel6"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==6'];  this addAction[""Staff Sergeant Ausrüstung"",life_fnc_weaponShopMenu,""coplevel7"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==7'];   this addAction[""Sergeant First Class Ausrüstung"",life_fnc_weaponShopMenu,""coplevel8"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==8'];   this addAction[""Master Sergeant Ausrüstung"",life_fnc_weaponShopMenu,""coplevel9"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==9'];   this addAction[""Sgt. Major Ausrüstung"",life_fnc_weaponShopMenu,""coplevel10"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==10'];   this addAction[""Command Sgt. Major Ausrüstung"",life_fnc_weaponShopMenu,""coplevel11"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==11'];   this addAction[""Second Lieutenant Ausrüstung"",life_fnc_weaponShopMenu,""coplevel12"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==12'];   this addAction[""First Lieutenant Ausrüstung"",life_fnc_weaponShopMenu,""coplevel13"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==13'];   this addAction[""Captain Ausrüstung"",life_fnc_weaponShopMenu,""coplevel14"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==14'];  this addAction[""Major Ausrüstung"",life_fnc_weaponShopMenu,""coplevel15"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==15'];  this addAction[""Colonel Ausrüstung"",life_fnc_weaponShopMenu,""coplevel16"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==16'];   this addAction[""General Ausrüstung"",life_fnc_weaponShopMenu,""coplevel17"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==17'];  this addAction[""Commander in Chief Ausrüstung"",life_fnc_weaponShopMenu,""coplevel17"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==17'];";
-				};
-				class Item17
-				{
 					position[]={6810.2407,273.80536,6520.209};
 					azimut=628.42798;
 					special="NONE";
-					id=116;
+					id=115;
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_6"";  }];  this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""U_C_WorkerCoveralls"";  this addItemToUniform ""FirstAidKit"";  this addHeadgear ""TRYK_H_pakol2"";  this addGoggles ""SFG_Tac_smallBeardD"";  this linkItem ""tf_anprc152_2"";  this setFace ""AfricanHead_02"";  this setSpeaker ""Male03PER"";  ";
 				};
-				class Item18
+				class Item17
 				{
 					position[]={6857.417,281.97861,6492.0088};
 					azimut=-14.3891;
 					offsetY=2.5999999;
 					special="NONE";
-					id=117;
+					id=116;
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Level 1 Shop"",life_fnc_weaponShopMenu,""weapon1"",0,false,false,"""",'playerSide == civilian && life_level == 1'];  this addAction[""Level 2 Shop"",life_fnc_weaponShopMenu,""weapon2"",0,false,false,"""",'playerSide == civilian && life_level == 2'];  this addAction[""Level 3 Shop"",life_fnc_weaponShopMenu,""weapon3"",0,false,false,"""",'playerSide == civilian && life_level == 3'];  this addAction[""Level 4 Shop"",life_fnc_weaponShopMenu,""weapon4"",0,false,false,"""",'playerSide == civilian && life_level == 4'];  this addAction[""Level 5 Shop"",life_fnc_weaponShopMenu,""weapon5"",0,false,false,"""",'playerSide == civilian && life_level == 5'];  this addAction[""Level 6 Shop"",life_fnc_weaponShopMenu,""weapon6"",0,false,false,"""",'playerSide == civilian && life_level == 6'];  this addAction[""Level 7 Shop"",life_fnc_weaponShopMenu,""weapon6"",0,false,false,"""",'playerSide == civilian && life_level == 7'];  this addAction[""Level 8 Shop"",life_fnc_weaponShopMenu,""weapon8"",0,false,false,"""",'playerSide == civilian && life_level == 8'];  this addAction[""Level 9 Shop"",life_fnc_weaponShopMenu,""weapon8"",0,false,false,"""",'playerSide == civilian && life_level == 9'];     this addAction[""Transport abgeben"",  { [2,1,2] remoteExecCall [""life_fnc_Transport"", player, false];},"""",0,false,false,"""",'life_transport_in_progress'];  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""rhs_uniform_flora_patchless"";  this addItemToUniform ""FirstAidKit"";  this addVest ""UO_AK_VEST_LOlive"";  this addHeadgear ""H_Shemag_olive_hs"";  this linkItem ""tf_anprc152_2"";  this setFace ""AfricanHead_02"";  this setSpeaker ""Male03PER"";  ";
 				};
-				class Item19
+				class Item18
 				{
 					position[]={8467.0576,307.29034,2465.6091};
 					azimut=261.211;
 					offsetY=0.5;
 					special="NONE";
-					id=118;
+					id=117;
 					side="CIV";
 					vehicle="C_man_polo_4_F_afro";
 					skill=0.60000002;
 					text="elektronikbedarf";
 					init="this setPos [(getPos this) select 0, (getPos this) select 1, 0.5];this enableSimulation false; this allowDamage false; this addAction[""Abduls Elektronikbedarf"",life_fnc_virt_menu,""electrostore""];removeallweapons this;  removeGoggles this;  removeHeadgear this;  removeVest this;  removeUniform this;  removeAllAssignedItems this; this addUniform ""TRYK_U_denim_jersey_blu""; this addHeadgear ""TRYK_H_pakol2"";  this addAction[""Quest abgeben"",  { [""abhoeren"",1,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 35) && (life_level >= 13)'];  this addAction[""Quest annehmen"",  { [""abhoeren"",0,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 36) && (life_level >= 13)'];  this addAction[""Quest abgeben"",  { [""abhoeren"",1,3] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 39) && (life_level >= 14)'];  this addAction[""Quest annehmen"",  { [""abhoeren"",0,4] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 40) && (life_level >= 14)'];  this addAction[""Quest abgeben"",  { [""abhoeren"",1,4] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 41) && (life_level >= 14)'];  this addAction[""Quest annehmen"",  { [""abhoeren"",0,5] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 42) && (life_level >= 14)'];  this addAction[""Quest abgeben"",  { [""abhoeren"",1,5] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 43) && (life_level >= 14)'];  ";
 				};
-				class Item20
+				class Item19
 				{
 					position[]={1449.8882,239.39743,5794.4355};
 					azimut=263.832;
 					offsetY=0.5;
 					special="NONE";
-					id=119;
+					id=118;
 					side="CIV";
 					vehicle="C_man_p_beggar_F_afro";
 					skill=0.60000002;
 					text="schwarzmarkt";
 					init="this setPos [(getPos this) select 0, (getPos this) select 1, 1.1];this enableSimulation false; this allowDamage false; removeallweapons this;  removeGoggles this;  removeHeadgear this;  removeVest this;  removeUniform this;  removeAllAssignedItems this;   this addUniform ""rds_uniform_citizen1"";  this addHeadgear ""TRYK_H_pakol2""; this addAction[""Transport abgeben"",  { [4,1,1] remoteExecCall [""life_fnc_Transport"", player, false];},"""",0,false,false,"""",'life_transport_in_progress'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,4] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 55) && (life_level >= 18)'];this addAction[""Schwarzmarkt"",life_fnc_virt_menu,""blackstore""];";
 				};
-				class Item21
+				class Item20
 				{
 					position[]={5411.8369,139.65576,6278.9902};
 					azimut=145.61099;
 					special="NONE";
-					id=120;
+					id=119;
 					side="CIV";
 					vehicle="RDS_Doctor";
 					skill=0.60000002;
 					text="doc";
 					init="this setPos [(getPos this) select 0, (getPos this) select 1, 0.8];this enableSimulation false; this allowDamage false; this addAction[""Medizinische Versorgung"",life_fnc_healHospital]; removeallweapons this; removeGoggles this; removeHeadgear this; removeVest this; removeAllAssignedItems this; this forceAddUniform ""rds_uniform_doctor""; this addHeadgear ""TRYK_H_pakol2"";  player addAction[""Transport abholen"",  { [3,1,2] remoteExecCall [""life_fnc_Transport"", player, false];},"""",0,false,false,"""",'life_transport_in_progress'];  ";
 				};
-				class Item22
+				class Item21
 				{
 					position[]={3040.7251,60.550678,9933.9326};
 					azimut=548.34369;
 					special="NONE";
-					id=121;
+					id=120;
 					side="WEST";
 					vehicle="B_medic_F";
 					leader=1;
@@ -2457,262 +2445,262 @@ class Mission
 					text="medic";
 					init="this setPos [(getPos this) select 0, (getPos this) select 1, 0.0];this enableSimulation false; this allowDamage false; this addAction[""Medizinische Versorgung"",life_fnc_healHospital]; removeallweapons this; removeGoggles this; removeAllAssignedItems this; removeHeadgear this; removeVest this;";
 				};
-				class Item23
+				class Item22
 				{
 					position[]={3551.5474,368.09964,1365.7428};
 					azimut=376.57599;
 					special="NONE";
-					id=122;
+					id=121;
 					side="CIV";
 					vehicle="RDS_Functionary2";
 					skill=0.60000002;
 					text="level";
 					init="this setPos [(getPos this) select 0, (getPos this) select 1, 0.6]; this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu]; this addAction[""Level 9 Shop"",life_fnc_weaponShopMenu,""weapon8"",0,false,false,"""",'playerSide == civilian && life_level == 9'];this addAction[""Level 10 Shop"",life_fnc_weaponShopMenu,""weapon10"",0,false,false,"""",'playerSide == civilian && life_level == 10'];  this addAction[""Level 11 Shop"",life_fnc_weaponShopMenu,""weapon10"",0,false,false,"""",'playerSide == civilian && life_level == 11'];  this addAction[""Level 12 Shop"",life_fnc_weaponShopMenu,""weapon12"",0,false,false,"""",'playerSide == civilian && life_level == 12'];  this addAction[""Level 13 Shop"",life_fnc_weaponShopMenu,""weapon13"",0,false,false,"""",'playerSide == civilian && life_level == 13'];  this addAction[""Level 14 Shop"",life_fnc_weaponShopMenu,""weapon14"",0,false,false,"""",'playerSide == civilian && life_level == 14'];  this addAction[""Level 15 Shop"",life_fnc_weaponShopMenu,""weapon15"",0,false,false,"""",'playerSide == civilian && life_level == 15'];  this addAction[""Level 16 Shop"",life_fnc_weaponShopMenu,""weapon15"",0,false,false,"""",'playerSide == civilian && life_level == 16'];  this addAction[""Level 17 Shop"",life_fnc_weaponShopMenu,""weapon17"",0,false,false,"""",'playerSide == civilian && life_level == 17'];  this addAction[""Level 18 Shop"",life_fnc_weaponShopMenu,""weapon18"",0,false,false,"""",'playerSide == civilian && life_level == 18'];  this addAction[""Level 19 Shop"",life_fnc_weaponShopMenu,""weapon19"",0,false,false,"""",'playerSide == civilian && life_level == 19'];  this addAction[""Level 20 Shop"",life_fnc_weaponShopMenu,""weapon20"",0,false,false,"""",'playerSide == civilian && life_level == 20'];  this addAction[""Level 21 Shop"",life_fnc_weaponShopMenu,""weapon21"",0,false,false,"""",'playerSide == civilian && life_level == 21'];  this addAction[""Level 22 Shop"",life_fnc_weaponShopMenu,""weapon22"",0,false,false,"""",'playerSide == civilian && life_level == 22'];  this addAction[""Level 23 Shop"",life_fnc_weaponShopMenu,""weapon23"",0,false,false,"""",'playerSide == civilian && life_level == 23'];  this addAction[""Level 24 Shop"",life_fnc_weaponShopMenu,""weapon24"",0,false,false,"""",'playerSide == civilian && life_level == 24'];  this addAction[""Level 25 Shop"",life_fnc_weaponShopMenu,""weapon25"",0,false,false,"""",'playerSide == civilian && life_level == 25'];  this addAction[""Level 26 Shop"",life_fnc_weaponShopMenu,""weapon26"",0,false,false,"""",'playerSide == civilian && life_level == 26'];  this addAction[""Level 27 Shop"",life_fnc_weaponShopMenu,""weapon27"",0,false,false,"""",'playerSide == civilian && life_level == 27'];  this addAction[""Level 28 Shop"",life_fnc_weaponShopMenu,""weapon28"",0,false,false,"""",'playerSide == civilian && life_level == 28'];  this addAction[""Level 29 Shop"",life_fnc_weaponShopMenu,""weapon29"",0,false,false,"""",'playerSide == civilian && life_level == 29'];  this addAction[""Level 30 Shop"",life_fnc_weaponShopMenu,""weapon30"",0,false,false,"""",'playerSide == civilian && life_level == 30'];  this addAction[""Level 31 Shop"",life_fnc_weaponShopMenu,""weapon31"",0,false,false,"""",'playerSide == civilian && life_level == 31'];  this addAction[""Level 32 Shop"",life_fnc_weaponShopMenu,""weapon32"",0,false,false,"""",'playerSide == civilian && life_level == 32'];  this addAction[""Level 33 Shop"",life_fnc_weaponShopMenu,""weapon33"",0,false,false,"""",'playerSide == civilian && life_level == 33'];  this addAction[""Level 34 Shop"",life_fnc_weaponShopMenu,""weapon34"",0,false,false,"""",'playerSide == civilian && life_level == 34'];  this addAction[""Level 35 Shop"",life_fnc_weaponShopMenu,""weapon35"",0,false,false,"""",'playerSide == civilian && life_level == 35'];  this addAction[""Level 36 Shop"",life_fnc_weaponShopMenu,""weapon36"",0,false,false,"""",'playerSide == civilian && life_level == 36'];  this addAction[""Level 37 Shop"",life_fnc_weaponShopMenu,""weapon37"",0,false,false,"""",'playerSide == civilian && life_level == 37'];  this addAction[""Level 38 Shop"",life_fnc_weaponShopMenu,""weapon38"",0,false,false,"""",'playerSide == civilian && life_level == 38'];  this addAction[""Level 39 Shop"",life_fnc_weaponShopMenu,""weapon39"",0,false,false,"""",'playerSide == civilian && life_level == 39'];  this addAction[""Level 40 Shop"",life_fnc_weaponShopMenu,""weapon40"",0,false,false,"""",'playerSide == civilian && life_level == 40'];  this addAction[""Level 41 Shop"",life_fnc_weaponShopMenu,""weapon41"",0,false,false,"""",'playerSide == civilian && life_level == 41'];  this addAction[""Level 42 Shop"",life_fnc_weaponShopMenu,""weapon42"",0,false,false,"""",'playerSide == civilian && life_level == 42'];  this addAction[""Level 43 Shop"",life_fnc_weaponShopMenu,""weapon43"",0,false,false,"""",'playerSide == civilian && life_level == 43'];  this addAction[""Level 44 Shop"",life_fnc_weaponShopMenu,""weapon44"",0,false,false,"""",'playerSide == civilian && life_level == 44'];  this addAction[""Level 45 Shop"",life_fnc_weaponShopMenu,""weapon45"",0,false,false,"""",'playerSide == civilian && life_level == 45'];  this addAction[""Level 46 Shop"",life_fnc_weaponShopMenu,""weapon46"",0,false,false,"""",'playerSide == civilian && life_level == 46'];  this addAction[""Level 47 Shop"",life_fnc_weaponShopMenu,""weapon47"",0,false,false,"""",'playerSide == civilian && life_level == 47'];  this addAction[""Level 48 Shop"",life_fnc_weaponShopMenu,""weapon48"",0,false,false,"""",'playerSide == civilian && life_level == 48'];  this addAction[""Level 49 Shop"",life_fnc_weaponShopMenu,""weapon49"",0,false,false,"""",'playerSide == civilian && life_level == 49'];  this addAction[""Level 50 Shop"",life_fnc_weaponShopMenu,""weapon50"",0,false,false,"""",'playerSide == civilian && life_level == 50']; this addAction[""Kleidung"",life_fnc_clothingMenu,""warlord""]; removeallweapons this; removeGoggles this; removeAllAssignedItems this; removeVest this; removeHeadgear this; this forceAddUniform ""SAA_uniform_officer_o"";  this addHeadgear ""H_Beret_blk"";  this addGoggles ""G_Squares"";  this addAction[""Transporte für Fortgeschrittene"",  { [2,0,0] remoteExecCall [""life_fnc_Transport"", player, false];},"""",0,false,false,"""",'!(life_transport_in_progress) && (life_level >= 10)'];  ";
 				};
-				class Item24
+				class Item23
 				{
 					position[]={3550.4392,368.16507,1366.213};
 					azimut=383.29901;
 					special="NONE";
-					id=123;
+					id=122;
 					side="CIV";
 					vehicle="RDS_Functionary2";
 					skill=0.60000002;
 					text="YahellsFrau";
 					init="this setPos [(getPos this) select 0, (getPos this) select 1, 0.6]; this enableSimulation false; this allowDamage false; this addAction[""Küche von Yahell's Frau"",life_fnc_virt_menu,""bandit""]; this addAction[""Mit ihr ins Schlafzimmer gehen"",life_fnc_hooker,""ficken""]; removeallweapons this; removeGoggles this; removeAllAssignedItems this; removeVest this; removeHeadgear this; this forceAddUniform ""rds_uniform_priest""; this addHeadgear ""H_ShemagOpen_tan""; this addGoggles ""G_Spectacles_Tinted"";  player addAction[""Transport abgeben"",  { [3,2,2] remoteExecCall [""life_fnc_Transport"", player, false];},"""",0,false,false,"""",'life_transport_in_progress'];  ";
 				};
-				class Item25
+				class Item24
 				{
 					position[]={4402.1196,346.20001,804.42188};
 					azimut=19.95435;
 					special="NONE";
-					id=124;
+					id=123;
 					side="CIV";
 					vehicle="C_man_polo_3_F";
 					skill=0.60000002;
 					text="di_1";
 					init="this allowDamage false; this enableSimulation false; this addAction[""Deliver Intel"",life_fnc_dpFinish,""di_1"",0,false,false,"""",'!isNil ""life_dp_point"" && life_delivery_in_progress && life_dp_point == _target '];  this addAction[""Get Delivery Mission"",life_fnc_getDPMission,""di_1"",0,false,false,"""",' isNil ""life_dp_point"" && !life_delivery_in_progress '];this forceAddUniform ""TRYK_U_denim_jersey_blk""; this addHeadgear ""rds_worker_cap1""; this addGoggles ""G_Spectacles"";";
 				};
-				class Item26
+				class Item25
 				{
 					position[]={5238.7979,145.37,6188.2788};
 					azimut=119.95436;
 					special="NONE";
-					id=125;
+					id=124;
 					side="CIV";
 					vehicle="C_man_polo_3_F";
 					skill=0.60000002;
 					text="di_5";
 					init="this allowDamage false; this enableSimulation false; this addAction[""Deliver Intel"",life_fnc_dpFinish,""di_5"",0,false,false,"""",'!isNil ""life_dp_point"" && life_delivery_in_progress && life_dp_point == _target '];  this addAction[""Get Delivery Mission"",life_fnc_getDPMission,""di_5"",0,false,false,"""",' isNil ""life_dp_point"" && !life_delivery_in_progress '];this forceAddUniform ""TRYK_U_denim_jersey_blk""; this addHeadgear ""rds_worker_cap1""; this addGoggles ""G_Spectacles"";";
 				};
-				class Item27
+				class Item26
 				{
 					position[]={6262.5396,59.607441,11215.918};
 					azimut=129.95419;
 					special="NONE";
-					id=126;
+					id=125;
 					side="CIV";
 					vehicle="C_man_polo_3_F";
 					skill=0.60000002;
 					text="di_10";
 					init="this allowDamage false; this enableSimulation false; this addAction[""Deliver Intel"",life_fnc_dpFinish,""di_10"",0,false,false,"""",'!isNil ""life_dp_point"" && life_delivery_in_progress && life_dp_point == _target '];  this addAction[""Get Delivery Mission"",life_fnc_getDPMission,""di_10"",0,false,false,"""",' isNil ""life_dp_point"" && !life_delivery_in_progress '];this forceAddUniform ""TRYK_U_denim_jersey_blk""; this addHeadgear ""rds_worker_cap1""; this addGoggles ""G_Spectacles"";";
 				};
-				class Item28
+				class Item27
 				{
 					position[]={12279.861,150.96104,10384.565};
 					azimut=284.95456;
 					special="NONE";
-					id=127;
+					id=126;
 					side="CIV";
 					vehicle="C_man_polo_3_F";
 					skill=0.60000002;
 					text="di_9";
 					init="this allowDamage false; this enableSimulation false; this addAction[""Deliver Intel"",life_fnc_dpFinish,""di_9"",0,false,false,"""",'!isNil ""life_dp_point"" && life_delivery_in_progress && life_dp_point == _target '];  this addAction[""Get Delivery Mission"",life_fnc_getDPMission,""di_9"",0,false,false,"""",' isNil ""life_dp_point"" && !life_delivery_in_progress '];this forceAddUniform ""TRYK_U_denim_jersey_blk""; this addHeadgear ""rds_worker_cap1""; this addGoggles ""G_Spectacles"";";
 				};
-				class Item29
+				class Item28
 				{
 					position[]={8260.4619,175.72736,7751.7656};
 					azimut=59.954342;
 					special="NONE";
-					id=128;
+					id=127;
 					side="CIV";
 					vehicle="C_man_polo_3_F";
 					skill=0.60000002;
 					text="di_8";
 					init="this allowDamage false; this enableSimulation false; this addAction[""Deliver Intel"",life_fnc_dpFinish,""di_8"",0,false,false,"""",'!isNil ""life_dp_point"" && life_delivery_in_progress && life_dp_point == _target '];  this addAction[""Get Delivery Mission"",life_fnc_getDPMission,""di_8"",0,false,false,"""",' isNil ""life_dp_point"" && !life_delivery_in_progress '];this forceAddUniform ""TRYK_U_denim_jersey_blk""; this addHeadgear ""rds_worker_cap1""; this addGoggles ""G_Spectacles"";";
 				};
-				class Item30
+				class Item29
 				{
 					position[]={2934.0139,63.642269,9951.6465};
 					azimut=171.28819;
 					special="NONE";
-					id=129;
+					id=128;
 					side="WEST";
 					vehicle="B_Pilot_F";
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Drone Shop"",life_fnc_vehicleShopMenu,[""cop_drone"",west,[""cop_drone_1""],""cop"",""Drone Shop""]]; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Air"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_drone_2"";  }]; this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];this addAction[format[""%1 ($%2)"",[""license_cop_drone""] call life_fnc_varToStr,[([""drone""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""drone"",0,false,false,"""",' !license_cop_drone && playerSide == west '];";
 					description="Drone";
 				};
-				class Item31
+				class Item30
 				{
 					position[]={8244.5742,296.03528,2172.5232};
 					azimut=871.67023;
 					special="NONE";
-					id=130;
+					id=129;
 					side="WEST";
 					vehicle="B_medic_F";
 					rank="MAJOR";
 					skill=0.60000002;
 					init="this setPos [(getPos this) select 0, (getPos this) select 1, 0.0];this enableSimulation false; this allowDamage false; this addAction[""Medizinische Versorgung"",life_fnc_healHospital]; removeallweapons this; removeGoggles this; removeAllAssignedItems this; removeHeadgear this; removeVest this;";
 				};
-				class Item32
+				class Item31
 				{
 					position[]={8289.7441,296.04001,2134.0676};
 					azimut=596.25403;
 					special="NONE";
-					id=131;
+					id=130;
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					init="this enableSimulation false;  this allowDamage false;  this addAction[""Essenausgabe"",life_fnc_virt_menu,""medic""]; this addAction[""Gebrauchtwaren"",life_fnc_weaponShopMenu,""med_basic""];  this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_3"",""med"",""USAF HQ""]];  this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""med_car_3""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent'];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];  ";
 				};
-				class Item33
+				class Item32
 				{
 					position[]={8268.5879,296.04001,2100.7573};
 					azimut=-26.6537;
 					special="NONE";
-					id=132;
+					id=131;
 					side="WEST";
 					vehicle="B_Pilot_F";
 					skill=0.60000002;
 					init="this enableSimulation false;  this allowDamage false;  this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent ']; this addAction[""Air Shop"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,[""med_air_1""],""med"",""USAF HQ""]]; this addAction[""Air Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Air"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""med_air_2"";  }]; this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
-				class Item34
+				class Item33
 				{
 					position[]={8265.4551,296.04001,2069.2666};
-					azimut=160.65019;
+					azimut=160.64999;
 					special="NONE";
-					id=133;
+					id=132;
 					side="WEST";
 					vehicle="B_engineer_F";
 					lock="LOCKED";
 					skill=0.60000002;
 					text="Harry";
-					init="this setPos [(getPos this) select 0, (getPos this) select 1, 0.2];this allowDamage false; this enableSimulation false; this addAction[""Tankstelle"",life_fnc_virt_menu,""tankstelle_med""];  removeallweapons this; removeGoggles this; removeAllAssignedItems this; removeHeadgear this; removeVest this;";
+					init="this setPos [(getPos this) select 0, (getPos this) select 1, 0.2];this allowDamage false; this enableSimulation false; this addAction[""Tankstelle"",life_fnc_virt_menu,""tankstelle""];  removeallweapons this; removeGoggles this; removeAllAssignedItems this; removeHeadgear this; removeVest this;";
 				};
-				class Item35
+				class Item34
 				{
 					position[]={8266.2783,296.04001,2143.4373};
 					azimut=1050.4166;
 					special="NONE";
-					id=134;
+					id=133;
 					side="WEST";
 					vehicle="B_medic_F";
 					rank="MAJOR";
 					skill=0.60000002;
 					init="this setPos [(getPos this) select 0, (getPos this) select 1, 0.0];this enableSimulation false; this allowDamage false; this addAction[""Medizinische Versorgung"",life_fnc_healHospital]; removeallweapons this; removeGoggles this; removeAllAssignedItems this; removeHeadgear this; removeVest this;";
 				};
-				class Item36
+				class Item35
 				{
 					position[]={1408.3901,215.79518,3514.407};
 					azimut=104.95436;
 					special="NONE";
-					id=135;
+					id=134;
 					side="CIV";
 					vehicle="C_man_polo_3_F";
 					skill=0.60000002;
 					text="di_3";
 					init="this allowDamage false; this enableSimulation false; this addAction[""Deliver Intel"",life_fnc_dpFinish,""di_3"",0,false,false,"""",'!isNil ""life_dp_point"" && life_delivery_in_progress && life_dp_point == _target '];  this addAction[""Get Delivery Mission"",life_fnc_getDPMission,""di_3"",0,false,false,"""",' isNil ""life_dp_point"" && !life_delivery_in_progress '];this forceAddUniform ""TRYK_U_denim_jersey_blk""; this addHeadgear ""rds_worker_cap1""; this addGoggles ""G_Spectacles"";";
 				};
-				class Item37
+				class Item36
 				{
 					position[]={8451.7422,305.54828,2440.834};
 					azimut=309.95456;
 					special="NONE";
-					id=136;
+					id=135;
 					side="CIV";
 					vehicle="C_man_polo_3_F";
 					skill=0.60000002;
 					text="di_2";
 					init="this allowDamage false; this enableSimulation false; this addAction[""Deliver Intel"",life_fnc_dpFinish,""di_2"",0,false,false,"""",'!isNil ""life_dp_point"" && life_delivery_in_progress && life_dp_point == _target '];  this addAction[""Get Delivery Mission"",life_fnc_getDPMission,""di_2"",0,false,false,"""",' isNil ""life_dp_point"" && !life_delivery_in_progress '];this forceAddUniform ""TRYK_U_denim_jersey_blk""; this addHeadgear ""rds_worker_cap1""; this addGoggles ""G_Spectacles"";";
 				};
-				class Item38
+				class Item37
 				{
 					position[]={2031.1667,276.16006,7692.2998};
 					azimut=34.954342;
 					special="NONE";
-					id=137;
+					id=136;
 					side="CIV";
 					vehicle="C_man_polo_3_F";
 					skill=0.60000002;
 					text="di_6";
 					init="this allowDamage false; this enableSimulation false; this addAction[""Deliver Intel"",life_fnc_dpFinish,""di_6"",0,false,false,"""",'!isNil ""life_dp_point"" && life_delivery_in_progress && life_dp_point == _target '];  this addAction[""Get Delivery Mission"",life_fnc_getDPMission,""di_6"",0,false,false,"""",' isNil ""life_dp_point"" && !life_delivery_in_progress '];this forceAddUniform ""TRYK_U_denim_jersey_blk""; this addHeadgear ""rds_worker_cap1""; this addGoggles ""G_Spectacles"";";
 				};
-				class Item39
+				class Item38
 				{
 					position[]={5600.2163,81.91729,8941.8438};
 					azimut=-187.47949;
 					special="NONE";
-					id=138;
+					id=137;
 					side="CIV";
 					vehicle="C_man_polo_3_F";
 					skill=0.60000002;
 					text="di_7";
 					init="this allowDamage false; this enableSimulation false; this addAction[""Deliver Intel"",life_fnc_dpFinish,""di_7"",0,false,false,"""",'!isNil ""life_dp_point"" && life_delivery_in_progress && life_dp_point == _target '];  this addAction[""Get Delivery Mission"",life_fnc_getDPMission,""di_7"",0,false,false,"""",' isNil ""life_dp_point"" && !life_delivery_in_progress '];this forceAddUniform ""TRYK_U_denim_jersey_blk""; this addHeadgear ""rds_worker_cap1""; this addGoggles ""G_Spectacles"";";
 				};
-				class Item40
+				class Item39
 				{
 					position[]={4124.3604,25.076235,11743.052};
 					azimut=89.954369;
 					special="NONE";
-					id=139;
+					id=138;
 					side="CIV";
 					vehicle="C_man_polo_3_F";
 					skill=0.60000002;
 					text="di_11";
 					init="this allowDamage false; this enableSimulation false; this addAction[""Deliver Intel"",life_fnc_dpFinish,""di_11"",0,false,false,"""",'!isNil ""life_dp_point"" && life_delivery_in_progress && life_dp_point == _target '];  this addAction[""Get Delivery Mission"",life_fnc_getDPMission,""di_11"",0,false,false,"""",' isNil ""life_dp_point"" && !life_delivery_in_progress '];this forceAddUniform ""TRYK_U_denim_jersey_blk""; this addHeadgear ""rds_worker_cap1""; this addGoggles ""G_Spectacles"";";
 				};
-				class Item41
+				class Item40
 				{
 					position[]={6839.5845,277.96582,6485.2202};
 					azimut=623.53998;
 					offsetY=1.6;
 					special="NONE";
-					id=140;
+					id=139;
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false;  this addAction[""Transporte für Anfänger"",  { [1,0,0] remoteExecCall [""life_fnc_Transport"", player, false];},"""",0,false,false,"""",'!(life_transport_in_progress)'];   this addAction[""Quest abgeben"",  { [""schakaleins"",1,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 1) && (life_level >= 1)'];  this addAction[""Quest annehmen"",  { [""schakaleins"",0,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 2) && (life_level >= 1)'];  this addAction[""Quest abgeben"",  { [""schakaleins"",1,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 3) && (life_level >= 1)'];  this addAction[""Quest annehmen"",  { [""schakalzwei"",0,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 14) && (life_level >= 3)'];  this addAction[""Quest abgeben"",  { [""schakalzwei"",1,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 15) && (life_level >= 3)'];  this addAction[""Quest annehmen"",  { [""glauben"",0,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 16) && (life_level >= 4)'];  this addAction[""Quest annehmen"",  { [""glauben"",0,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 18) && (life_level >= 5)'];  this addAction[""Quest abgeben"",  { [""glauben"",1,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 19) && (life_level >= 5)'];  this addAction[""Quest annehmen"",  { [""glauben"",0,3] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 20) && (life_level >= 6)'];  this addAction[""Quest abgeben"",  { [""glauben"",1,3] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 21) && (life_level >= 6)'];  this addAction[""Quest annehmen"",  { [""propaganda"",0,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 22) && (life_level >= 7)'];  this addAction[""Quest abgeben"",  { [""propaganda"",1,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 23) && (life_level >= 7)'];  this addAction[""Quest annehmen"",  { [""propaganda"",0,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 24) && (life_level >= 8)'];  this addAction[""Quest abgeben"",  { [""propaganda"",1,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 25) && (life_level >= 8)'];  this addAction[""Quest annehmen"",  { [""propaganda"",0,3] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 26) && (life_level >= 9)'];  this addAction[""Quest annehmen"",  { [""schakaldrei"",0,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 28) && (life_level >= 10)'];  this addAction[""Quest annehmen"",  { [""abhoeren"",0,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 34) && (life_level >= 13)'];  this addAction[""Quest abgeben"",  { [""abhoeren"",1,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 37) && (life_level >= 13)'];  this addAction[""Quest annehmen"",  { [""abhoeren"",0,3] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 38) && (life_level >= 14)'];  this addAction[""Quest annehmen"",  { [""abhoeren"",0,6] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 44) && (life_level >= 15)'];  this addAction[""Quest abgeben"",  { [""abhoeren"",1,6] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 45) && (life_level >= 15)'];  this addAction[""Quest annehmen"",  { [""abhoeren"",0,7] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 46) && (life_level >= 16)'];  this addAction[""Quest abgeben"",  { [""abhoeren"",1,7] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 47) && (life_level >= 16)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 48) && (life_level >= 17)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 49) && (life_level >= 17)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 50) && (life_level >= 17)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 51) && (life_level >= 17)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,3] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 52) && (life_level >= 18)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,3] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 53) && (life_level >= 18)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,4] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 54) && (life_level >= 18)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,5] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 56) && (life_level >= 19)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,5] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 57) && (life_level >= 19)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,6] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 58) && (life_level >= 20)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,6] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 59) && (life_level >= 20)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,7] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 60) && (life_level >= 20)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,7] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 61) && (life_level >= 20)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,8] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 62) && (life_level >= 20)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,8] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 63) && (life_level >= 20)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,9] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 64) && (life_level >= 20)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,9] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 65) && (life_level >= 20)'];    removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""U_I_G_resistanceLeader_F"";  this addItemToUniform ""FirstAidKit"";  this addHeadgear ""TRYK_H_Bandana_wig_g"";  this addGoggles ""G_Aviator"";  this linkItem ""tf_anprc152_2"";  this setFace ""GreekHead_A3_08"";  this setSpeaker ""Male03PER"";    ";
 				};
-				class Item42
+				class Item41
 				{
 					position[]={3608.3633,360.9624,1217.8438};
 					azimut=240.30099;
 					special="NONE";
-					id=141;
+					id=140;
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this addAction[""Transport abgeben"",  { [1,1,3] remoteExecCall [""life_fnc_Transport"", player, false];},"""",0,false,false,"""",'life_transport_in_progress'];  this enableSimulation false; this allowDamage false;  this addAction[""Transport (Der große Coup)"",  { [4,0,0] remoteExecCall [""life_fnc_Transport"", player, false];},"""",0,false,false,"""",'!(life_transport_in_progress) && (life_level >= 30)'];  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""TRYK_U_B_Wood_T"";  this addItemToUniform ""FirstAidKit"";  this addVest ""V_Chestrig_khk"";  this addHeadgear ""rhsusf_patrolcap_ocp"";  this addGoggles ""SFG_Tac_chinlessbB"";  this linkItem ""tf_anprc152_2"";  this setFace ""GreekHead_A3_07"";  this setSpeaker ""Male03PER"";  ";
 				};
-				class Item43
+				class Item42
 				{
 					position[]={6560.9321,62.29287,11399.67};
 					azimut=494.33301;
 					special="NONE";
-					id=142;
+					id=141;
 					side="CIV";
 					vehicle="RDS_Functionary2";
 					skill=0.60000002;
 					text="YahellsFrau_1";
 					init="this setPos [(getPos this) select 0, (getPos this) select 1, 0]; this enableSimulation false; this allowDamage false; removeallweapons this; removeGoggles this; removeAllAssignedItems this; removeVest this; removeHeadgear this; this forceAddUniform ""rds_uniform_priest"";   this addAction[""Transport abgeben"",  { [3,1,1] remoteExecCall [""life_fnc_Transport"", player, false];},"""",0,false,false,"""",'life_transport_in_progress'];  ";
 				};
-				class Item44
+				class Item43
 				{
 					position[]={3562.4895,368.11447,1377.4097};
 					azimut=186.474;
 					special="NONE";
-					id=143;
+					id=142;
 					side="CIV";
 					vehicle="RDS_Functionary2";
 					skill=0.60000002;
@@ -2731,7 +2719,7 @@ class Mission
 				{
 					position[]={12799.509,312.45554,0.49923706};
 					azimut=182.302;
-					id=144;
+					id=143;
 					side="GUER";
 					vehicle="I_Story_Colonel_F";
 					leader=1;
@@ -2753,7 +2741,7 @@ class Mission
 					azimut=55;
 					offsetY=0.5;
 					special="NONE";
-					id=145;
+					id=144;
 					side="CIV";
 					vehicle="C_man_1";
 					leader=1;
@@ -2766,7 +2754,7 @@ class Mission
 					azimut=312;
 					offsetY=0.5;
 					special="NONE";
-					id=146;
+					id=145;
 					side="CIV";
 					vehicle="C_man_p_fugitive_F_asia";
 					skill=0.60000002;
@@ -2786,7 +2774,7 @@ class Mission
 					position[]={5320.1572,145.93019,6163.9712};
 					azimut=215;
 					special="NONE";
-					id=147;
+					id=146;
 					side="CIV";
 					vehicle="RDS_Profiteer1";
 					leader=1;
@@ -2807,7 +2795,7 @@ class Mission
 					azimut=125;
 					offsetY=0.5;
 					special="NONE";
-					id=148;
+					id=147;
 					side="CIV";
 					vehicle="C_man_p_fugitive_F_asia";
 					leader=1;
@@ -2829,7 +2817,7 @@ class Mission
 					azimut=135;
 					offsetY=2.7;
 					special="NONE";
-					id=149;
+					id=148;
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					leader=1;
@@ -2849,7 +2837,7 @@ class Mission
 					position[]={5650.5391,81.919998,8899.9531};
 					azimut=135;
 					special="NONE";
-					id=150;
+					id=149;
 					side="CIV";
 					vehicle="C_man_1";
 					leader=1;
@@ -2870,7 +2858,7 @@ class Mission
 					azimut=25;
 					offsetY=-1;
 					special="NONE";
-					id=151;
+					id=150;
 					side="CIV";
 					vehicle="C_man_p_fugitive_F_asia";
 					leader=1;
@@ -2891,7 +2879,7 @@ class Mission
 					position[]={5659.4326,81.925095,8888.9053};
 					azimut=310;
 					special="NONE";
-					id=152;
+					id=151;
 					side="CIV";
 					vehicle="RDS_Profiteer1";
 					leader=1;
@@ -2955,7 +2943,7 @@ class Mission
 							typeName="same_lr_frequencies_for_side";
 						};
 					};
-					id=153;
+					id=152;
 					side="LOGIC";
 					vehicle="tfar_ModuleTaskForceRadioEnforceUsage";
 					leader=1;
@@ -2975,7 +2963,7 @@ class Mission
 					position[]={12576.029,348.56277,127.13306};
 					azimut=185.11099;
 					special="NONE";
-					id=154;
+					id=153;
 					side="GUER";
 					vehicle="I_medic_F";
 					player="PLAY CDG";
@@ -2990,7 +2978,7 @@ class Mission
 					position[]={12577.067,348.56497,128.9426};
 					azimut=185.11099;
 					special="NONE";
-					id=155;
+					id=154;
 					side="GUER";
 					vehicle="I_medic_F";
 					player="PLAY CDG";
@@ -3003,7 +2991,7 @@ class Mission
 					position[]={12576.759,348.59473,128.57474};
 					azimut=185.11099;
 					special="NONE";
-					id=156;
+					id=155;
 					side="GUER";
 					vehicle="I_medic_F";
 					player="PLAY CDG";
@@ -3016,7 +3004,7 @@ class Mission
 					position[]={12576.496,348.59204,128.10501};
 					azimut=185.11099;
 					special="NONE";
-					id=157;
+					id=156;
 					side="GUER";
 					vehicle="I_medic_F";
 					player="PLAY CDG";
@@ -3037,7 +3025,7 @@ class Mission
 					position[]={12578.225,347.86621,127.04809};
 					azimut=185.11099;
 					special="NONE";
-					id=158;
+					id=157;
 					side="GUER";
 					vehicle="I_medic_F";
 					player="PLAY CDG";
@@ -3050,7 +3038,7 @@ class Mission
 					position[]={12578.599,347.83936,127.54565};
 					azimut=185.11099;
 					special="NONE";
-					id=159;
+					id=158;
 					side="GUER";
 					vehicle="I_medic_F";
 					player="PLAY CDG";
@@ -3063,7 +3051,7 @@ class Mission
 					position[]={12578.906,347.85703,128.17813};
 					azimut=185.11099;
 					special="NONE";
-					id=160;
+					id=159;
 					side="GUER";
 					vehicle="I_medic_F";
 					player="PLAY CDG";
@@ -3076,7 +3064,7 @@ class Mission
 					position[]={12577.46,347.96725,126.28769};
 					azimut=185.11099;
 					special="NONE";
-					id=161;
+					id=160;
 					side="GUER";
 					vehicle="I_medic_F";
 					player="PLAY CDG";
@@ -3119,7 +3107,7 @@ class Mission
 							typeName="Whitelist";
 						};
 					};
-					id=162;
+					id=161;
 					side="LOGIC";
 					vehicle="ACE_ModuleCheckPBOs";
 					leader=1;
@@ -3177,7 +3165,7 @@ class Mission
 							typeName="serverUpdateInterval";
 						};
 					};
-					id=163;
+					id=162;
 					side="LOGIC";
 					vehicle="ace_weather_ModuleSettings";
 					leader=1;
@@ -3259,7 +3247,7 @@ class Mission
 							typeName="simulationRadius";
 						};
 					};
-					id=164;
+					id=163;
 					side="LOGIC";
 					vehicle="ace_advanced_ballistics_ModuleSettings";
 					leader=1;
@@ -3311,7 +3299,7 @@ class Mission
 							typeName="MapShowCursorCoordinates";
 						};
 					};
-					id=165;
+					id=164;
 					side="LOGIC";
 					vehicle="ACE_ModuleMap";
 					leader=1;
@@ -3339,7 +3327,7 @@ class Mission
 							typeName="enable";
 						};
 					};
-					id=166;
+					id=165;
 					side="LOGIC";
 					vehicle="ACE_ModuleSitting";
 					leader=1;
@@ -3391,7 +3379,7 @@ class Mission
 							typeName="MapShowCursorCoordinates";
 						};
 					};
-					id=167;
+					id=166;
 					side="LOGIC";
 					vehicle="ACE_ModuleMap";
 					leader=1;
@@ -3419,7 +3407,7 @@ class Mission
 							typeName="enable";
 						};
 					};
-					id=168;
+					id=167;
 					side="LOGIC";
 					vehicle="ACE_moduleCargoSettings";
 					leader=1;
@@ -3477,7 +3465,7 @@ class Mission
 							typeName="SafeZoneRadius";
 						};
 					};
-					id=169;
+					id=168;
 					side="LOGIC";
 					vehicle="ACE_ModuleSwitchUnits";
 					leader=1;
@@ -3512,12 +3500,12 @@ class Mission
 						};
 						class Item2
 						{
-							value="0";
+							value="1";
 							parentCls="ace_captives_moduleSettings";
 							typeName="requireSurrender";
 						};
 					};
-					id=170;
+					id=169;
 					side="LOGIC";
 					vehicle="ace_captives_moduleSettings";
 					leader=1;
@@ -3545,7 +3533,7 @@ class Mission
 							typeName="EnableTeamManagement";
 						};
 					};
-					id=171;
+					id=170;
 					side="LOGIC";
 					vehicle="ACE_ModuleInteraction";
 					leader=1;
@@ -3621,7 +3609,7 @@ class Mission
 							typeName="wheelRepairRequiredItems";
 						};
 					};
-					id=172;
+					id=171;
 					side="LOGIC";
 					vehicle="ACE_moduleRepairSettings";
 					leader=1;
@@ -3641,7 +3629,7 @@ class Mission
 							typeName="enable";
 						};
 					};
-					id=173;
+					id=172;
 					side="LOGIC";
 					vehicle="ACE_moduleCargoSettings";
 					lock="UNLOCKED";
@@ -3692,7 +3680,7 @@ class Mission
 							typeName="showCursorTagForVehicles";
 						};
 					};
-					id=174;
+					id=173;
 					side="LOGIC";
 					vehicle="ACE_ModuleNameTags";
 					leader=1;
@@ -3712,7 +3700,7 @@ class Mission
 					position[]={12576.2,348.2854,125.88107};
 					azimut=185.11099;
 					special="NONE";
-					id=175;
+					id=174;
 					side="GUER";
 					vehicle="I_medic_F";
 					player="PLAY CDG";
@@ -3734,7 +3722,7 @@ class Mission
 				{
 					position[]={5261.522,146.52196,6231.4468};
 					azimut=396.491;
-					id=176;
+					id=175;
 					side="CIV";
 					vehicle="C_man_1";
 					leader=1;
@@ -3755,7 +3743,7 @@ class Mission
 					position[]={12802.121,312.77548,4.0073242};
 					azimut=-201.94919;
 					special="NONE";
-					id=177;
+					id=176;
 					side="CIV";
 					vehicle="C_man_1";
 					leader=1;
@@ -3793,7 +3781,7 @@ class Mission
 					position[]={9413.1201,165.48981,9996.0107};
 					azimut=300.255;
 					special="NONE";
-					id=178;
+					id=177;
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
@@ -3804,7 +3792,7 @@ class Mission
 					position[]={8896.3145,266.17206,5323.4097};
 					azimut=149.95419;
 					special="NONE";
-					id=179;
+					id=178;
 					side="CIV";
 					vehicle="C_man_polo_3_F";
 					skill=0.60000002;
@@ -3816,7 +3804,7 @@ class Mission
 					position[]={8842.1514,265.60828,5304.4922};
 					azimut=418.496;
 					special="NONE";
-					id=180;
+					id=179;
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
@@ -3828,7 +3816,7 @@ class Mission
 					azimut=109.253;
 					offsetY=2.3;
 					special="NONE";
-					id=181;
+					id=180;
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
@@ -3840,7 +3828,7 @@ class Mission
 					azimut=112.724;
 					offsetY=2.2;
 					special="NONE";
-					id=182;
+					id=181;
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
@@ -3852,7 +3840,7 @@ class Mission
 					azimut=411.82001;
 					offsetY=0.1;
 					special="NONE";
-					id=183;
+					id=182;
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
@@ -3864,7 +3852,7 @@ class Mission
 					azimut=281.99301;
 					offsetY=2.3;
 					special="NONE";
-					id=184;
+					id=183;
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
@@ -3875,7 +3863,7 @@ class Mission
 					position[]={5300.5366,145.53362,6123.1323};
 					azimut=312.875;
 					special="NONE";
-					id=185;
+					id=184;
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
@@ -3886,7 +3874,7 @@ class Mission
 					position[]={12797.1,312.81009,4.3869019};
 					azimut=201.036;
 					offsetY=1;
-					id=186;
+					id=185;
 					side="CIV";
 					vehicle="C_man_1";
 					leader=1;
@@ -3908,7 +3896,7 @@ class Mission
 					position[]={6343.2451,61.00388,11006.172};
 					azimut=362.16;
 					special="NONE";
-					id=187;
+					id=186;
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
@@ -3920,7 +3908,7 @@ class Mission
 					azimut=117.505;
 					offsetY=1.2;
 					special="NONE";
-					id=188;
+					id=187;
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
@@ -3931,7 +3919,7 @@ class Mission
 					position[]={12798.62,312.78943,4.1603088};
 					azimut=201.036;
 					offsetY=1;
-					id=189;
+					id=188;
 					side="CIV";
 					vehicle="C_man_1";
 					leader=1;
@@ -3953,7 +3941,7 @@ class Mission
 					position[]={12799.883,312.73236,3.5346985};
 					azimut=262.41901;
 					special="NONE";
-					id=190;
+					id=189;
 					side="CIV";
 					vehicle="C_man_1";
 					leader=1;
@@ -3973,7 +3961,7 @@ class Mission
 					position[]={6870.3779,283.92157,6507.7397};
 					azimut=255.257;
 					offsetY=1.4;
-					id=191;
+					id=190;
 					side="CIV";
 					vehicle="C_man_1";
 					leader=1;
@@ -3993,7 +3981,7 @@ class Mission
 					position[]={3549.2705,368.29944,1368.6185};
 					azimut=481.99899;
 					offsetY=0.1;
-					id=192;
+					id=191;
 					side="CIV";
 					vehicle="C_man_1";
 					leader=1;
@@ -4014,7 +4002,7 @@ class Mission
 					position[]={5374.7163,213.03467,5917.5068};
 					azimut=201.036;
 					offsetY=1.2;
-					id=193;
+					id=192;
 					side="CIV";
 					vehicle="C_man_1";
 					leader=1;
@@ -4035,7 +4023,7 @@ class Mission
 					position[]={5832.0469,83.040001,11349.802};
 					azimut=-45.788689;
 					special="NONE";
-					id=194;
+					id=193;
 					side="CIV";
 					vehicle="C_man_w_worker_F";
 					leader=1;
@@ -4047,7 +4035,7 @@ class Mission
 					position[]={5787.1548,83.040001,11305.665};
 					azimut=-40.127499;
 					special="NONE";
-					id=195;
+					id=194;
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
@@ -4066,7 +4054,7 @@ class Mission
 					position[]={4162.0884,25.684429,11722.596};
 					azimut=627.90698;
 					special="NONE";
-					id=196;
+					id=195;
 					side="CIV";
 					vehicle="C_man_1";
 					leader=1;
@@ -4087,7 +4075,7 @@ class Mission
 					azimut=559.50098;
 					offsetY=2.2;
 					special="NONE";
-					id=197;
+					id=196;
 					side="CIV";
 					vehicle="C_man_1";
 					leader=1;
@@ -4107,7 +4095,7 @@ class Mission
 					position[]={12602.943,345.83554,172.10403};
 					azimut=29.242399;
 					special="NONE";
-					id=198;
+					id=197;
 					side="CIV";
 					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
@@ -4129,7 +4117,7 @@ class Mission
 					position[]={12606.221,344.47021,170.15015};
 					azimut=29.242399;
 					special="NONE";
-					id=199;
+					id=198;
 					side="CIV";
 					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
@@ -4151,7 +4139,7 @@ class Mission
 					position[]={12608.868,343.4227,168.85773};
 					azimut=29.242399;
 					special="NONE";
-					id=200;
+					id=199;
 					side="CIV";
 					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
@@ -4173,7 +4161,7 @@ class Mission
 					position[]={12610.884,342.6445,167.81937};
 					azimut=29.242399;
 					special="NONE";
-					id=201;
+					id=200;
 					side="CIV";
 					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
@@ -4195,7 +4183,7 @@ class Mission
 					position[]={12613.501,341.58786,166.17981};
 					azimut=29.242399;
 					special="NONE";
-					id=202;
+					id=201;
 					side="CIV";
 					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
@@ -4217,7 +4205,7 @@ class Mission
 					position[]={12601.81,345.88684,170.30731};
 					azimut=29.242399;
 					special="NONE";
-					id=203;
+					id=202;
 					side="CIV";
 					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
@@ -4239,7 +4227,7 @@ class Mission
 					position[]={12605.118,344.46692,167.88116};
 					azimut=29.242399;
 					special="NONE";
-					id=204;
+					id=203;
 					side="CIV";
 					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
@@ -4261,7 +4249,7 @@ class Mission
 					position[]={12608.111,343.34818,166.5567};
 					azimut=29.242399;
 					special="NONE";
-					id=205;
+					id=204;
 					side="CIV";
 					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
@@ -4283,7 +4271,7 @@ class Mission
 					position[]={12610.696,342.43243,165.80139};
 					azimut=29.242399;
 					special="NONE";
-					id=206;
+					id=205;
 					side="CIV";
 					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
@@ -4305,7 +4293,7 @@ class Mission
 					position[]={12612.397,341.7226,164.50974};
 					azimut=29.242399;
 					special="NONE";
-					id=207;
+					id=206;
 					side="CIV";
 					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
@@ -4313,6 +4301,27 @@ class Mission
 					skill=0.60000002;
 					text="civ_85";
 					description="Civ 75";
+				};
+			};
+		};
+		class Item122
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10717.668,382.90598,2354.1392};
+					azimut=262.41901;
+					special="NONE";
+					id=207;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					leader=1;
+					skill=0.60000002;
+					text="h1_3_1_1";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Essenausgabe"",life_fnc_virt_menu,""cop""]; this addAction[""Kleidungsspind"",life_fnc_clothingMenu,""cop""];  this addAction[""Army Equipment"",life_fnc_weaponShopMenu,""army_equipment""];  this addAction[""Abzeichen-Waffenspind"",life_fnc_weaponShopMenuAbzeichen,""abzeichen""];   this addAction[""Recruit Ausrüstung"",life_fnc_weaponShopMenu,""coplevel1"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==1'];   this addAction[""Private Ausrüstung"",life_fnc_weaponShopMenu,""coplevel2"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==2'];   this addAction[""Private First Class Ausrüstung"",life_fnc_weaponShopMenu,""coplevel3"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==3'];   this addAction[""Specialist Ausrüstung"",life_fnc_weaponShopMenu,""coplevel4"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==4'];   this addAction[""Corporal Ausrüstung"",life_fnc_weaponShopMenu,""coplevel5"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==5'];  this addAction[""Sergeant Ausrüstung"",life_fnc_weaponShopMenu,""coplevel6"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==6'];  this addAction[""Staff Sergeant Ausrüstung"",life_fnc_weaponShopMenu,""coplevel7"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==7'];   this addAction[""Sergeant First Class Ausrüstung"",life_fnc_weaponShopMenu,""coplevel8"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==8'];   this addAction[""Master Sergeant Ausrüstung"",life_fnc_weaponShopMenu,""coplevel9"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==9'];   this addAction[""Sgt. Major Ausrüstung"",life_fnc_weaponShopMenu,""coplevel10"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==10'];   this addAction[""Command Sgt. Major Ausrüstung"",life_fnc_weaponShopMenu,""coplevel11"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==11'];   this addAction[""Second Lieutenant Ausrüstung"",life_fnc_weaponShopMenu,""coplevel12"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==12'];   this addAction[""First Lieutenant Ausrüstung"",life_fnc_weaponShopMenu,""coplevel13"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==13'];   this addAction[""Captain Ausrüstung"",life_fnc_weaponShopMenu,""coplevel14"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==14'];  this addAction[""Major Ausrüstung"",life_fnc_weaponShopMenu,""coplevel15"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==15'];  this addAction[""Colonel Ausrüstung"",life_fnc_weaponShopMenu,""coplevel16"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==16'];   this addAction[""General Ausrüstung"",life_fnc_weaponShopMenu,""coplevel17"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==17'];  this addAction[""Commander in Chief Ausrüstung"",life_fnc_weaponShopMenu,""coplevel17"",0,false,false,"""",'playerSide ==west && player getVariable [""rank"",0] ==18'];";
 				};
 			};
 		};
