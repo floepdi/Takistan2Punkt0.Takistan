@@ -422,7 +422,7 @@ if ("glauben" == _reihe) then // Für den Glauben aufrüsten
 								//Marker
 								"glauben_1_2_1" setMarkerAlphaLocal 0; // Marker von letzter Quest
 								"glauben_1_3_0" setMarkerAlphaLocal 1; // Marker von dieser Quest
-                				player createDiaryRecord["questbuch",["Quest-Buch","Dope für den Kampf<br/>Farme Haschisch und gib es im Rebellenlager ab"]];
+                				player createDiaryRecord["questbuch",["Quest-Buch","Dope für den Kampf<br/>Farme 5 Marijuana und gib es im Rebellenlager ab"]];
 						};
 				};
 				if (_progress == 1) then {
@@ -805,9 +805,15 @@ if("abhoeren" == _reihe) then { // Abhören
 					};
 				};
 				if(_progress == 1) then {
+					_copcars = ["rhsusf_m998_d_2dr","rhsusf_m998_d_4dr","DAR_M1152","rhsusf_m1025_d_m2","DAR_M1165_GMV","DAR_M1151","DAR_M1151_Deploy","DAR_M1167","rhsusf_m113d_usarmy"];
+					{
+						if (_x in life_vehicles) then {
+							life_questinfo = 1;
+						}
+					} forEach _copcars;
 					if( (life_quest == 41)  && (life_questinfo > 0))then {
 
-						//Schlüssel abfrage
+						//Check for vehicle
 
 						playSound "abhoeren_1_4_1";
 						ADD(life_quest,1);
