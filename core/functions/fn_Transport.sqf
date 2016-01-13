@@ -68,13 +68,13 @@ if (1 == _paket) then // Jobs für Anfänger
 										_user setVariable ["transport", 0, false];
 										playSound "transport_1_1_1";
 										"Transport_1_1" setMarkerAlphaLocal 0;
-										_reward  = 100;
+										_reward  = 50;
 										ADD(CASH,_reward);
-										_level = 100;
+										_level = 25;
 										ADD(life_gesamtexp,_level);
 										if (life_quest == 3) then {ADD(life_questinfo,1);};
 										[] call life_fnc_SetupLevel;
-										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 100$ <br /> + 100 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 50$ <br /> + 25 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 										 player createDiaryRecord["transportbuch",
 					[
 							"Transport-Buch",
@@ -137,11 +137,13 @@ if (1 == _paket) then // Jobs für Anfänger
 										_user setVariable ["transport", 0, false];
 										playSound "transport_1_2_1";
 										"Transport_1_2" setMarkerAlphaLocal 0;
-										_level = 200;
+										_reward  = 55;
+										ADD(CASH,_reward);
+                    _level = 30;
 										ADD(life_gesamtexp,_level);
 										if (life_quest == 3) then {ADD(life_questinfo,1);};
 										[] call life_fnc_SetupLevel;
-										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 200 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 55$ <br /> + 30 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
                     player createDiaryRecord["transportbuch",
 					[
 							"Transport-Buch",
@@ -202,13 +204,13 @@ if (1 == _paket) then // Jobs für Anfänger
 										_user setVariable ["transport", 0, false];
 										playSound "transport_1_3_1";
 										"Transport_1_3" setMarkerAlphaLocal 0;
-										_reward  = 150;
+										_reward  = 65;
 										life_cash = life_cash + _reward;
-										_level = 150;
+										_level = 50;
 										ADD(life_gesamtexp,_level);
 										if (life_quest == 3) then {ADD(life_questinfo,1);};
 										[] call life_fnc_SetupLevel;
-										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 150$ <br /> + 150 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 65$ <br /> + 50 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
                     player createDiaryRecord["transportbuch",
 					[
 							"Transport-Buch",
@@ -277,30 +279,30 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 							_p = _user getVariable "transport";
 								if (_p == 21) then
 								{
-									_reward = "rhs_weap_ak74m_folded";
-									if !((player canAddItemtoBackpack _reward) OR (PrimaryWeapon Player == "")) exitWith {hint "Mach zuerst Platz für eine Waffe, um die Belohnung entgegen zu nehmen"};
+									_reward = "hgun_mas_mak_F";
+									if !((player canAddItemtoBackpack _reward) OR (handgunWeapon  Player == "")) exitWith {hint "Mach zuerst Platz für eine Waffe, um die Belohnung entgegen zu nehmen"};
 										if ([false,"aklieferung",1] call life_fnc_handleInv) then
 										{
 											life_transport_in_progress = false;
 											_user setVariable ["transport", 0, false];
 											playSound "transport_2_1_1";
 											"Transport_2_1" setMarkerAlphaLocal 0;
-											ADD(life_gesamtexp,250);
+											ADD(life_gesamtexp,50);
 											[] call life_fnc_SetupLevel;
 											if (life_quest == 31) then {ADD(life_questinfo,1);};
-											[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + AK74M (Folded) <br /> + 250 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+											[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Handgun <br /> + 50 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 
-											if (PrimaryWeapon Player != "") then
+											if (handgunWeapon  Player != "") then
 											{
 												player addItemToBackpack _reward;
-												player addItemToUniform "rhs_30Rnd_545x39_AK";
-												player addItemToUniform "rhs_30Rnd_545x39_AK";
+												player addItemToUniform "8Rnd_mas_9x18_Mag";
+												player addItemToUniform "8Rnd_mas_9x18_Mag";
 											}
 											else
 											{
 												 player addWeapon _reward;
-												 player addItemToUniform "rhs_30Rnd_545x39_AK";
-												 player addItemToUniform "rhs_30Rnd_545x39_AK";
+												 player addItemToUniform "8Rnd_mas_9x18_Mag";
+												 player addItemToUniform "8Rnd_mas_9x18_Mag";
                       player createDiaryRecord["transportbuch",
 					[
 							"Transport-Buch",
@@ -366,12 +368,12 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 										playSound "transport_2_2_1";
 										"Transport_2_2" setMarkerAlphaLocal 0;
 										player addItem _reward;
-										_rewardcash  = 100;
+										_rewardcash  = 45;
 										ADD(CASH,_rewardcash);
-										ADD(life_gesamtexp,250);
+										ADD(life_gesamtexp,25);
 										if (life_quest == 31) then {ADD(life_questinfo,1);};
 										[] call life_fnc_SetupLevel;
-										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + ACO (rot) <br /> + 100$ <br /> + 250 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + ACO (rot) <br /> + 45$ <br /> + 25 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
                     player createDiaryRecord["transportbuch",
 					[
 							"Transport-Buch",
@@ -436,12 +438,12 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 									_user setVariable ["transport", 0, false];
 									playSound "transport_2_3_1";
 									"Transport_2_3" setMarkerAlphaLocal 0;
-									_reward  = 400;
+									_reward  = 100;
 									ADD(CASH,_reward);
-									ADD(life_gesamtexp,300);
+									ADD(life_gesamtexp,80);
 									if (life_quest == 31) then {ADD(life_questinfo,1);};
 									[] call life_fnc_SetupLevel;
-									[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 400$ <br /> + 300 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText; player createDiaryRecord["transportbuch",
+									[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 100$ <br /> + 80 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText; player createDiaryRecord["transportbuch",
 					[
 							"Transport-Buch",
 								"
