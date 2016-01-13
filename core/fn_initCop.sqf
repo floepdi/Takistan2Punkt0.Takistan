@@ -51,7 +51,7 @@ if ((player getVariable "rank") >= 17) then {
 	for "_i" from 1 to 3 do {player addItemToUniform "20Rnd_mas_762x51_Stanag";};
 	player addVest "TRYK_V_ArmorVest_Ranger2";
 	for "_i" from 1 to 2 do {player addItemToVest "9Rnd_45ACP_Mag";};
-	for "_i" from 1 to 2 do {player addItemToVest "MiniGrenade";};
+	for "_i" from 1 to 4 do {player addItemToVest "MiniGrenade";};
 	for "_i" from 1 to 2 do {player addItemToVest "1Rnd_HE_Grenade_shell";};
 	player addBackpack "B_TacticalPack_blk";
 	player addItemToBackpack "ACE_Flashlight_KSF1";
@@ -74,7 +74,7 @@ if ((player getVariable "rank") >= 17) then {
 	player linkItem "ItemMap";
 	player linkItem "ItemCompass";
 	player linkItem "ItemWatch";
-	player linkItem "tf_anprc154_1";
+	player linkItem "tf_anprc152";
 	player linkItem "ItemGPS";
 	player linkItem "ACE_NVG_Wide";
 

@@ -97,7 +97,7 @@ while {true} do {
 		};
 
 
-     	if !(call TFAR_fnc_isTeamSpeakPluginEnabled) then {endMission "NOTFAR";};
+     if !(call TFAR_fnc_isTeamSpeakPluginEnabled) then {endMission "NOTFAR";};
 	/* Check if the player's state changed? */
 
 

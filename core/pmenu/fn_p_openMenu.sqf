@@ -39,6 +39,8 @@ switch(playerSide) do {
 		ctrlShow[1216,false]; //admin+ ^
 		ctrlShow[2425,true];
 		ctrlShow[1215,true];
+		ctrlShow[2407,false]; //hide group button
+		ctrlShow[1208,false]; //hide group button
 	};
 
 	case independent:

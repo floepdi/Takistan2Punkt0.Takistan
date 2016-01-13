@@ -290,7 +290,11 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 											ADD(life_gesamtexp,50);
 											[] call life_fnc_SetupLevel;
 											if (life_quest == 31) then {ADD(life_questinfo,1);};
+<<<<<<< HEAD
 											[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Handgun <br /> + 50 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+=======
+											[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Handgun <br /> + 250 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+>>>>>>> eb8e3cfd1d2a83cb0b8f81fd60e16fd425cf9a97
 
 											if (handgunWeapon  Player != "") then
 											{

@@ -2,7 +2,7 @@
 /*
 	File: fn_onPlayerKilled.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	When the player dies collect various information about that player
 	and pull up the death dialog / camera functionality.
@@ -40,10 +40,10 @@ _unit spawn
 	disableSerialization;
 	_RespawnBtn = ((findDisplay 7300) displayCtrl 7302);
 	_Timer = ((findDisplay 7300) displayCtrl 7301);
-	
+
 	_maxTime = time + (life_respawn_timer * 60);
 	_RespawnBtn ctrlEnable false;
-	waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; 
+	waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString];
 	round(_maxTime - time) <= 0 OR isNull _this};
 	_RespawnBtn ctrlEnable true;
 	_Timer ctrlSetText localize "STR_Medic_Respawn_2";
@@ -69,7 +69,7 @@ if(!isNull _killer && {_killer != _unit} && {side _killer != west} && {alive _ki
 		};
 	} else {
 		[[getPlayerUID _killer,_killer getVariable["realname",name _killer],"187"],"life_fnc_wantedAdd",false,false] call life_fnc_MP;
-		
+
 		if(!local _killer) then {
 			[[3],"life_fnc_removeLicenses",_killer,FALSE] call life_fnc_MP;
 		};
@@ -85,6 +85,11 @@ if(side _killer == west && playerSide != west) then {
 		CASH = 0;
 	};
 };
+
+//Killed Cop
+	if(side _killer == civilian && playerSide == west) then {
+	[[_coplevel],"life_fnc_rebTransfer",_killer,false] spawn life_fnc_MP;
+	};
 
 if(!isNull _killer && {_killer != _unit}) then {
 	life_removeWanted = true;

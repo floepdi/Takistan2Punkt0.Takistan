@@ -221,6 +221,7 @@ class Life_Client_Core
 		class robPerson {};
 		class demoChargeTimer {};
 		class civLoadout {};
+		class RebTransfer {};
 	};
 
 	class Vehicle
@@ -248,6 +249,7 @@ class Life_Client_Core
 		class bountyReceive {};
 		class searchClient {};
 		class spikeStripEffect {};
+		class seizeObjects {};
 		class doorAnimate {};
 		class fedCamDisplay {};
 		class copLoadout {};
@@ -312,6 +314,7 @@ class Life_Client_Core
         class kochsalzmate {};
         class epi {};
         class epimate {};
+        class depotwaffen {};
 	};
 
 	class Dialog_Controls

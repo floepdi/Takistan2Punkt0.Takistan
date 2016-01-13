@@ -43,6 +43,7 @@ class WeaponShops {
             { "Binocular", "", 10 },
             { "Chemlight_green", "", 10 },
             { "Chemlight_blue", "", 10 },
+			{"tf_anprc152","",10},
             { "SmokeShell", "", 10 },
             { "SmokeShellRed", "", 10 },
             { "SmokeShellGreen", "", 10 },

@@ -60,6 +60,13 @@ switch (true) do {
 	 	[false,_item,1] call life_fnc_handleInv;
 	};
 
+	case (EQUAL(_item,"depotwaffen")): {
+	    if(([false,_item,1] call life_fnc_handleInv)) then
+	    {
+	        [] spawn life_fnc_depotwaffen;
+	    };
+	};
+
 	case (_item in ["fladenbrot","burger","dattel"]): {
 		if(!(EQUAL(M_CONFIG(getNumber,"VirtualItems",_item,"edible"),-1))) then {
 			if([false,_item,1] call life_fnc_handleInv) then {
