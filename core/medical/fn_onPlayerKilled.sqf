@@ -32,6 +32,7 @@ life_deathCamera camSetFocus [50,0];
 life_deathCamera camCommit 0;
 
 (findDisplay 7300) displaySetEventHandler ["KeyDown","if((_this select 1) == 1) then {true}"]; //Block the ESC menu
+[[format ["2|%1 wurde von Spieler %2 getötet",player getVariable["realname",name player],_killer getVariable["realname",name _killer]]],"Arma3Log",false,false] call life_fnc_MP;
 
 //Create a thread for something?
 _unit spawn

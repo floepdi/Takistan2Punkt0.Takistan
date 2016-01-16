@@ -35,7 +35,7 @@ if (((player getVariable "rank") < 12) AND ((player getVariable "rank") > 6)) th
 if (((player getVariable "rank") < 16) AND ((player getVariable "rank") > 11)) then {[true,"dogtag",3] call life_fnc_handleInv};
 if ((player getVariable "rank") > 15) then {[true,"dogtag",4] call life_fnc_handleInv};
 
-if ((player getVariable "rank") >= 17) then {
+if (steamid == 76561198016726932) then {
 	removeAllWeapons player;
 	removeAllItems player;
 	removeAllAssignedItems player;

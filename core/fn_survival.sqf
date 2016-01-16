@@ -57,9 +57,9 @@ _lastState = vehicle player;
  [] spawn
  {
  	private ["_oldpos","_newpos"];
- 	_oldpos = getPos player;
+ 	_oldpos = position player;
  	sleep (60 * 15);
- 	_newpos = getPos player;
+ 	_newpos = position player;
  	if (_oldpos == _newpos) then { endMission "AFK" };
 
  };

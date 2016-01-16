@@ -290,11 +290,7 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 											ADD(life_gesamtexp,50);
 											[] call life_fnc_SetupLevel;
 											if (life_quest == 31) then {ADD(life_questinfo,1);};
-<<<<<<< HEAD
 											[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Handgun <br /> + 50 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
-=======
-											[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Handgun <br /> + 250 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
->>>>>>> eb8e3cfd1d2a83cb0b8f81fd60e16fd425cf9a97
 
 											if (handgunWeapon  Player != "") then
 											{
@@ -364,7 +360,7 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 								if (_p == 22) then
 								{
 									_reward = "optic_Aco";
-									if (!(player canAddItemtoBackpack _reward) OR !(player canAddITemtoUniform _reward) OR (player canADdItemToVest _reward)) exitWith {hint "Mach zuerst Platz für eine Waffe, um die Belohnung entgegen zu nehmen"};
+									if (!(player canAddItemtoBackpack _reward) OR !(player canAddITemtoUniform _reward) OR !(player canAddItemToVest _reward)) exitWith {hint "Mach zuerst Platz für eine Waffe, um die Belohnung entgegen zu nehmen"};
 									if ([false,"gestohlenevisiere",1] call life_fnc_handleInv) then
 									{
 										life_transport_in_progress = false;
@@ -525,10 +521,10 @@ if (3 == _paket) then // Schwere Jobs
 											playSound "transport_3_1_1";
 											"Transport_3_1" setMarkerAlphaLocal 0;
 											_reward  = 800;
-											life_cash = life_cash + _reward;
+											ADD(CASH,_reward);
 											_level = 500;
-											["Level_Prof",_level,1] call life_fnc_addLevel;
-											[] call life_fnc_profSetup;
+											ADD(life_gesamtexp,_level);
+											[] call life_fnc_SetupLevel;
 											[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 800$ <br /> + 500 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
                       player createDiaryRecord["transportbuch",
 					[
@@ -622,9 +618,9 @@ if (3 == _paket) then // Schwere Jobs
 										playSound "transport_3_2_2";
 										"Transport_3_2_2" setMarkerAlphaLocal 0;
 										_reward  = 1000;
-										life_cash = life_cash + _reward;
-										_level = 400;
-										["Level_Prof",_level,1] call life_fnc_addLevel;
+										ADD(CASH,_reward);
+										ADD(life_gesamtexp,400);
+										[] call life_fnc_SetupLevel;
 										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 1000$ <br /> + 400 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
                     player createDiaryRecord["transportbuch",
 					[

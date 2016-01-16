@@ -87,7 +87,7 @@ class VirtualItems {
   VITEMMACRO(blastingcharge, "STR_Item_BCharge", "blastingCharge", 5, 500, -1, true, -1, "icons\ico_blastingCharge.paa")
   VITEMMACRO(boltcutter, "STR_Item_BCutter", "boltCutter", 5, 250, -1, true, -1, "icons\ico_boltcutters.paa")
   VITEMMACRO(defusekit, "STR_Item_DefuseKit", "defuseKit", 2, 100, -1, false, -1, "")
-  VITEMMACRO(information, "STR_Item_information", "information", 3, -1, 50, true, -1, "")
+  VITEMMACRO(information, "STR_Item_information", "information", 3, -1, 10, true, -1, "")
   VITEMMACRO(strahler, "STR_Item_strahler", "strahler", 3, 10, -1, true, -1, "")
   VITEMMACRO(barricade, "STR_Item_barricade", "barricade", 3, 10, -1, true, -1, "")
   VITEMMACRO(barrier, "STR_Item_barrier", "barrier", 3, 10, -1, true, -1, "")
@@ -102,21 +102,21 @@ class VirtualItems {
 
 	//Mined Items
   VITEMMACRO(oil_unprocessed, "STR_Item_OilU", "oilUnprocessed", 5, -1, -1, false, -1, "")
-  VITEMMACRO(oil_processed, "STR_Item_Oilp", "oilProcessed", 4, -1, 20, false, -1, "")
-  VITEMMACRO(mehl, "STR_Item_mehl", "mehl", 1, -1, 4, false, -1, "")
+  VITEMMACRO(oil_processed, "STR_Item_Oilp", "oilProcessed", 4, -1, 34, false, -1, "")
+  VITEMMACRO(mehl, "STR_Item_mehl", "mehl", 1, -1, 9, false, -1, "")
   VITEMMACRO(getreide, "STR_Item_getreide", "getreide", 2, -1, -1, false, -1, "")
   VITEMMACRO(wasser, "STR_Item_wasser", "wasser", 1, -1, -1, false, -1, "")
-  VITEMMACRO(fladen, "STR_Item_fladen", "fladen", 2, -1, 11, false, -1, "")
+  VITEMMACRO(fladen, "STR_Item_fladen", "fladen", 2, -1, 27, false, -1, "")
 
 	//Drugs & Illegal Farm
   VITEMMACRO(heroin_unprocessed, "STR_Item_HeroinU", "heroinUnprocessed", 4, -1, -1, true, -1, "")
-  VITEMMACRO(heroin_processed, "STR_Item_HeroinP", "heroinProcessed", 3, -1, 25, true, -1, "")
-  VITEMMACRO(heroin_refined, "STR_Item_heroinr", "heroinRefined", 3, -1, 30, true, -1, "")
+  VITEMMACRO(heroin_processed, "STR_Item_HeroinP", "heroinProcessed", 3, -1, 55, true, -1, "")
+  VITEMMACRO(heroin_refined, "STR_Item_heroinr", "heroinRefined", 3, -1, 65, true, -1, "")
   VITEMMACRO(cannabis, "STR_Item_Cannabis", "cannabis", 3, -1, -1, true, -1, "")
-  VITEMMACRO(marijuana, "STR_Item_Marijuana", "marijuana", 2, -1, 20, true, -1, "icons\ico_marijuana.paa")
-  VITEMMACRO(marijuana_refined, "STR_Item_Marijuanar", "marijuanaRefined", 2, -1, 25, true, -1, "icons\ico_marijuana.paa")
+  VITEMMACRO(marijuana, "STR_Item_Marijuana", "marijuana", 2, -1, 45, true, -1, "icons\ico_marijuana.paa")
+  VITEMMACRO(marijuana_refined, "STR_Item_Marijuanar", "marijuanaRefined", 2, -1, 55, true, -1, "icons\ico_marijuana.paa")
   VITEMMACRO(goldore, "STR_Item_goldore", "goldore", 10, -1, -1, true, -1, "")
-  VITEMMACRO(goldbar, "STR_Item_goldbar", "goldbar", 5, -1, 50, true, -1, "")
+  VITEMMACRO(goldbar, "STR_Item_goldbar", "goldbar", 5, -1, 150, true, -1, "")
   VITEMMACRO(coalp, "STR_Item_coalp", "coalPerfined", 3, 10, -1, true, -1, "")
 
   // Illegale Items (Transporte etc)
@@ -138,7 +138,7 @@ class VirtualItems {
   VITEMMACRO(gehaeuse, "STR_Item_gehaeuse", "gehaeuse", 3, 50, -1, false, -1, "")
   VITEMMACRO(behaelter, "STR_Item_behaelter", "behaelter", 3, 50, -1, false, -1, "")
   VITEMMACRO(battery, "STR_Item_battery", "battery", 1, 50, -1, false, -1, "")
-  VITEMMACRO(abhoergeraet, "STR_Item_abhoergeraet", "abhoergeraet", 10, -1, -1, true, -1, "")
+  VITEMMACRO(abhoergeraet, "STR_Item_abhoergeraet", "abhoergeraet", 5, 100, -1, true, -1, "")
   VITEMMACRO(sulfuru, "STR_Item_sulfuru", "sulfuru", 3, -1, -1, true, -1, "")
   VITEMMACRO(sulfurp, "STR_Item_sulfurp", "sulfurp", 3, -1, -1, true, -1, "")
   VITEMMACRO(nitre, "STR_Item_nitre", "nitre", 3, -1, -1, true, -1, "")
@@ -215,7 +215,12 @@ class VirtualShops {
 
 	class electrostore {
 		name = "STR_Shops_Electrostore";
-		items[] = { "battery", "gehaeuse", "antenne" };
+		items[] = { "battery", "gehaeuse", "antenne" , "abhoergeraet" };
+	};
+
+	class electrostore2 {
+		name = "STR_Shops_Electrostore";
+		items[] = { "battery", "gehaeuse", "antenne", "abhoergeraet" };
 	};
 
 	class blackstore  {

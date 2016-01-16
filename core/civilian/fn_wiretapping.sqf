@@ -1,7 +1,7 @@
 /*
 	File: fn_wiretapping.sqf
 	Author: synced-gaming.de - xydra
-	
+
 	Description:
 	Main functionality for gathering information (wiretapping a military car).
 */
@@ -13,8 +13,7 @@ _weight = 0;
 
 
 /* Check if it is possible wiretap the vehicle */
-if( !(side _car == west)) exitWith {hint "Du kannst nur Militärfahrzeuge abhören"};
-if( !(_car getVariable ["restrained",false])) exitWith {hint "Du bist gefesselt!"};
+if( !(typeOf cursorTarget in ["rhsusf_m998_d_2dr","rhsusf_m998_d_4dr","DAR_M1152","rhsusf_m1025_d_m2","DAR_M1165_GMV","DAR_M1151","DAR_M1151_Deploy","DAR_M1167","rhsusf_m113d_usarmy"])) exitWith {hint "Du kannst nur Militärfahrzeuge abhören"};
 if(player distance _car > 4) exitWith {hint "Du bist zu weit entfernt!"};
 closeDialog 0;
 
@@ -36,20 +35,15 @@ _spotted = false;
 
 
 /* gather info */
-while(true) do {
+while {true} do {
 		/* give player 1 information if they have place in inv */
-	_weight = ["information",5,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
-	if(_weight > 0) then {
-		life_action_inUse = true;
-		if(([true,"information",_weight]call life_fnc_handleInv)) then {
+		if(([true,"information",1]call life_fnc_handleInv)) then {
 			hint "Du hast eine Information aufgeschnappt";
 		};
-		life_action_inUse = false;
-	};
+
 
 	/* check if wiretapping device is spotted (10% chance)*/
 	_rand = random 100;
-	if(_rand <= 10) exitWith{hint "Dein Abhörgerät wurde entdeckt!"};
-	
+	if(_rand <= 10) exitWith{hint "Dein Abhörgerät wurde entdeckt!";deleteVehicle _bomb;};
 	sleep 60;
 };

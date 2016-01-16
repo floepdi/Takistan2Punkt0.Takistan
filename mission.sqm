@@ -2188,8 +2188,8 @@ class Mission
 				items=44;
 				class Item0
 				{
-					position[]={5281.4019,145.99036,6182.6045};
-					azimut=298.20001;
+					position[]={5347.1763,142.75073,6231.8037};
+					azimut=327.91202;
 					special="NONE";
 					id=99;
 					side="CIV";
@@ -2199,8 +2199,8 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={5289.2241,146.24962,6191.895};
-					azimut=-418.23544;
+					position[]={5289.667,146.25867,6192.2144};
+					azimut=-418.25769;
 					special="NONE";
 					id=100;
 					side="CIV";
@@ -2210,8 +2210,8 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={6281.5898,59.498768,11156.107};
-					azimut=299.95456;
+					position[]={6280.0977,59.501709,11156.813};
+					azimut=299.93231;
 					special="NONE";
 					id=101;
 					side="CIV";
@@ -2221,8 +2221,8 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={6269.3818,59.584778,11162.482};
-					azimut=124.95436;
+					position[]={6267.8877,59.614555,11163.189};
+					azimut=124.93207;
 					offsetY=0.5;
 					special="NONE";
 					id=102;
@@ -2233,8 +2233,8 @@ class Mission
 				};
 				class Item4
 				{
-					position[]={6261.0923,59.690338,11158.639};
-					azimut=298.19955;
+					position[]={6259.5977,59.743156,11159.33};
+					azimut=298.17731;
 					special="NONE";
 					id=103;
 					side="CIV";
@@ -2244,8 +2244,8 @@ class Mission
 				};
 				class Item5
 				{
-					position[]={6267.2217,59.675537,11167.518};
-					azimut=-418.23544;
+					position[]={6265.7236,59.712196,11168.223};
+					azimut=-418.25769;
 					special="NONE";
 					id=104;
 					side="CIV";
@@ -2255,8 +2255,8 @@ class Mission
 				};
 				class Item6
 				{
-					position[]={8529.4912,308.65723,2474.0276};
-					azimut=179.95419;
+					position[]={8531.377,308.80057,2475.6038};
+					azimut=179.93185;
 					special="NONE";
 					id=105;
 					side="CIV";
@@ -2266,8 +2266,8 @@ class Mission
 				};
 				class Item7
 				{
-					position[]={8541.3203,309.22,2475.0747};
-					azimut=179.95399;
+					position[]={8543.207,309.453,2476.6563};
+					azimut=179.93166;
 					offsetY=0.69999999;
 					special="NONE";
 					id=106;
@@ -2278,8 +2278,8 @@ class Mission
 				};
 				class Item8
 				{
-					position[]={8546.1289,309.77435,2484.4692};
-					azimut=269.95456;
+					position[]={8548.0098,309.83984,2486.0513};
+					azimut=269.93231;
 					offsetY=0.5;
 					special="NONE";
 					id=107;
@@ -2291,8 +2291,8 @@ class Mission
 				};
 				class Item9
 				{
-					position[]={8544.4805,309.75327,2493.6729};
-					azimut=269.95401;
+					position[]={8546.3594,309.85791,2495.2554};
+					azimut=269.93176;
 					offsetY=0.5;
 					special="NONE";
 					id=108;
@@ -2303,8 +2303,8 @@ class Mission
 				};
 				class Item10
 				{
-					position[]={8514.0918,308.43683,2481.4878};
-					azimut=84.954369;
+					position[]={8515.9766,308.5253,2483.0586};
+					azimut=84.932076;
 					special="NONE";
 					id=109;
 					side="CIV";
@@ -2314,8 +2314,8 @@ class Mission
 				};
 				class Item11
 				{
-					position[]={2987.8167,61.905586,9922.9766};
-					azimut=262.41901;
+					position[]={2986.8032,61.88475,9922.3965};
+					azimut=262.39676;
 					special="NONE";
 					id=110;
 					side="WEST";
@@ -2326,8 +2326,8 @@ class Mission
 				};
 				class Item12
 				{
-					position[]={3074.1851,60.438465,9917.793};
-					azimut=349.95456;
+					position[]={3073.1736,60.437584,9917.2422};
+					azimut=349.93231;
 					special="NONE";
 					id=111;
 					side="WEST";
@@ -2337,8 +2337,8 @@ class Mission
 				};
 				class Item13
 				{
-					position[]={2956.313,59.25248,9869.8594};
-					azimut=4.9543772;
+					position[]={2955.321,59.222042,9869.2715};
+					azimut=4.9320698;
 					special="NONE";
 					id=112;
 					side="WEST";
@@ -2349,8 +2349,8 @@ class Mission
 				};
 				class Item14
 				{
-					position[]={10712.219,382.20657,2346.8462};
-					azimut=349.95456;
+					position[]={10714.152,382.44037,2349.272};
+					azimut=349.93231;
 					special="NONE";
 					id=113;
 					side="WEST";
@@ -2360,8 +2360,8 @@ class Mission
 				};
 				class Item15
 				{
-					position[]={10681.955,379.61581,2309.3267};
-					azimut=167.33156;
+					position[]={10683.912,379.85449,2311.7412};
+					azimut=167.30922;
 					special="NONE";
 					id=114;
 					side="WEST";
@@ -2372,8 +2372,8 @@ class Mission
 				};
 				class Item16
 				{
-					position[]={6810.2407,273.80536,6520.209};
-					azimut=628.42798;
+					position[]={6810.5532,273.81158,6521.1157};
+					azimut=628.40564;
 					special="NONE";
 					id=115;
 					side="CIV";
@@ -2383,8 +2383,8 @@ class Mission
 				};
 				class Item17
 				{
-					position[]={6857.417,281.97861,6492.0088};
-					azimut=-14.3891;
+					position[]={6857.7388,282.02774,6492.9341};
+					azimut=-14.411406;
 					offsetY=2.5999999;
 					special="NONE";
 					id=116;
@@ -2395,8 +2395,8 @@ class Mission
 				};
 				class Item18
 				{
-					position[]={8467.0576,307.29034,2465.6091};
-					azimut=261.211;
+					position[]={8467.1738,307.27722,2465.4692};
+					azimut=261.189;
 					offsetY=0.5;
 					special="NONE";
 					id=117;
@@ -2404,12 +2404,12 @@ class Mission
 					vehicle="C_man_polo_4_F_afro";
 					skill=0.60000002;
 					text="elektronikbedarf";
-					init="this setPos [(getPos this) select 0, (getPos this) select 1, 0.5];this enableSimulation false; this allowDamage false; this addAction[""Abduls Elektronikbedarf"",life_fnc_virt_menu,""electrostore""];removeallweapons this;  removeGoggles this;  removeHeadgear this;  removeVest this;  removeUniform this;  removeAllAssignedItems this; this addUniform ""TRYK_U_denim_jersey_blu""; this addHeadgear ""TRYK_H_pakol2"";  this addAction[""Quest abgeben"",  { [""abhoeren"",1,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 35) && (life_level >= 13)'];  this addAction[""Quest annehmen"",  { [""abhoeren"",0,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 36) && (life_level >= 13)'];  this addAction[""Quest abgeben"",  { [""abhoeren"",1,3] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 39) && (life_level >= 14)'];  this addAction[""Quest annehmen"",  { [""abhoeren"",0,4] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 40) && (life_level >= 14)'];  this addAction[""Quest abgeben"",  { [""abhoeren"",1,4] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 41) && (life_level >= 14)'];  this addAction[""Quest annehmen"",  { [""abhoeren"",0,5] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 42) && (life_level >= 14)'];  this addAction[""Quest abgeben"",  { [""abhoeren"",1,5] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 43) && (life_level >= 14)'];  ";
+					init="this setPos [(getPos this) select 0, (getPos this) select 1, 0.5];this enableSimulation false; this allowDamage false; this addAction[""Abduls Elektronikbedarf"",life_fnc_virt_menu,""electrostore2""];removeallweapons this;  removeGoggles this;  removeHeadgear this;  removeVest this;  removeUniform this;  removeAllAssignedItems this; this addUniform ""TRYK_U_denim_jersey_blu""; this addHeadgear ""TRYK_H_pakol2"";  this addAction[""Quest abgeben"",  { [""abhoeren"",1,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 35) && (life_level >= 13)'];  this addAction[""Quest annehmen"",  { [""abhoeren"",0,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 36) && (life_level >= 13)'];  this addAction[""Quest abgeben"",  { [""abhoeren"",1,3] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 39) && (life_level >= 14)'];  this addAction[""Quest annehmen"",  { [""abhoeren"",0,4] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 40) && (life_level >= 14)'];  this addAction[""Quest abgeben"",  { [""abhoeren"",1,4] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 41) && (life_level >= 14)'];  this addAction[""Quest annehmen"",  { [""abhoeren"",0,5] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 42) && (life_level >= 14)'];  this addAction[""Quest abgeben"",  { [""abhoeren"",1,5] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 43) && (life_level >= 14)'];  this addAction[""Quest annehmen"",  { [""abhoeren"",0,6] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 44) && (life_level >= 15)'];";
 				};
 				class Item19
 				{
-					position[]={1449.8882,239.39743,5794.4355};
-					azimut=263.832;
+					position[]={1450.4824,239.27971,5793.2568};
+					azimut=263.80975;
 					offsetY=0.5;
 					special="NONE";
 					id=118;
@@ -2421,8 +2421,8 @@ class Mission
 				};
 				class Item20
 				{
-					position[]={5411.8369,139.65576,6278.9902};
-					azimut=145.61099;
+					position[]={5412.2446,139.65837,6279.3525};
+					azimut=145.58865;
 					special="NONE";
 					id=119;
 					side="CIV";
@@ -2433,8 +2433,8 @@ class Mission
 				};
 				class Item21
 				{
-					position[]={3040.7251,60.550678,9933.9326};
-					azimut=548.34369;
+					position[]={3039.7097,60.534214,9933.3672};
+					azimut=548.32135;
 					special="NONE";
 					id=120;
 					side="WEST";
@@ -2447,8 +2447,8 @@ class Mission
 				};
 				class Item22
 				{
-					position[]={3551.5474,368.09964,1365.7428};
-					azimut=376.57599;
+					position[]={3553.8667,367.98514,1365.3799};
+					azimut=376.55374;
 					special="NONE";
 					id=121;
 					side="CIV";
@@ -2459,8 +2459,8 @@ class Mission
 				};
 				class Item23
 				{
-					position[]={3550.4392,368.16507,1366.213};
-					azimut=383.29901;
+					position[]={3552.7578,368.04904,1365.8511};
+					azimut=383.27676;
 					special="NONE";
 					id=122;
 					side="CIV";
@@ -2471,8 +2471,8 @@ class Mission
 				};
 				class Item24
 				{
-					position[]={4402.1196,346.20001,804.42188};
-					azimut=19.95435;
+					position[]={4404.6548,346.20001,804.39111};
+					azimut=19.932049;
 					special="NONE";
 					id=123;
 					side="CIV";
@@ -2483,8 +2483,8 @@ class Mission
 				};
 				class Item25
 				{
-					position[]={5238.7979,145.37,6188.2788};
-					azimut=119.95436;
+					position[]={5239.2373,145.37,6188.5737};
+					azimut=119.93207;
 					special="NONE";
 					id=124;
 					side="CIV";
@@ -2495,8 +2495,8 @@ class Mission
 				};
 				class Item26
 				{
-					position[]={6262.5396,59.607441,11215.918};
-					azimut=129.95419;
+					position[]={6261.0225,59.600517,11216.613};
+					azimut=129.93185;
 					special="NONE";
 					id=125;
 					side="CIV";
@@ -2507,8 +2507,8 @@ class Mission
 				};
 				class Item27
 				{
-					position[]={12279.861,150.96104,10384.565};
-					azimut=284.95456;
+					position[]={12278.67,150.8466,10387.605};
+					azimut=284.93231;
 					special="NONE";
 					id=126;
 					side="CIV";
@@ -2519,8 +2519,8 @@ class Mission
 				};
 				class Item28
 				{
-					position[]={8260.4619,175.72736,7751.7656};
-					azimut=59.954342;
+					position[]={8260.291,175.80611,7753.2373};
+					azimut=59.932011;
 					special="NONE";
 					id=127;
 					side="CIV";
@@ -2531,8 +2531,8 @@ class Mission
 				};
 				class Item29
 				{
-					position[]={2934.0139,63.642269,9951.6465};
-					azimut=171.28819;
+					position[]={2932.9897,63.529152,9951.0547};
+					azimut=171.26585;
 					special="NONE";
 					id=128;
 					side="WEST";
@@ -2543,8 +2543,8 @@ class Mission
 				};
 				class Item30
 				{
-					position[]={8244.5742,296.03528,2172.5232};
-					azimut=871.67023;
+					position[]={8246.5781,296.04196,2173.9905};
+					azimut=871.64789;
 					special="NONE";
 					id=129;
 					side="WEST";
@@ -2555,8 +2555,8 @@ class Mission
 				};
 				class Item31
 				{
-					position[]={8289.7441,296.04001,2134.0676};
-					azimut=596.25403;
+					position[]={8291.7617,296.04001,2135.5522};
+					azimut=596.23169;
 					special="NONE";
 					id=130;
 					side="WEST";
@@ -2566,8 +2566,8 @@ class Mission
 				};
 				class Item32
 				{
-					position[]={8268.5879,296.04001,2100.7573};
-					azimut=-26.6537;
+					position[]={8270.6191,296.04001,2102.2339};
+					azimut=-26.676001;
 					special="NONE";
 					id=131;
 					side="WEST";
@@ -2577,8 +2577,8 @@ class Mission
 				};
 				class Item33
 				{
-					position[]={8265.4551,296.04001,2069.2666};
-					azimut=160.64999;
+					position[]={8267.4961,296.04001,2070.7397};
+					azimut=160.62766;
 					special="NONE";
 					id=132;
 					side="WEST";
@@ -2590,8 +2590,8 @@ class Mission
 				};
 				class Item34
 				{
-					position[]={8266.2783,296.04001,2143.4373};
-					azimut=1050.4166;
+					position[]={8268.2891,296.04001,2144.9111};
+					azimut=1050.3938;
 					special="NONE";
 					id=133;
 					side="WEST";
@@ -2602,8 +2602,8 @@ class Mission
 				};
 				class Item35
 				{
-					position[]={1408.3901,215.79518,3514.407};
-					azimut=104.95436;
+					position[]={1409.8721,215.77783,3513.2107};
+					azimut=104.93207;
 					special="NONE";
 					id=134;
 					side="CIV";
@@ -2614,8 +2614,8 @@ class Mission
 				};
 				class Item36
 				{
-					position[]={8451.7422,305.54828,2440.834};
-					azimut=309.95456;
+					position[]={8453.6465,305.67493,2442.3799};
+					azimut=309.93231;
 					special="NONE";
 					id=135;
 					side="CIV";
@@ -2626,8 +2626,8 @@ class Mission
 				};
 				class Item37
 				{
-					position[]={2031.1667,276.16006,7692.2998};
-					azimut=34.954342;
+					position[]={2031.0225,276.09171,7691.3438};
+					azimut=34.932011;
 					special="NONE";
 					id=136;
 					side="CIV";
@@ -2638,8 +2638,8 @@ class Mission
 				};
 				class Item38
 				{
-					position[]={5600.2163,81.91729,8941.8438};
-					azimut=-187.47949;
+					position[]={5599.5874,81.917648,8942.2832};
+					azimut=-187.50183;
 					special="NONE";
 					id=137;
 					side="CIV";
@@ -2650,8 +2650,8 @@ class Mission
 				};
 				class Item39
 				{
-					position[]={4124.3604,25.076235,11743.052};
-					azimut=89.954369;
+					position[]={4122.6392,25.090237,11742.908};
+					azimut=89.932076;
 					special="NONE";
 					id=138;
 					side="CIV";
@@ -2662,20 +2662,20 @@ class Mission
 				};
 				class Item40
 				{
-					position[]={6839.5845,277.96582,6485.2202};
-					azimut=623.53998;
+					position[]={6839.9102,278.11551,6486.1382};
+					azimut=623.51801;
 					offsetY=1.6;
 					special="NONE";
 					id=139;
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false;  this addAction[""Transporte für Anfänger"",  { [1,0,0] remoteExecCall [""life_fnc_Transport"", player, false];},"""",0,false,false,"""",'!(life_transport_in_progress)'];   this addAction[""Quest abgeben"",  { [""schakaleins"",1,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 1) && (life_level >= 1)'];  this addAction[""Quest annehmen"",  { [""schakaleins"",0,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 2) && (life_level >= 1)'];  this addAction[""Quest abgeben"",  { [""schakaleins"",1,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 3) && (life_level >= 1)'];  this addAction[""Quest annehmen"",  { [""schakalzwei"",0,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 14) && (life_level >= 3)'];  this addAction[""Quest abgeben"",  { [""schakalzwei"",1,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 15) && (life_level >= 3)'];  this addAction[""Quest annehmen"",  { [""glauben"",0,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 16) && (life_level >= 4)'];  this addAction[""Quest annehmen"",  { [""glauben"",0,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 18) && (life_level >= 5)'];  this addAction[""Quest abgeben"",  { [""glauben"",1,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 19) && (life_level >= 5)'];  this addAction[""Quest annehmen"",  { [""glauben"",0,3] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 20) && (life_level >= 6)'];  this addAction[""Quest abgeben"",  { [""glauben"",1,3] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 21) && (life_level >= 6)'];  this addAction[""Quest annehmen"",  { [""propaganda"",0,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 22) && (life_level >= 7)'];  this addAction[""Quest abgeben"",  { [""propaganda"",1,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 23) && (life_level >= 7)'];  this addAction[""Quest annehmen"",  { [""propaganda"",0,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 24) && (life_level >= 8)'];  this addAction[""Quest abgeben"",  { [""propaganda"",1,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 25) && (life_level >= 8)'];  this addAction[""Quest annehmen"",  { [""propaganda"",0,3] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 26) && (life_level >= 9)'];  this addAction[""Quest annehmen"",  { [""schakaldrei"",0,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 28) && (life_level >= 10)'];  this addAction[""Quest annehmen"",  { [""abhoeren"",0,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 34) && (life_level >= 13)'];  this addAction[""Quest abgeben"",  { [""abhoeren"",1,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 37) && (life_level >= 13)'];  this addAction[""Quest annehmen"",  { [""abhoeren"",0,3] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 38) && (life_level >= 14)'];  this addAction[""Quest annehmen"",  { [""abhoeren"",0,6] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 44) && (life_level >= 15)'];  this addAction[""Quest abgeben"",  { [""abhoeren"",1,6] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 45) && (life_level >= 15)'];  this addAction[""Quest annehmen"",  { [""abhoeren"",0,7] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 46) && (life_level >= 16)'];  this addAction[""Quest abgeben"",  { [""abhoeren"",1,7] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 47) && (life_level >= 16)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 48) && (life_level >= 17)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 49) && (life_level >= 17)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 50) && (life_level >= 17)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 51) && (life_level >= 17)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,3] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 52) && (life_level >= 18)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,3] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 53) && (life_level >= 18)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,4] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 54) && (life_level >= 18)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,5] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 56) && (life_level >= 19)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,5] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 57) && (life_level >= 19)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,6] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 58) && (life_level >= 20)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,6] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 59) && (life_level >= 20)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,7] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 60) && (life_level >= 20)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,7] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 61) && (life_level >= 20)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,8] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 62) && (life_level >= 20)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,8] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 63) && (life_level >= 20)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,9] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 64) && (life_level >= 20)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,9] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 65) && (life_level >= 20)'];    removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""U_I_G_resistanceLeader_F"";  this addItemToUniform ""FirstAidKit"";  this addHeadgear ""TRYK_H_Bandana_wig_g"";  this addGoggles ""G_Aviator"";  this linkItem ""tf_anprc152_2"";  this setFace ""GreekHead_A3_08"";  this setSpeaker ""Male03PER"";    ";
+					init="this enableSimulation false; this allowDamage false;  this addAction[""Transporte für Anfänger"",  { [1,0,0] remoteExecCall [""life_fnc_Transport"", player, false];},"""",0,false,false,"""",'!(life_transport_in_progress)'];   this addAction[""Quest abgeben"",  { [""schakaleins"",1,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 1) && (life_level >= 1)'];  this addAction[""Quest annehmen"",  { [""schakaleins"",0,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 2) && (life_level >= 1)'];  this addAction[""Quest abgeben"",  { [""schakaleins"",1,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 3) && (life_level >= 1)'];  this addAction[""Quest annehmen"",  { [""schakalzwei"",0,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 14) && (life_level >= 3)'];  this addAction[""Quest abgeben"",  { [""schakalzwei"",1,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 15) && (life_level >= 3)'];  this addAction[""Quest annehmen"",  { [""glauben"",0,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 16) && (life_level >= 4)'];  this addAction[""Quest annehmen"",  { [""glauben"",0,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 18) && (life_level >= 5)'];  this addAction[""Quest abgeben"",  { [""glauben"",1,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 19) && (life_level >= 5)'];  this addAction[""Quest annehmen"",  { [""glauben"",0,3] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 20) && (life_level >= 6)'];  this addAction[""Quest abgeben"",  { [""glauben"",1,3] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 21) && (life_level >= 6)'];  this addAction[""Quest annehmen"",  { [""propaganda"",0,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 22) && (life_level >= 7)'];  this addAction[""Quest abgeben"",  { [""propaganda"",1,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 23) && (life_level >= 7)'];  this addAction[""Quest annehmen"",  { [""propaganda"",0,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 24) && (life_level >= 8)'];  this addAction[""Quest abgeben"",  { [""propaganda"",1,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 25) && (life_level >= 8)'];  this addAction[""Quest annehmen"",  { [""propaganda"",0,3] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 26) && (life_level >= 9)'];  this addAction[""Quest annehmen"",  { [""schakaldrei"",0,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 28) && (life_level >= 10)'];  this addAction[""Quest annehmen"",  { [""abhoeren"",0,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 34) && (life_level >= 13)'];  this addAction[""Quest abgeben"",  { [""abhoeren"",1,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 37) && (life_level >= 13)'];  this addAction[""Quest annehmen"",  { [""abhoeren"",0,3] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 38) && (life_level >= 14)'];  this addAction[""Quest abgeben"",  { [""abhoeren"",1,6] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 45) && (life_level >= 15)'];  this addAction[""Quest annehmen"",  { [""abhoeren"",0,7] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 46) && (life_level >= 16)'];  this addAction[""Quest abgeben"",  { [""abhoeren"",1,7] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 47) && (life_level >= 16)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 48) && (life_level >= 17)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,1] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 49) && (life_level >= 17)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 50) && (life_level >= 17)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,2] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 51) && (life_level >= 17)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,3] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 52) && (life_level >= 18)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,3] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 53) && (life_level >= 18)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,4] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 54) && (life_level >= 18)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,5] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 56) && (life_level >= 19)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,5] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 57) && (life_level >= 19)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,6] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 58) && (life_level >= 20)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,6] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 59) && (life_level >= 20)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,7] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 60) && (life_level >= 20)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,7] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 61) && (life_level >= 20)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,8] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 62) && (life_level >= 20)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,8] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 63) && (life_level >= 20)'];  this addAction[""Quest annehmen"",  { [""hoellenfeuer"",0,9] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 64) && (life_level >= 20)'];  this addAction[""Quest abgeben"",  { [""hoellenfeuer"",1,9] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 65) && (life_level >= 20)'];    removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""U_I_G_resistanceLeader_F"";  this addItemToUniform ""FirstAidKit"";  this addHeadgear ""TRYK_H_Bandana_wig_g"";  this addGoggles ""G_Aviator"";  this linkItem ""tf_anprc152_2"";  this setFace ""GreekHead_A3_08"";  this setSpeaker ""Male03PER"";    this addAction[""Quest annehmen"",  { [""abhoeren"",0,6] remoteExecCall [""life_fnc_quest"", player, false];},"""",0,false,false,"""",'(life_quest == 44) && (life_level >= 15)'];";
 				};
 				class Item41
 				{
-					position[]={3608.3633,360.9624,1217.8438};
-					azimut=240.30099;
+					position[]={3610.74,360.97488,1217.5034};
+					azimut=240.27866;
 					special="NONE";
 					id=140;
 					side="CIV";
@@ -2685,8 +2685,8 @@ class Mission
 				};
 				class Item42
 				{
-					position[]={6560.9321,62.29287,11399.67};
-					azimut=494.33301;
+					position[]={6559.3457,62.292953,11400.477};
+					azimut=494.31076;
 					special="NONE";
 					id=141;
 					side="CIV";
@@ -2697,8 +2697,8 @@ class Mission
 				};
 				class Item43
 				{
-					position[]={3562.4895,368.11447,1377.4097};
-					azimut=186.474;
+					position[]={3564.8049,368.02124,1377.0527};
+					azimut=186.45166;
 					special="NONE";
 					id=142;
 					side="CIV";
@@ -2822,7 +2822,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					leader=1;
 					skill=0.60000002;
-					init="this enableSimulation false; this addAction[""Level 1 Shop"",life_fnc_weaponShopMenu,""weapon1"",0,false,false,"""",'playerSide == civilian && life_level == 1'];  this addAction[""Level 2 Shop"",life_fnc_weaponShopMenu,""weapon2"",0,false,false,"""",'playerSide == civilian && life_level == 2'];  this addAction[""Level 3 Shop"",life_fnc_weaponShopMenu,""weapon3"",0,false,false,"""",'playerSide == civilian && life_level == 3'];  this addAction[""Level 4 Shop"",life_fnc_weaponShopMenu,""weapon4"",0,false,false,"""",'playerSide == civilian && life_level == 4'];  this addAction[""Level 5 Shop"",life_fnc_weaponShopMenu,""weapon5"",0,false,false,"""",'playerSide == civilian && life_level == 5'];  this addAction[""Level 6 Shop"",life_fnc_weaponShopMenu,""weapon6"",0,false,false,"""",'playerSide == civilian && life_level == 6'];  this addAction[""Level 7 Shop"",life_fnc_weaponShopMenu,""weapon7"",0,false,false,"""",'playerSide == civilian && life_level == 7'];  this addAction[""Level 8 Shop"",life_fnc_weaponShopMenu,""weapon8"",0,false,false,"""",'playerSide == civilian && life_level == 8'];  this addAction[""Level 9 Shop"",life_fnc_weaponShopMenu,""weapon9"",0,false,false,"""",'playerSide == civilian && life_level == 9']; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""TRYK_U_B_OD_OD_CombatUniform"";  this addVest ""SP_OpforRig1_Tan"";  this addHeadgear ""H_Bandanna_khk"";  this addGoggles ""TRYK_Shemagh_G"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this setFace ""PersianHead_A3_03"";  this setSpeaker ""ACE_NoVoice"";   this addAction[""Transport abgeben"",  { [1,1,1] remoteExecCall [""life_fnc_Transport"", player, false];},"""",0,false,false,"""",'life_transport_in_progress'];  this addAction[""Transport abgeben"",  { [2,1,1] remoteExecCall [""life_fnc_Transport"", player, false];},"""",0,false,false,"""",'life_transport_in_progress'];  ";
+					init="this enableSimulation false;this allowDamage false; this addAction[""Level 1 Shop"",life_fnc_weaponShopMenu,""weapon1"",0,false,false,"""",'playerSide == civilian && life_level == 1'];  this addAction[""Level 2 Shop"",life_fnc_weaponShopMenu,""weapon2"",0,false,false,"""",'playerSide == civilian && life_level == 2'];  this addAction[""Level 3 Shop"",life_fnc_weaponShopMenu,""weapon3"",0,false,false,"""",'playerSide == civilian && life_level == 3'];  this addAction[""Level 4 Shop"",life_fnc_weaponShopMenu,""weapon4"",0,false,false,"""",'playerSide == civilian && life_level == 4'];  this addAction[""Level 5 Shop"",life_fnc_weaponShopMenu,""weapon5"",0,false,false,"""",'playerSide == civilian && life_level == 5'];  this addAction[""Level 6 Shop"",life_fnc_weaponShopMenu,""weapon6"",0,false,false,"""",'playerSide == civilian && life_level == 6'];  this addAction[""Level 7 Shop"",life_fnc_weaponShopMenu,""weapon7"",0,false,false,"""",'playerSide == civilian && life_level == 7'];  this addAction[""Level 8 Shop"",life_fnc_weaponShopMenu,""weapon8"",0,false,false,"""",'playerSide == civilian && life_level == 8'];  this addAction[""Level 9 Shop"",life_fnc_weaponShopMenu,""weapon9"",0,false,false,"""",'playerSide == civilian && life_level == 9']; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""TRYK_U_B_OD_OD_CombatUniform"";  this addVest ""SP_OpforRig1_Tan"";  this addHeadgear ""H_Bandanna_khk"";  this addGoggles ""TRYK_Shemagh_G"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this setFace ""PersianHead_A3_03"";  this setSpeaker ""ACE_NoVoice"";   this addAction[""Transport abgeben"",  { [1,1,1] remoteExecCall [""life_fnc_Transport"", player, false];},"""",0,false,false,"""",'life_transport_in_progress'];  this addAction[""Transport abgeben"",  { [2,1,1] remoteExecCall [""life_fnc_Transport"", player, false];},"""",0,false,false,"""",'life_transport_in_progress'];  ";
 				};
 			};
 		};
@@ -17582,15 +17582,15 @@ class Mission
 		};
 		class Item1325
 		{
-			position[]={6071.9678,121.50421,7342.0215};
-			azimut=220.218;
+			position[]={6072.5098,121.56281,7341.9902};
+			azimut=311.061;
 			offsetY=-1.5;
 			special="NONE";
 			id=1533;
 			side="EMPTY";
-			vehicle="Land_HeatPump_F";
+			vehicle="Land_WaterTank_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""Heroin Verfeinerung"",life_fnc_processAction,""heroinr"",0,false,false,"""",' life_inv_heroin_processed > 0 && !life_is_processing'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Heroin Verfeinerung"",life_fnc_processAction,""heroinr"",0,false,false,"""",' life_inv_heroinprocessed > 0 && !life_is_processing'];";
 		};
 		class Item1326
 		{
@@ -22896,7 +22896,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=644;
+		items=645;
 		class Item0
 		{
 			position[]={12610.248,330.20355,83.107422};
@@ -23003,14 +23003,14 @@ class Mission
 		};
 		class Item13
 		{
-			position[]={5273.5396,145.9892,6187.3022};
+			position[]={5342.7056,142.65541,6239.7578};
 			name="car_g_3";
 			type="Empty";
-			angle=308.69058;
+			angle=329.81134;
 		};
 		class Item14
 		{
-			position[]={5281.0972,145.98248,6182.4248};
+			position[]={5346.4482,142.80199,6231.2881};
 			name="civ_gar_1_3";
 			type="plp_mark_as_motorcycle";
 			colorName="ColorWhite";
@@ -27199,13 +27199,14 @@ class Mission
 		};
 		class Item569
 		{
-			position[]={5281.6289,145.99423,6182.6338};
+			position[]={5346.98,142.77098,6231.4971};
 			name="glauben_1_1_0";
 			text="Questziel";
 			type="plp_mark_as_vehicle";
 			colorName="ColorRed";
 			a=0.69999999;
 			b=0.69999999;
+			angle=167.76701;
 		};
 		class Item570
 		{
@@ -27429,7 +27430,7 @@ class Mission
 		};
 		class Item592
 		{
-			position[]={8467.2939,307.21805,2464.7764};
+			position[]={8466.8389,307.23895,2464.958};
 			name="abhoeren_1_3_1";
 			text="Neue Quest";
 			type="plp_mark_as_vehicle";
@@ -27929,6 +27930,16 @@ class Mission
 			name="Transporte für Fortgeschrittene_1";
 			text="Transporte für Anfänger";
 			type="plp_mark_as_truck";
+			colorName="ColorRed";
+			a=0.69999999;
+			b=0.69999999;
+		};
+		class Item644
+		{
+			position[]={6838.1758,277.68384,6485.9209};
+			name="abhoeren_1_5_1";
+			text="Neue Quest";
+			type="plp_mark_as_vehicle";
 			colorName="ColorRed";
 			a=0.69999999;
 			b=0.69999999;

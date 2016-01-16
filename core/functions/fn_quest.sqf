@@ -665,7 +665,7 @@ if ("schakaldrei" == _reihe) then // Aus dem Leben eines Schakals Part 3
 						};
 				};
 				if (_progress == 1) then {
-					if ((life_quest == 33) AND (life_questinfo == 1)) then {
+					if ((life_quest == 33) AND (life_questinfo >= 1)) then {
 								playsound "schakaldrei_1_3_1";
 								ADD(life_quest,1);
 								life_questinfo = 0;
@@ -805,21 +805,15 @@ if("abhoeren" == _reihe) then { // Abhören
 					};
 				};
 				if(_progress == 1) then {
-					_copcars = ["rhsusf_m998_d_2dr","rhsusf_m998_d_4dr","DAR_M1152","rhsusf_m1025_d_m2","DAR_M1165_GMV","DAR_M1151","DAR_M1151_Deploy","DAR_M1167","rhsusf_m113d_usarmy"];
-					{
-						if (_x in life_vehicles) then {
-							life_questinfo = 1;
-						}
-					} forEach _copcars;
 					if( (life_quest == 41)  && (life_questinfo > 0))then {
 
 						//Check for vehicle
 
 						playSound "abhoeren_1_4_1";
 						ADD(life_quest,1);
-						["QuestInfo_Prof",0,0] call life_fnc_addLevel;
-            			ADD(life_gesamtexp,250);
+						ADD(life_gesamtexp,250);
             			ADD(CASH,250);
+						[] call life_fnc_SetupLevel;
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Pole - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'> + 250$ <br/> + 250 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"abhoeren_1_4_0" setMarkerAlphaLocal 0;
 						"abhoeren_1_4_1" setMarkerAlphaLocal 1;
@@ -842,7 +836,7 @@ if("abhoeren" == _reihe) then { // Abhören
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 43) then {
+					if((life_quest == 43) AND (life_inv_abhoergeraet > 0)) then {
 							playSound "abhoeren_1_5_1";
 							ADD(life_quest,1);
               				ADD(life_gesamtexp,250);

@@ -24,19 +24,20 @@ class CarShops {
 		side = "med";
 		vehicles[] = {
 			{ "RDS_S1203_Civ_02", 100, "", { "life_mediclevel", 1 }},
-      { "B_mas_cars_Hilux_Unarmed", 125, "", { "life_mediclevel", 1 }},
-      { "UAZ_Unarmed", 150, "", { "life_mediclevel", 1 }},
-      { "B_mas_cars_LR_Unarmed", 175, "", { "life_mediclevel", 1 }},
-      { "B_mas_HMMWV_UNA_des", 200, "", { "life_mediclevel", 1 }}
+      { "B_mas_cars_Hilux_Unarmed", 125, "", { "life_mediclevel", 2 }},
+      { "rhs_gaz66_ap2_vmf", 125, "", { "life_mediclevel", 2 }},
+      { "UAZ_Unarmed", 150, "", { "life_mediclevel", 3 }},
+      { "B_mas_cars_LR_Unarmed", 175, "", { "life_mediclevel", 3 }},
+      { "B_mas_HMMWV_UNA_des", 200, "", { "life_mediclevel", 4 }}
 		};
 	};
 
 	class med_air_hs {
 		side = "med";
 		vehicles[] = {
-			{ "GR_Bell412_1", 500, "", { "life_mediclevel", 1 }},
-			{ "GR_UH1H_4", 750, "", { "life_mediclevel", 1 }},
-      { "RHS_UH60M_MEV_d", 100, "", { "life_mediclevel", 1 }}
+			{ "GR_Bell412_1", 100, "", { "life_mediclevel", 1 }},
+			{ "GR_UH1H_4", 100, "", { "life_mediclevel", 2 }},
+      { "RHS_UH60M_MEV_d", 100, "", { "life_mediclevel", 3 }}
 		};
 	};
 

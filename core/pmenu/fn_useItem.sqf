@@ -85,6 +85,10 @@ switch (true) do {
 		[] spawn life_fnc_pickAxeUse;
 	};
 
+	case (EQUAL(_item,"abhoergeraet")): {
+		[] spawn life_fnc_wiretapping;
+	};
+
 	default {};
 };
 
