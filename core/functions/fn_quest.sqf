@@ -1101,6 +1101,8 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 						// Zündername?
 
 						if ([false,"battery",1] call life_fnc_handleInv AND [false,"behaelter",1] call life_fnc_handleInv) then {
+							[true,"battery",1] call life_fnc_handleInv;
+							[true,"behaelter",1] call life_fnc_handleInv;
 							playSound "hoellenfeuer_1_6_1";
 							ADD(life_quest,1);
 							ADD(life_gesamtexp,500);
@@ -1130,6 +1132,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 				if(_progress == 1) then {
 					if(life_quest == 61) then {
 						if ([false,"explosive",1] call life_fnc_handleInv) then {
+							[true,"explosive",1] call life_fnc_handleInv;
 							playSound "hoellenfeuer_1_7_1";
 							ADD(life_quest,1);
 							ADD(CASH,500);
@@ -1161,7 +1164,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 					if(life_quest == 63) then {
 
 						// Small IED Bug IN Arma oder Z-Item?
-							if ("IEDLandSmall_Remote_Mag" in items player) then {
+							if ("IEDLandSmall_Remote_Mag" in backpackItems player or "IEDLandSmall_Remote_Mag" in vestItems player) then {
 							playSound "hoellenfeuer_1_8_1";
 							ADD(life_quest,1);
 							ADD(CASH,250);
@@ -1190,7 +1193,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 				if(_progress == 1) then {
 					if(life_quest == 65) then {
 
-						if ("IEDLandSmall_Remote_Mag" in items player) then {
+						if ("IEDLandSmall_Remote_Mag" in backpackItems player or "IEDLandSmall_Remote_Mag" in vestItems player) then {
 
 							playSound "hoellenfeuer_1_9_1";
 							ADD(life_quest,1);
