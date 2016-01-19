@@ -279,7 +279,7 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 							_p = _user getVariable "transport";
 								if (_p == 21) then
 								{
-									_reward = "hgun_mas_mak_F";
+									_reward = "CUP_hgun_Makarov";
 									if !((player canAddItemtoBackpack _reward) OR (handgunWeapon  Player == "")) exitWith {hint "Mach zuerst Platz für eine Waffe, um die Belohnung entgegen zu nehmen"};
 										if ([false,"aklieferung",1] call life_fnc_handleInv) then
 										{
@@ -295,14 +295,14 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 											if (handgunWeapon  Player != "") then
 											{
 												player addItemToBackpack _reward;
-												player addItemToUniform "8Rnd_mas_9x18_Mag";
-												player addItemToUniform "8Rnd_mas_9x18_Mag";
+												player addItemToUniform "CUP_8Rnd_9x18_Makarov_M";
+												player addItemToUniform "CUP_8Rnd_9x18_Makarov_M";
 											}
 											else
 											{
 												 player addWeapon _reward;
-												 player addItemToUniform "8Rnd_mas_9x18_Mag";
-												 player addItemToUniform "8Rnd_mas_9x18_Mag";
+												 player addItemToUniform "CUP_8Rnd_9x18_Makarov_M";
+												 player addItemToUniform "CUP_8Rnd_9x18_Makarov_M";
                       player createDiaryRecord["transportbuch",
 					[
 							"Transport-Buch",

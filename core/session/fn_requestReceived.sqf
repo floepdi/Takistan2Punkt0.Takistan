@@ -24,10 +24,10 @@ if(EQUAL(SEL(_this,0),"Error")) exitWith {[] call SOCK_fnc_insertPlayerInfo;};
 if(!(EQUAL(steamid,SEL(_this,0)))) exitWith {[] call SOCK_fnc_dataQuery;};
 
 //Lets make sure some vars are not set before hand.. If they are get rid of them, hopefully the engine purges past variables but meh who cares.
-if(!isServer && (!isNil "life_adminlevel" OR !isNil "life_coplevel" OR !isNil "life_donator")) exitWith {
+if(!isServer && (!isNil "life_adminlevel" OR !isNil "life_coplevel" OR !isNil "life_donatorlvl")) exitWith {
 	[[profileName,getPlayerUID player,"VariablesAlreadySet"],"SPY_fnc_cookieJar",false,false] call life_fnc_MP;
 	[[SPY,["VariablesAlreadySet"],profileName,steamid],"TON_fnc_logIt",false,false] call life_fnc_MP;
-	[[profileName,format["Variables set before client initialization...\nlife_adminlevel: %1\nlife_coplevel: %2\nlife_donator: %3",life_adminlevel,life_coplevel,life_donator]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
+	[[profileName,format["Variables set before client initialization...\nlife_adminlevel: %1\nlife_coplevel: %2\nlife_donator: %3",life_adminlevel,life_coplevel,life_donatorlvl]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
 	sleep 0.9;
 	failMission "SpyGlass";
 };
@@ -36,7 +36,7 @@ if(!isServer && (!isNil "life_adminlevel" OR !isNil "life_coplevel" OR !isNil "l
 CASH = parseNumber (SEL(_this,2));
 BANK = parseNumber (SEL(_this,3));
 CONST(life_adminlevel,parseNumber (SEL(_this,4)));
-CONST(life_donator,0);
+CONST(life_donatorlvl,0);
 
 //Loop through licenses
 if(count (SEL(_this,6)) > 0) then {

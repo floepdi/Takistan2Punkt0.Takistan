@@ -44,4 +44,11 @@ if(!rulesok)then {
         sleep 35;
 };
 rulesok = nil;
+
+if(FETCH_CONST(life_donatorlvl) > 0) then {
+	life_civ_donator = true;
+} else {
+	life_civ_donator = false
+};
+
 };

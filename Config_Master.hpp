@@ -101,22 +101,22 @@ class VirtualItems {
   VITEMMACRO(epikit, "STR_Item_epikit", "epikit", 3, 100, -1, false, -1, "")
 
 	//Mined Items
-  VITEMMACRO(oil_unprocessed, "STR_Item_OilU", "oilUnprocessed", 5, -1, -1, false, -1, "")
-  VITEMMACRO(oil_processed, "STR_Item_Oilp", "oilProcessed", 4, -1, 34, false, -1, "")
-  VITEMMACRO(mehl, "STR_Item_mehl", "mehl", 1, -1, 9, false, -1, "")
+  VITEMMACRO(oil_unprocessed, "STR_Item_OilU", "oilUnprocessed", 4, -1, -1, false, -1, "")
+  VITEMMACRO(oil_processed, "STR_Item_Oilp", "oilProcessed", 3, -1, 34, false, -1, "")
+  VITEMMACRO(mehl, "STR_Item_mehl", "mehl", 1, -1, 13, false, -1, "")
   VITEMMACRO(getreide, "STR_Item_getreide", "getreide", 2, -1, -1, false, -1, "")
   VITEMMACRO(wasser, "STR_Item_wasser", "wasser", 1, -1, -1, false, -1, "")
-  VITEMMACRO(fladen, "STR_Item_fladen", "fladen", 2, -1, 27, false, -1, "")
+  VITEMMACRO(fladen, "STR_Item_fladen", "fladen", 2, -1, 37, false, -1, "")
 
 	//Drugs & Illegal Farm
   VITEMMACRO(heroin_unprocessed, "STR_Item_HeroinU", "heroinUnprocessed", 4, -1, -1, true, -1, "")
   VITEMMACRO(heroin_processed, "STR_Item_HeroinP", "heroinProcessed", 3, -1, 55, true, -1, "")
   VITEMMACRO(heroin_refined, "STR_Item_heroinr", "heroinRefined", 3, -1, 65, true, -1, "")
   VITEMMACRO(cannabis, "STR_Item_Cannabis", "cannabis", 3, -1, -1, true, -1, "")
-  VITEMMACRO(marijuana, "STR_Item_Marijuana", "marijuana", 2, -1, 45, true, -1, "icons\ico_marijuana.paa")
-  VITEMMACRO(marijuana_refined, "STR_Item_Marijuanar", "marijuanaRefined", 2, -1, 55, true, -1, "icons\ico_marijuana.paa")
-  VITEMMACRO(goldore, "STR_Item_goldore", "goldore", 10, -1, -1, true, -1, "")
-  VITEMMACRO(goldbar, "STR_Item_goldbar", "goldbar", 5, -1, 150, true, -1, "")
+  VITEMMACRO(marijuana, "STR_Item_Marijuana", "marijuana", 2, -1, 65, true, -1, "icons\ico_marijuana.paa")
+  VITEMMACRO(marijuana_refined, "STR_Item_Marijuanar", "marijuanaRefined", 2, -1, 75, true, -1, "icons\ico_marijuana.paa")
+  VITEMMACRO(goldore, "STR_Item_goldore", "goldore", 6, -1, -1, true, -1, "")
+  VITEMMACRO(goldbar, "STR_Item_goldbar", "goldbar", 4, -1, 150, true, -1, "")
   VITEMMACRO(coalp, "STR_Item_coalp", "coalPerfined", 3, 10, -1, true, -1, "")
 
   // Illegale Items (Transporte etc)
@@ -170,6 +170,13 @@ class VirtualItems {
 	CLASS ENTRY,DisplayName,VariableName,price,illegal,side indicator
 */
 class Licenses {
+	class donator {
+		variable = "donator";
+		displayName = "STR_License_Donator";
+		price = 10000;
+		illegal = false;
+		side = "civ";
+	};
 };
 
 class VirtualShops {

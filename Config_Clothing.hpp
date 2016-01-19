@@ -40,7 +40,7 @@ class Clothing {
 			{ "rds_worker_cap3", "", 15, {  "life_levelshop", "SCALAR", 3 } },
 			{ "rds_Villager_cap2", "", 15, {  "life_levelshop", "SCALAR", 3 } },
 			{ "rds_Woodlander_cap1", "", 15, {  "life_levelshop", "SCALAR", 3 } },
-			{ "H_Booniehat_khk", "", 25, { life_level"", "SCALAR", 4 } },
+			{ "H_Booniehat_khk", "", 25, { "life_level", "SCALAR", 4 } },
 			{ "rds_worker_cap2", "", 20, {  "life_levelshop", "SCALAR", 5 } },
 			{ "rds_Villager_cap3", "", 20, {  "life_levelshop", "SCALAR", 5 } },
 			{ "rds_Woodlander_cap4", "", 20, {  "life_levelshop", "SCALAR", 5 } },
@@ -76,6 +76,47 @@ class Clothing {
 		};
 	};
 
+	class donator {
+		title = "STR_Shops_C_Donator";
+		license = "donator";
+		side = "civ";
+
+		uniforms[] = {
+			{ "NONE", "Remove Uniform", 0, { "", "", -1 } },
+			{ "TRYK_SUITS_BLK_F", "Anzug schwarz", 50, { "", "", -1 }  },
+			{ "TRYK_SUITS_BR_F", "Anzu braun", 50, { "", "", -1 }  },
+			{ "rds_uniform_Policeman", "Polizeiuniform", 25, { "", "", -1 }  },
+			{ "rds_uniform_priest", "Priesterkutte", 30, { "", "", -1 } },
+			{ "rds_uniform_Villager2", "Fesches Outfit", 30, { "", "", -1 } },
+			{ "U_C_Journalist", "Presseoutfit", 35, { "", "", -1 } }
+		};
+
+		headgear[] = {
+			{ "NONE", "Remove Hat", 0, { "", "", -1 } },
+			{ "Kio_No1_Hat", "Du bist die Nummer 1", 10, { "", "", -1 } },
+			{ "Kio_Pirate_Hat", "Arrrrr", 10, { "", "", -1 } },
+			{ "rds_police_cap", "Polizeimütze", 10, { "", "", -1 } },
+			{ "Kio_Spinning_Hat", "Du spinnst doch!", 15, { "", "", -1 } },
+			{ "TRYK_H_ghillie_top", "Ghillie Oberkörper&Kopf", 100, { "", "", -1 } },
+			{ "TRYK_H_ghillie_over", "Ghillie Ganzkörper", 100, { "", "", -1 } },
+			{ "TRYK_H_ghillie_top_headless", "Ghillie nur Oberkörper", 100, { "", "", -1 } }
+
+		};
+
+		goggles[] = {
+			{ "NONE", "Remove Glasses", 0, { "", "", -1 } },
+			{ "TRYK_kio_balaclava_BLK", "", 50, { "", "", -1 }  },
+			{ "G_mas_wpn_wrap_c", "", 50, { "", "", -1 }  },
+			{ "TRYK_kio_balaclavas", "", 50, { "", "", -1 }  }
+		};
+
+		vests[] = {
+			{ "NONE", "Remove Vest", 0, { "", "", -1 } },
+            { "V_Press_F", "Presseweste", 25, { "", "", -1 }  }
+
+		};
+	};
+	
 	class cop {
 		title = "STR_Shops_C_Police";
 		license = "";
@@ -140,30 +181,24 @@ class Clothing {
 		vests[] = {
 			{ "NONE", "Remove Vest", 0, { "", "", -1 } },
 			{ "V_HarnessO_gry", "Ausbildungsweste", 10, { "life_coplevel", "SCALAR", 1 } },
-      { "V_TacVest_khk", "Mannschaftsweste I", 10, { "life_coplevel", "SCALAR", 2 } },
-      { "rhsusf_iotv_ocp_Repair", "Mannschaftsweste II", 10, { "life_coplevel", "SCALAR", 4 } },
-      { "rhsusf_iotv_ocp_Grenadier", "Mannschaftsweste III", 10, { "life_coplevel", "SCALAR", 5 } },
-      { "rhsusf_iotv_ocp_Squadleader", "Mannschaftsweste IV", 10, { "life_coplevel", "SCALAR", 6 } },
-      { "V_PlateCarrier_Kerry", "Unteroffiziersweste I", 10, { "life_coplevel", "SCALAR", 7 } },
-      { "TRYK_V_PlateCarrier_coyo_L", "Unteroffiziersweste II", 10, { "life_coplevel", "SCALAR", 8 } },
-      { "TRYK_V_tacv1LC_CY", "Unteroffiziersweste III", 10, { "life_coplevel", "SCALAR", 10 } },
-      { "TRYK_V_ArmorVest_tan", "Offiziersweste", 10, { "life_coplevel", "SCALAR", 12 } },
-      { "TRYK_V_ArmorVest_Delta", "Leitungsweste I", 10, { "life_coplevel", "SCALAR", 17 } },
-			{ "TRYK_V_ArmorVest_Delta2", "Leitungsweste II", 1500, { "life_coplevel", "SCALAR", 17 } }
-		};
+			{ "V_TacVest_khk", "Mannschaftsweste", 10, { "life_coplevel", "SCALAR", 2 } },
+			{ "V_PlateCarrierL_CTRG", "Unteroffiziersweste I", 10, { "life_coplevel", "SCALAR", 7 } },
+			{ "V_PlateCarrierH_CTRG ", "Unteroffiziersweste II", 10, { "life_coplevel", "SCALAR", 10 } },
+			{ "V_PlateCarrier2_blk ", "Leitungsweste", 10, { "life_coplevel", "SCALAR", 14 } }
+	 };
 
 		backpacks[] = {
 			{ "NONE", "Remove Backpack", 0, { "", "", -1 } },
 			{ "tf_rt1523g", "Funkrucksack I", 0, { "", "", -1 } },
 			{ "tf_rt1523g_big_rhs", "Funkrucksack II", 0, { "", "", -1 } },
 			{ "rhs_sidor", "Ausbildungsrucksack", 10, { "life_coplevel", "SCALAR", 1 } },
-      { "B_AssaultPack_cbr", "Mannschaftsrucksack I", 10, { "life_coplevel", "SCALAR", 2 } },
-      { "TRYK_B_AssaultPack_MARPAT_Desert", "Mannschaftsrucksack II", 10, { "life_coplevel", "SCALAR", 3 } },
-      { "B_mas_Kitbag_des", "Mannschaftsrucksack III", 10, { "life_coplevel", "SCALAR", 4 } },
-      { "TRYK_B_Coyotebackpack", "Mannschaftsrucksack IV", 10, { "life_coplevel", "SCALAR", 5 } },
-      { "B_Carryall_cbr", "Mannschaftsrucksack V", 10, { "life_coplevel", "SCALAR", 6 } },
-      { "B_mas_Kitbag_black", "Leitungsrucksack I", 10, { "life_coplevel", "SCALAR", 14 } },
-      { "B_TacticalPack_blk", "Leitungsrucksack II", 10, { "life_coplevel", "SCALAR", 14 } }
+			{ "B_AssaultPack_cbr", "Mannschaftsrucksack I", 10, { "life_coplevel", "SCALAR", 2 } },
+			{ "TRYK_B_AssaultPack_MARPAT_Desert", "Mannschaftsrucksack II", 10, { "life_coplevel", "SCALAR", 3 } },
+			{ "B_mas_Kitbag_des", "Mannschaftsrucksack III", 10, { "life_coplevel", "SCALAR", 4 } },
+			{ "TRYK_B_Coyotebackpack", "Mannschaftsrucksack IV", 10, { "life_coplevel", "SCALAR", 5 } },
+			{ "B_Carryall_cbr", "Mannschaftsrucksack V", 10, { "life_coplevel", "SCALAR", 6 } },
+			{ "B_mas_Kitbag_black", "Leitungsrucksack I", 10, { "life_coplevel", "SCALAR", 14 } },
+			{ "B_TacticalPack_blk", "Leitungsrucksack II", 10, { "life_coplevel", "SCALAR", 14 } }
 
 
 
@@ -232,9 +267,9 @@ class Clothing {
 
 		vests[] = {
 			{ "NONE", "Remove Vest", 0, { "", "", -1 } },
-     		 { "V_HarnessO_brn", "", 200, {  "life_levelshop", "SCALAR", 8 } },
-			{ "V_TacVest_khk", "", 350, {  "life_levelshop", "SCALAR", 13 } },
-			{ "TRYK_V_tacv1_CY", "", 450, {  "life_levelshop", "SCALAR", 20 } }
+     		{ "V_HarnessO_brn", "", 200, {  "life_levelshop", "SCALAR", 8 } },
+			{ "TRYK_V_tacv1_CY", "", 350, {  "life_levelshop", "SCALAR", 13 } },
+			{ "V_TacVest_khk", "", 450, {  "life_levelshop", "SCALAR", 20 } }
 		};
 
 		backpacks[] = {

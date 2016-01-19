@@ -11,7 +11,6 @@ _spy = _this select 0;
 _car = cursorTarget;
 _weight = 0;
 
-
 /* Check if it is possible wiretap the vehicle */
 if( !(typeOf cursorTarget in ["rhsusf_m998_d_2dr","rhsusf_m998_d_4dr","DAR_M1152","rhsusf_m1025_d_m2","DAR_M1165_GMV","DAR_M1151","DAR_M1151_Deploy","DAR_M1167","rhsusf_m113d_usarmy"])) exitWith {hint "Du kannst nur Militärfahrzeuge abhören"};
 if(player distance _car > 4) exitWith {hint "Du bist zu weit entfernt!"};
@@ -36,14 +35,22 @@ _spotted = false;
 
 /* gather info */
 while {true} do {
-		/* give player 1 information if they have place in inv */
-		if(([true,"information",1]call life_fnc_handleInv)) then {
-			hint "Du hast eine Information aufgeschnappt";
+	_b = false;
+	_list = (position _car) nearEntities ["Man", 50];
+	{
+		if(side _x == west) then {
+			_b = true;
 		};
+	} forEach _list;
+	if(! _b) exitWith { hint "Es ist kein Soldat in der Nähe!";deleteVehicle _bomb;};
+	/* give player 1 information if they have place in inv */
+	if(([true,"information",1]call life_fnc_handleInv)) then {
+		hint "Du hast eine Information aufgeschnappt";
+	};
 
 
-	/* check if wiretapping device is spotted (10% chance)*/
+	/* check if wiretapping device is spotted (20% chance)*/
 	_rand = random 100;
-	if(_rand <= 10) exitWith{hint "Dein Abhörgerät wurde entdeckt!";deleteVehicle _bomb;};
+	if(_rand <= 20) exitWith{hint "Dein Abhörgerät wurde entdeckt!";deleteVehicle _bomb;};
 	sleep 60;
 };

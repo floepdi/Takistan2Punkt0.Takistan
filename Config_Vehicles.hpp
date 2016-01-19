@@ -19,6 +19,20 @@ class CarShops {
 		};
 	};
 
+	
+	class donator_car {
+		side = "civ";
+		vehicles[] = {
+	  { "C_SUV_01_F", 3250, "donator", { "life_civ_donator", 1 }},
+	  { "C_Van_01_transport_F", 250, "donator", { "life_civ_donator", 1 }},
+      { "rhs_gaz66_ammo_vmf", 500, "donator", { "life_civ_donator", 1 }},
+      { "RDS_Golf4_Civ_01", 300, "donator", { "life_civ_donator", 1 }},
+      { "max_Dodge_multy", 6000, "donator", { "life_civ_donator", 1 }},
+      { "O_MRAP_02_F", 10000, "donator", { "life_civ_donator", 1 }},
+	  { "DAR_MK27T", 13334, "donator", { "life_civ_donator", 1 }},
+      { "RHS_Ural_Open_Civ_01", 750, "donator", { "life_civ_donator", 1 }}
+		};
+	};
 
 	class med_shop {
 		side = "med";
@@ -71,15 +85,16 @@ class CarShops {
 	class cop_car {
 		side = "cop";
 		vehicles[] = {
-			{ "rhsusf_m998_d_2dr", 100, "", { "life_coplevel", 1 }},
+	  { "rhsusf_m998_d_2dr", 100, "", { "life_coplevel", 1 }},
       { "rhsusf_m998_d_4dr", 125, "", { "life_coplevel", 2 }},
-      { "DAR_M1152", 150, "", { "life_coplevel", 4 }},
-      { "rhsusf_m1025_d", 175, "", { "life_coplevel", 5 }},
-      { "rhsusf_m1025_d_m2", 200, "", { "life_coplevel", 6 }},
-      { "DAR_M1165_GMV", 225, "", { "life_coplevel", 7 }},
-      { "DAR_M1151", 250, "", { "life_coplevel", 9 }},
-      { "DAR_M1151_Deploy", 250, "", { "life_coplevel", 11 }},
-      { "DAR_M1167", 275, "", { "life_coplevel", 13 }},
+      { "DAR_M1152", 150, "", { "life_coplevel", 3 }},
+      { "rhsusf_m1025_d", 175, "", { "life_coplevel", 4 }},
+      { "rhsusf_m1025_d_m2", 200, "", { "life_coplevel", 5 }},
+      { "DAR_M1165_GMV", 225, "", { "life_coplevel", 6 }},
+	  { "DAR_MK23ADT", 1000, "", { "life_coplevel", 6 } },
+      { "DAR_M1151", 250, "", { "life_coplevel", 8 }},
+      { "DAR_M1151_Deploy", 250, "", { "life_coplevel", 10 }},
+      { "DAR_M1167", 275, "", { "life_coplevel", 12 }},
       { "rhsusf_m113d_usarmy", 1337, "", { "life_coplevel", 16 }}
 		};
 	};
@@ -96,11 +111,12 @@ class CarShops {
 	class cop_air {
 		side = "cop";
 		vehicles[] = {
-			{ "GR_UH1H_6", 1000, "", { "life_coplevel", 5 } },
-      { "GR_UH1H_3", 2000, "", { "life_coplevel", 6 } },
-      { "GR_UH1H_2", 3000, "", { "life_coplevel", 8 } },
-      { "GR_AW101_1", 5000, "", { "life_coplevel", 9 } },
-      { "GR_UH60_1", 6000, "", { "life_coplevel", 10 } },
+	  { "GR_UH1H_6", 1000, "", { "life_coplevel", 4 } },
+	  { "B_Heli_Light_01_F", 1000, "", { "life_coplevel", 5 } },
+	  { "GR_UH1H_3", 2000, "", { "life_coplevel", 6 } },
+      { "GR_UH1H_2", 3000, "", { "life_coplevel", 7 } },
+      { "GR_AW101_1", 5000, "", { "life_coplevel", 8 } },
+      { "GR_UH60_1", 6000, "", { "life_coplevel", 9 } },
       { "B_Heli_Light_01_armed_F", 20000, "", { "life_coplevel", 16 } }
 		};
 	};
@@ -159,6 +175,13 @@ class CfgVehicles {
 		chopShop = 45000;
 	};
 
+	class DAR_MK27T {
+		vItemSpace = 120;
+		storageFee[] = { 100, 0, 0, 0 };
+		insurance = 16000;
+		chopShop = 45000;
+	};
+	
 	class C_Van_01_transport_F {
 		vItemSpace = 40;
 		storageFee[] = { 0, 0, 0, 0 };

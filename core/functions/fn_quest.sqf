@@ -61,7 +61,7 @@ if ("schakaleins" == _reihe) then
 			};
 				if (_progress == 1) then{
 				if (life_quest == 3 && life_questinfo >= 3) then {
-					_reward = "arifle_mas_ak74";
+					_reward = "CUP_arifle_AKS74U";
 					if !((player canAddItemtoBackpack _reward) OR (PrimaryWeapon Player == "")) exitWith {hint "Mach zuerst Platz für eine Waffe, um die Belohnung entgegen zu nehmen"};
 					playSound "schakaleins_1_2_1";
 					"schakaleins_1_2_0" setMarkerAlphaLocal 0;
@@ -74,14 +74,14 @@ if ("schakaleins" == _reihe) then
 					if (PrimaryWeapon Player != "") then
 											{
 												player addItemToBackpack _reward;
-												player addItemToUniform "30Rnd_mas_545x39_mag";
-												player addItemToUniform "30Rnd_mas_545x39_mag";
+												player addItemToUniform "CUP_30Rnd_545x39_AK_M";
+												player addItemToUniform "CUP_30Rnd_545x39_AK_M";
 											}
 											else
 											{
 												 player addWeapon _reward;
-												 player addItemToUniform "30Rnd_mas_545x39_mag";
-												 player addItemToUniform "30Rnd_mas_545x39_mag";
+												 player addItemToUniform "CUP_30Rnd_545x39_AK_M";
+												 player addItemToUniform "CUP_30Rnd_545x39_AK_M";
 											};
 					player createDiaryRecord["questbuch",["Quest-Buch","Nachschub - Abgeschlossen!<br/>Neue Questreihe: 69 Blonde Schönheiten"]];
 				}
@@ -1101,8 +1101,6 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 						// Zündername?
 
 						if ([false,"battery",1] call life_fnc_handleInv AND [false,"behaelter",1] call life_fnc_handleInv) then {
-							[true,"battery",1] call life_fnc_handleInv;
-							[true,"behaelter",1] call life_fnc_handleInv;
 							playSound "hoellenfeuer_1_6_1";
 							ADD(life_quest,1);
 							ADD(life_gesamtexp,500);
@@ -1132,7 +1130,6 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 				if(_progress == 1) then {
 					if(life_quest == 61) then {
 						if ([false,"explosive",1] call life_fnc_handleInv) then {
-							[true,"explosive",1] call life_fnc_handleInv;
 							playSound "hoellenfeuer_1_7_1";
 							ADD(life_quest,1);
 							ADD(CASH,500);
@@ -1164,7 +1161,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 					if(life_quest == 63) then {
 
 						// Small IED Bug IN Arma oder Z-Item?
-							if ("IEDLandSmall_Remote_Mag" in backpackItems player or "IEDLandSmall_Remote_Mag" in vestItems player) then {
+							if ("IEDLandSmall_Remote_Mag" in items player) then {
 							playSound "hoellenfeuer_1_8_1";
 							ADD(life_quest,1);
 							ADD(CASH,250);
@@ -1193,7 +1190,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 				if(_progress == 1) then {
 					if(life_quest == 65) then {
 
-						if ("IEDLandSmall_Remote_Mag" in backpackItems player or "IEDLandSmall_Remote_Mag" in vestItems player) then {
+						if ("IEDLandSmall_Remote_Mag" in items player) then {
 
 							playSound "hoellenfeuer_1_9_1";
 							ADD(life_quest,1);

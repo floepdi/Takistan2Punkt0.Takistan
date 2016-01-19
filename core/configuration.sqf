@@ -74,6 +74,7 @@ life_ishealing = false;
 life_transport_in_progress = false;
 life_istazed = false;
 life_vehicles = [];
+life_wiretapping = false;
 
 switch (playerSide) do {
 	case west: {

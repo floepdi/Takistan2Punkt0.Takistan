@@ -49,6 +49,10 @@
 			<Original>Bakery</Original>
 			<German>Bäckerei</German>
 		</Key>
+		<Key ID="STR_License_Donator">
+			<Original>Donatorlizenz</Original>
+			<German>Donatorlizenz</German>
+			<English>Donatorlicense</English>
 		<Key ID="STR_Process_Gold">
 			<Original>Processing Gold</Original>
 			<English>Processing Gold</English>

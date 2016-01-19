@@ -1,6 +1,49 @@
 class WeaponShops {
     //Armory Shops
-    class tankstellegebraucht {
+    class donator {
+        name = "Donatorshop";
+        side = "civ";
+        license = "donator";
+        level = -1;
+        msg = "";
+        items[] = {
+            {"NONE","Waffen",0},
+            { "CUP_arifle_AKS_Gold", "Goldene AK", 1337 },
+            { "CUP_30Rnd_762x39_AK47_M", "30RND 7,62mm AK", 200 },
+            { "CUP_srifle_CZ550","", 3500 },
+            { "CUP_5x_22_LR_17_HMR_M", "", 250 },
+            { "CUP_arifle_RPK74M", "Schwarze RPK 74", 1750 },
+            { "CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M", "", 100 },
+            { "CUP_srifle_SVD_des", "Dragunov Desert", 3750 },
+            { "CUP_10Rnd_762x54_SVD_M", "", 200 },
+            { "CUP_arifle_XM8_Compact", "", 1750 },
+            { "CUP_30Rnd_556x45_Stanag", "", 125 },
+            { "CUP_srifle_LeeEnfield", "", 1500 },
+            { "CUP_10x_303_M", "", 50 },
+            { "CUP_arifle_AKS74U", "", 800 },
+            { "CUP_30Rnd_545x39_AK_M", "", 20 },
+            
+            
+            {"NONE","Aufsätze",0},
+             {"CUP_optic_Kobra","",100}, 
+             {"optic_ACO_grn","",125},
+             {"optic_mas_acog","",250},
+             {"CUP_optic_PSO_1","",400},
+             {"CUP_optic_PSO_3","",600},
+             
+            {"NONE","Ausrüstung",0},
+            {"rhsusf_ANPVS_15","",400}, 
+            { "ItemGPS", "", 15 },
+            { "ItemMap", "", 10 },
+            { "ItemCompass", "", 15 },
+            { "ToolKit", "", 50 },
+            { "Chemlight_red", "", 20 },
+            { "Chemlight_yellow", "", 20 },
+            { "ACE_EarPlugs", "", 20 },
+            { "ACE_MapTools", "", 15 }
+        };
+    };
+  class tankstellegebraucht {
         name = "Tankstellenshop";
         side = "civ";
         license = "";
@@ -94,11 +137,23 @@ class WeaponShops {
         level = 1;
         msg = "Du bist hier falsch!";
         items[] = {
-                        {"arifle_mas_m16","",200},
+        								{"NONE","Waffen",0},
+                        {"CUP_arifle_M16A4_Base","",200},
+												{"CUP_arifle_M16A4_GL","",200},
+                        {"CUP_30Rnd_556x45_Stanag","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+                       
+                       
+                        {"NONE","Aufsätze",0},
+                        {"CUP_optic_CompM2_Black","",50},
+                        
+                          
+												{"NONE","Equipment",0},
+                        {"NVGoggles","",10}
+                      
+                                       
 
-                        {"30Rnd_mas_556x45_Stanag","",10},
-
-                        {"FHQ_optic_MicroCCO_tan","",50}
+            
         };
     };
     class coplevel2 {
@@ -109,17 +164,28 @@ class WeaponShops {
         msg = "Du bist hier falsch!";
         items[] = {
           							{"NONE","Waffen",0},
-                        {"arifle_mas_m16","",200},
-                        {"arifle_mas_m4c","",200},
-
-                        {"30Rnd_mas_556x45_Stanag","",10},
-                          
+                        {"CUP_arifle_M16A4_Base","",200},
+												{"CUP_arifle_M16A4_GL","",200},
+                        {"CUP_arifle_M4A1_desert","",200},
+												{"CUP_arifle_M4A1_BUIS_desert_GL","",200},
+                       	{"CUP_30Rnd_556x45_Stanag","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_hgun_Duty","",200},
+												{"16Rnd_9x21_Mag","",10},
+                       	{"CUP_hgun_M9","",200},
+                        {"CUP_15Rnd_9x19_M9","",10},
+                        
+                        
 												{"NONE","Aufsätze",0},
-                        {"FHQ_optic_MicroCCO_tan","",50},
-                        {"FHQ_optic_AIM_tan","",50},
+                        {"CUP_optic_CompM2_Black","",50},
+                        {"CUP_optic_RCO","",50},
+                        {"optic_NVS","",50},
+                          
                           
 												{"NONE","Equipment",0},
-                        {"NVGoggles","",10}
+                        {"NVGoggles","",10},
+                        {"CUP_bipod_VLTOR_Modpod","",10}
         };
     };
 
@@ -131,20 +197,35 @@ class WeaponShops {
         msg = "Du bist hier falsch!";
         items[] = {
           							{"NONE","Waffen",0},
-                        {"arifle_mas_m16","",200},
-                        {"arifle_mas_m4c","",200},
-                        {"arifle_mas_m4","",200},
-
-                        {"30Rnd_mas_556x45_Stanag","",10},
+                        {"CUP_arifle_M16A4_Base","",200},
+												{"CUP_arifle_M16A4_GL","",200},
+                        {"CUP_arifle_M4A1_desert","",200},
+												{"CUP_arifle_M4A1_BUIS_desert_GL","",200},
+                       	{"CUP_30Rnd_556x45_Stanag","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+						
+												{"CUP_arifle_G36A_camo","",200},
+                        {"CUP_arifle_G36C_camo","",200},
+                        {"CUP_arifle_G36K_camo","",200},
+                        {"CUP_30Rnd_556x45_G36","",10},
+                        
+                        {"CUP_arifle_MG36","",200},
+                        {"CUP_100Rnd_556x45_BetaCMag","",10},
+                        
+                        {"CUP_hgun_Duty","",200},
+												{"16Rnd_9x21_Mag","",10},
+                       	{"CUP_hgun_M9","",200},
+                        {"CUP_15Rnd_9x19_M9","",10},
                           
 												{"NONE","Aufsätze",0},
-                        {"FHQ_optic_MicroCCO_tan","",50},
-                        {"FHQ_optic_AIM_tan","",50},
-                        {"FHQ_optic_AimM_TAN","",50},
-                        {"FHQ_optic_HWS_tan","",50},
+                        {"CUP_optic_CompM2_Black","",50},                      
+                        {"CUP_optic_RCO","",50},
+                        {"optic_NVS","",50},
+                        {"CUP_optic_ACOG","",50},
                           
 												{"NONE","Equipment",0},
-                        {"NVGoggles","",50}
+                        {"NVGoggles","",10},
+                        {"CUP_bipod_VLTOR_Modpod","",10}
         };
     };
 
@@ -156,25 +237,48 @@ class WeaponShops {
         msg = "Du bist hier falsch!";
         items[] = {
           							{"NONE","Waffen",0},
-                        {"arifle_mas_m16","",200},
-                        {"arifle_mas_m4c","",200},
-                        {"arifle_mas_m4","",200},
-                        {"arifle_mas_g36c","",200},
-                        {"30Rnd_mas_556x45_Stanag","",10},
-
-                        {"hgun_mas_bhp_F","",200},
-                        {"15Rnd_mas_9x21_Mag","",10},
+                        {"CUP_arifle_M16A4_Base","",200},
+												{"CUP_arifle_M16A4_GL","",200},
+                        {"CUP_arifle_M4A1_desert","",200},
+												{"CUP_arifle_M4A1_BUIS_desert_GL","",200},
+                        {"CUP_arifle_Mk16_STD_FG","",200},
+                        {"CUP_arifle_Mk16_STD_EGLM","",200},
+												{"CUP_arifle_Mk16_SV","",200},
+                       	{"CUP_30Rnd_556x45_Stanag","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+						
+												{"CUP_arifle_G36A_camo","",200},
+                        {"CUP_arifle_G36C_camo","",200},
+                        {"CUP_arifle_G36K_camo","",200},
+                        {"CUP_30Rnd_556x45_G36","",10},
+                        
+                        {"CUP_arifle_MG36","",200},
+                        {"CUP_100Rnd_556x45_BetaCMag","",10},
+                        
+                        {"CUP_srifle_Mk12SPR","",200},
+                        {"CUP_20Rnd_556x45_Stanag","",10},
+                        
+                        {"CUP_hgun_Duty","",200},
+												{"16Rnd_9x21_Mag","",10},
+                       	{"CUP_hgun_M9","",200},
+                        {"CUP_15Rnd_9x19_M9","",10},
+                                                                                         
                           
 												{"NONE","Aufsätze",0},
-                        {"FHQ_optic_MicroCCO_tan","",50},
-                        {"FHQ_optic_AIM_tan","",50},
+                        {"CUP_optic_CompM2_Black","",50},
+                        {"CUP_optic_RCO","",50},
+                        {"optic_NVS","",50},
+                        {"CUP_optic_ACOG","",50},
                         {"FHQ_optic_AimM_TAN","",50},
-                        {"FHQ_optic_HWS_tan","",50},
-                        {"FHQ_optic_ACOG","", 50},
+                        {"CUP_optic_SB_11_4x20_PM","",50},
                           
 												{"NONE","Equipment",0},
                         {"MiniGrenade","",50},
-                        {"NVGoggles","",50}
+                        {"NVGoggles","",50},
+                        {"CUP_bipod_VLTOR_Modpod","",10},
+                        {"CUP_Vector21N","",50},
+                        {"ACE_RangeCard","",50}
+                        
         };
     };
 
@@ -187,32 +291,56 @@ class WeaponShops {
         msg = "Du bist hier falsch!";
         items[] = {
                         {"NONE","Waffen",0},
-                        {"arifle_mas_m16","",200},
-                        {"arifle_mas_m4c","",200},
-                        {"arifle_mas_m4","",200},
-                        {"arifle_mas_g36c","",200},
-                        {"arifle_mas_m4_m203_d","",200},
-                        {"30Rnd_mas_556x45_Stanag","",10},
-
-                        {"LMG_mas_M249_F","",200},
-                        {"200Rnd_mas_556x45_Stanag","",10},
-
-                        {"hgun_mas_bhp_F","",200},
-                        {"15Rnd_mas_9x21_Mag","",10},
+                        {"CUP_arifle_M16A4_Base","",200},
+												{"CUP_arifle_M16A4_GL","",200},
+                        {"CUP_arifle_M4A1_desert","",200},
+												{"CUP_arifle_M4A1_BUIS_desert_GL","",200},
+                        {"CUP_arifle_Mk16_STD_FG","",200},
+                        {"CUP_arifle_Mk16_STD_EGLM","",200},
+												{"CUP_arifle_Mk16_SV","",200},
+                       	{"CUP_30Rnd_556x45_Stanag","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+						
+												{"CUP_arifle_G36A_camo","",200},
+                        {"CUP_arifle_G36C_camo","",200},
+                        {"CUP_arifle_G36K_camo","",200},
+                        {"CUP_30Rnd_556x45_G36","",10},
+                        
+                        {"CUP_arifle_MG36","",200},
+                        {"CUP_100Rnd_556x45_BetaCMag","",10},
+                        
+                        {"CUP_srifle_Mk12SPR","",200},
+                        {"CUP_20Rnd_556x45_Stanag","",10},
+                        
+                        {"CUP_lmg_M249","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M24","",10},
+                        
+                        {"CUP_srifle_DMR","",200},
+                        {"CUP_20Rnd_762x51_DMR","",10},
+                        
+                        {"CUP_hgun_Duty","",200},
+												{"16Rnd_9x21_Mag","",10},
+                       	{"CUP_hgun_M9","",200},
+                        {"CUP_15Rnd_9x19_M9","",10},
+                                                
                           
 												{"NONE","Aufsätze",0},
-                        {"FHQ_optic_MicroCCO_tan","",50},
-                        {"FHQ_optic_AIM_tan","",50},
+                        {"CUP_optic_CompM2_Black","",50},
+                        {"CUP_optic_RCO","",50},
+                        {"optic_NVS","",50},
+                        {"CUP_optic_ACOG","",50},
                         {"FHQ_optic_AimM_TAN","",50},
-                        {"FHQ_optic_HWS_tan","",50},
-                        {"FHQ_optic_ACOG","", 50},
-                        {"FHQ_optic_HWS_G33_tan","",50},
-                        {"FHQ_optic_ACOG_tan","",50},
+                        {"CUP_optic_SB_11_4x20_PM","",50},
+                        {"CUP_optic_SB_3_12x50_PMII","",50},
+                        {"CUP_optic_ELCAN_SpecterDR","",50},
+                        
 
-                        {"NONE","Equipment",0},  
+                        {"NONE","Equipment",0},
                         {"MiniGrenade","",50},
-                        {"1Rnd_HE_Grenade_shell","",50},
-                        {"NVGoggles","",50}
+                        {"NVGoggles","",50},
+                        {"CUP_bipod_VLTOR_Modpod","",10},
+                        {"CUP_Vector21N","",50},
+                        {"ACE_RangeCard","",50}
         };
     };
 
@@ -224,38 +352,66 @@ class WeaponShops {
         msg = "Du bist hier falsch!";
         items[] = {
           							{"NONE","Waffen",0},
-                        {"arifle_mas_m16","",200},
-                        {"arifle_mas_m4c","",200},
-                        {"arifle_mas_m4","",200},
-                        {"arifle_mas_g36c","",200},
-                        {"arifle_mas_m4_m203_d","",200},
-                        {"arifle_mas_mk16_l_gl","",200},
-                        {"30Rnd_mas_556x45_Stanag","",10},
-
-                        {"LMG_mas_M249_F","",200},
-                        {"200Rnd_mas_556x45_Stanag","",10},
-
-                        {"hlc_rifle_SAMR","",200},
-                        {"30Rnd_556x45_Stanag","",10},
-
-                        {"hgun_mas_bhp_F","",200},
-                        {"15Rnd_mas_9x21_Mag","",10},
+                        {"CUP_arifle_M16A4_Base","",200},
+												{"CUP_arifle_M16A4_GL","",200},
+                        {"CUP_arifle_M4A1_desert","",200},
+												{"CUP_arifle_M4A1_BUIS_desert_GL","",200},
+                        {"CUP_arifle_Mk16_STD_FG","",200},
+                        {"CUP_arifle_Mk16_STD_EGLM","",200},
+												{"CUP_arifle_Mk16_SV","",200},
+                       	{"CUP_30Rnd_556x45_Stanag","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+						
+												{"CUP_arifle_G36A_camo","",200},
+                        {"CUP_arifle_G36C_camo","",200},
+                        {"CUP_arifle_G36K_camo","",200},
+                        {"CUP_30Rnd_556x45_G36","",10},
+                        
+                        {"CUP_arifle_MG36","",200},
+                        {"CUP_100Rnd_556x45_BetaCMag","",10},
+                        
+                        {"CUP_srifle_Mk12SPR","",200},
+                        {"CUP_20Rnd_556x45_Stanag","",10},
+                        
+                        {"CUP_lmg_M249","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M24","",10},
+                        
+                        {"CUP_srifle_DMR","",200},
+                        {"CUP_20Rnd_762x51_DMR","",10},
+                        
+                        {"CUP_arifle_Mk17_STD_FG","",200},
+                        {"CUP_arifle_Mk17_STD_EGLM","",200},
+                        {"CUP_arifle_Mk20","",200},
+                        {"CUP_20Rnd_762x51_B_SCAR","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_lmg_L110A1","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249","",10},
+                        
+                        {"CUP_hgun_Duty","",200},
+												{"16Rnd_9x21_Mag","",10},
+                       	{"CUP_hgun_M9","",200},
+                        {"CUP_15Rnd_9x19_M9","",10},
+                                              
                           
 												{"NONE","Aufsätze",0},
-                        {"FHQ_optic_MicroCCO_tan","",50},
-                        {"FHQ_optic_AIM_tan","",50},
+                        {"CUP_optic_CompM2_Black","",50},
+                        {"CUP_optic_RCO","",50},
+                        {"optic_NVS","",50},
+                        {"CUP_optic_ACOG","",50},
                         {"FHQ_optic_AimM_TAN","",50},
-                        {"FHQ_optic_HWS_tan","",50},
-                        {"FHQ_optic_ACOG","", 50},
-                        {"FHQ_optic_HWS_G33_tan","",50},
+                        {"CUP_optic_SB_11_4x20_PM","",50},
+                        {"CUP_optic_SB_3_12x50_PMII","",50},
+                        {"CUP_optic_ELCAN_SpecterDR","",50},
                         {"FHQ_optic_ACOG_tan","",50},
-                        {"optic_SOS","",50},
                           
-												{"NONE","Equipment",0}, 
-                        {"ACE_RangeCard","",50},
+												{"NONE","Equipment",0},
                         {"MiniGrenade","",50},
-                        {"1Rnd_HE_Grenade_shell","",50},
-                        {"NVGoggles","",50}
+                        {"HandGrenade","",50},
+                        {"NVGoggles","",50},
+                        {"CUP_bipod_VLTOR_Modpod","",10},
+                        {"CUP_Vector21N","",50},
+                        {"ACE_RangeCard","",50}
         };
     };
 	
@@ -267,44 +423,83 @@ class WeaponShops {
         msg = "Du bist hier falsch!";
         items[] = {
                         {"NONE","Waffen",0},
-                        {"arifle_mas_m16","",200},
-                        {"arifle_mas_m4c","",200},
-                        {"arifle_mas_m4","",200},
-                        {"arifle_mas_g36c","",200},
-                        {"arifle_mas_m4_m203_d","",200},
-                        {"arifle_mas_mk16_l_gl","",200},
-                        {"30Rnd_mas_556x45_Stanag","",10},
-
-                        {"LMG_mas_M249_F","",200},
-                        {"200Rnd_mas_556x45_Stanag","",10},
-
-                        {"hlc_rifle_SAMR","",200},
-                        {"30Rnd_556x45_Stanag","",10},
-
-                        {"arifle_mas_g3","",200},
-                        {"arifle_mas_g3_m203","",200},
-                        {"20Rnd_mas_762x51_Stanag","",10},
-
-                        {"hgun_mas_bhp_F","",200},
-                        {"15Rnd_mas_9x21_Mag","",10},
-                          
+                        {"CUP_arifle_M16A4_Base","",200},
+												{"CUP_arifle_M16A4_GL","",200},
+                        {"CUP_arifle_M4A1_desert","",200},
+												{"CUP_arifle_M4A1_BUIS_desert_GL","",200},
+                        {"CUP_arifle_Mk16_STD_FG","",200},
+                        {"CUP_arifle_Mk16_STD_EGLM","",200},
+												{"CUP_arifle_Mk16_SV","",200},
+                       	{"CUP_30Rnd_556x45_Stanag","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+						
+												{"CUP_arifle_G36A_camo","",200},
+                        {"CUP_arifle_G36C_camo","",200},
+                        {"CUP_arifle_G36K_camo","",200},
+                        {"CUP_30Rnd_556x45_G36","",10},
+                        
+                        {"CUP_arifle_MG36","",200},
+                        {"CUP_100Rnd_556x45_BetaCMag","",10},
+                        
+                        {"CUP_srifle_Mk12SPR","",200},
+                        {"CUP_20Rnd_556x45_Stanag","",10},
+                        
+                        {"CUP_lmg_M249","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M24","",10},
+                        
+                        {"CUP_srifle_DMR","",200},
+                        {"CUP_20Rnd_762x51_DMR","",10},
+                        
+                        {"CUP_arifle_Mk17_STD_FG","",200},
+                        {"CUP_arifle_Mk17_STD_EGLM","",200},
+                        {"CUP_arifle_Mk20","",200},
+                        {"CUP_20Rnd_762x51_B_SCAR","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_lmg_L110A1","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249","",10},
+                        
+                        {"CUP_srifle_M24_des","",200},
+                        {"CUP_5Rnd_762x51_M24","",10},                    
+                        
+                        {"CUP_lmg_M60A4","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_launch_Mk153Mod0","",200},
+                        {"CUP_SMAW_HEDP_M","",10},
+                        
+                        {"CUP_hgun_Duty","",200},
+												{"16Rnd_9x21_Mag","",10},
+                       	{"CUP_hgun_M9","",200},
+                        {"CUP_15Rnd_9x19_M9","",10},
+                        
+                                                                                                  
 												{"NONE","Aufsätze",0},
-                        {"FHQ_optic_MicroCCO_tan","",50},
-                        {"FHQ_optic_AIM_tan","",50},
+                        {"CUP_optic_CompM2_Black","",50},
+                        {"CUP_optic_RCO","",50},
+                        {"optic_NVS","",50},
+                        {"CUP_optic_ACOG","",50},
                         {"FHQ_optic_AimM_TAN","",50},
-                        {"FHQ_optic_HWS_tan","",50},
-                        {"FHQ_optic_ACOG","", 50},
-                        {"FHQ_optic_HWS_G33_tan","",50},
+                        {"CUP_optic_SB_11_4x20_PM","",50},
+                        {"CUP_optic_SB_3_12x50_PMII","",50},
+                        {"CUP_optic_ELCAN_SpecterDR","",50},
                         {"FHQ_optic_ACOG_tan","",50},
-                        {"optic_SOS","",50},
+                        {"CUP_optic_Leupold_VX3","",50},
 
-                        {"NONE","Equipment",0},   
-                        {"ACE_RangeCard","",50},                              
+                        {"NONE","Equipment",0},
                         {"MiniGrenade","",50},
-                        {"1Rnd_HE_Grenade_shell","",50},
                         {"HandGrenade","",50},
-                        {"ACE_Vector","",50},
-                        {"NVGoggles","",50}
+                        {"NVGoggles","",50},
+                        {"CUP_bipod_VLTOR_Modpod","",10},
+                        {"CUP_Vector21N","",50},
+                        {"Rangefinder","",50},
+                        {"ACE_RangeCard","",50},
+                        {"ACE_ATragMX","",50},
+                        {"ACE_Kestrel4500","",50},
+                        {"ACE_HuntIR_monitor","",50},
+                        {"ACE_HuntIR_M203","",50}
+                        
+                        
         };
     };
 	
@@ -316,51 +511,92 @@ class WeaponShops {
         msg = "Du bist hier falsch!";
         items[] = {
                         {"NONE","Waffen",0},
-                        {"arifle_mas_m16","",200},
-                        {"arifle_mas_m4c","",200},
-                        {"arifle_mas_m4","",200},
-                        {"arifle_mas_g36c","",200},
-                        {"arifle_mas_m4_m203_d","",200},
-                        {"arifle_mas_mk16_l_gl","",200},
-                        {"30Rnd_mas_556x45_Stanag","",10},
-
-                        {"LMG_mas_M249_F","",200},
-                        {"200Rnd_mas_556x45_Stanag","",10},
-
-                        {"hlc_rifle_SAMR","",200},
-                        {"30Rnd_556x45_Stanag","",10},
-
-                        {"arifle_mas_g3","",200},
-                        {"arifle_mas_g3_m203","",200},
-                        {"arifle_mas_mk17","",200},
-                        {"arifle_mas_mk17_gl","",200},
-                        {"20Rnd_mas_762x51_Stanag","",10},
-
-                        {"hgun_mas_bhp_F","",200},
-                        {"15Rnd_mas_9x21_Mag","",10},
+                        {"CUP_arifle_M16A4_Base","",200},
+												{"CUP_arifle_M16A4_GL","",200},
+                        {"CUP_arifle_M4A1_desert","",200},
+												{"CUP_arifle_M4A1_BUIS_desert_GL","",200},
+                        {"CUP_arifle_Mk16_STD_FG","",200},
+                        {"CUP_arifle_Mk16_STD_EGLM","",200},
+												{"CUP_arifle_Mk16_SV","",200},
+                       	{"CUP_30Rnd_556x45_Stanag","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+						
+												{"CUP_arifle_G36A_camo","",200},
+                        {"CUP_arifle_G36C_camo","",200},
+                        {"CUP_arifle_G36K_camo","",200},
+                        {"CUP_30Rnd_556x45_G36","",10},
+                        
+                        {"CUP_arifle_MG36","",200},
+                        {"CUP_100Rnd_556x45_BetaCMag","",10},
+                        
+                        {"CUP_srifle_Mk12SPR","",200},
+                        {"CUP_20Rnd_556x45_Stanag","",10},
+                        
+                        {"CUP_lmg_M249","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M24","",10},
+                        
+                        {"CUP_srifle_DMR","",200},
+                        {"CUP_20Rnd_762x51_DMR","",10},
+                        
+                        {"CUP_arifle_Mk17_STD_FG","",200},
+                        {"CUP_arifle_Mk17_STD_EGLM","",200},
+                        {"CUP_arifle_Mk20","",200},
+                        {"CUP_20Rnd_762x51_B_SCAR","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_lmg_L110A1","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249","",10},
+                        
+                        {"CUP_srifle_M24_des","",200},
+                        {"CUP_5Rnd_762x51_M24","",10},                    
+                        
+                        {"CUP_lmg_M60A4","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_glaunch_Mk13","",200},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_srifle_M40A3","",200},
+                        {"CUP_5Rnd_762x51_M24","",10},
+                        
+                        {"CUP_lmg_Mk48_des","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_launch_Mk153Mod0","",200},
+                        {"CUP_SMAW_HEDP_M","",10},
+                        
+                        {"CUP_hgun_Duty","",200},
+												{"16Rnd_9x21_Mag","",10},
+                       	{"CUP_hgun_M9","",200},
+                        {"CUP_15Rnd_9x19_M9","",10},
+                                                                                                                      
                           
 												{"NONE","Aufsätze",0},
-                        {"FHQ_optic_MicroCCO_tan","",50},
-                        {"FHQ_optic_AIM_tan","",50},
+                        {"CUP_optic_CompM2_Black","",50},
+                        {"CUP_optic_RCO","",50},
+                        {"optic_NVS","",50},
+                        {"CUP_optic_ACOG","",50},
                         {"FHQ_optic_AimM_TAN","",50},
-                        {"FHQ_optic_HWS_tan","",50},
-                        {"FHQ_optic_ACOG","", 50},
-                        {"FHQ_optic_HWS_G33_tan","",50},
+                        {"CUP_optic_SB_11_4x20_PM","",50},
+                        {"CUP_optic_SB_3_12x50_PMII","",50},
+                        {"CUP_optic_ELCAN_SpecterDR","",50},
                         {"FHQ_optic_ACOG_tan","",50},
+                        {"CUP_optic_Leupold_VX3","",50},
                         {"optic_AMS_snd","",50},
-                        {"optic_SOS","",50},
+                                                
 
-                        {"NONE","Equipment",0},  
-												{"ACE_RangeCard","",50},
+                        {"NONE","Equipment",0},
                         {"MiniGrenade","",50},
-                        {"1Rnd_HE_Grenade_shell","",50},
                         {"HandGrenade","",50},
-                        {"rhs_mag_mk84","",50},
-                        {"bipod_01_F_snd","",50},
-                        {"ACE_Vector","",50},
                         {"NVGoggles","",50},
-												{"ACE_HuntIR_monitor","",50},
-												{"ACE_HuntIR_M203","",50}
+                        {"CUP_bipod_VLTOR_Modpod","",50},
+                        {"CUP_Vector21N","",50},
+                        {"Rangefinder","",50},
+                        {"ACE_RangeCard","",50},
+                        {"ACE_ATragMX","",50},
+                        {"ACE_Kestrel4500","",50},
+                        {"ACE_HuntIR_monitor","",50},
+                        {"ACE_HuntIR_M203","",50}
         };
     };
 
@@ -372,56 +608,96 @@ class WeaponShops {
         msg = "Du bist hier falsch!";
         items[] = {
                         {"NONE","Waffen",0},
-                        {"arifle_mas_m16","",200},
-                        {"arifle_mas_m4c","",200},
-                        {"arifle_mas_m4","",200},
-                        {"arifle_mas_g36c","",200},
-                        {"arifle_mas_m4_m203_d","",200},
-                        {"arifle_mas_mk16_l_gl","",200},
-                        {"30Rnd_mas_556x45_Stanag","",10},
-
-                        {"LMG_mas_M249_F","",200},
-                        {"200Rnd_mas_556x45_Stanag","",10},
-
-                        {"hlc_rifle_SAMR","",200},
-                        {"30Rnd_556x45_Stanag","",10},
-
-                        {"arifle_mas_g3","",200},
-                        {"arifle_mas_g3_m203","",200},
-                        {"arifle_mas_mk17","",200},
-                        {"arifle_mas_mk17_gl","",200},
-                        {"srifle_mas_sr25_d","",200},
-                        {"20Rnd_mas_762x51_Stanag","",10},
-
-                        {"LMG_mas_mk48_F_d","",200},
-                        {"100Rnd_mas_762x51_Stanag","",10},
-
-                        {"hgun_mas_bhp_F","",200},
-                        {"15Rnd_mas_9x21_Mag","",10},
-                          
+                        {"CUP_arifle_M16A4_Base","",200},
+												{"CUP_arifle_M16A4_GL","",200},
+                        {"CUP_arifle_M4A1_desert","",200},
+												{"CUP_arifle_M4A1_BUIS_desert_GL","",200},
+                        {"CUP_arifle_Mk16_STD_FG","",200},
+                        {"CUP_arifle_Mk16_STD_EGLM","",200},
+												{"CUP_arifle_Mk16_SV","",200},
+                       	{"CUP_30Rnd_556x45_Stanag","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+						
+												{"CUP_arifle_G36A_camo","",200},
+                        {"CUP_arifle_G36C_camo","",200},
+                        {"CUP_arifle_G36K_camo","",200},
+                        {"CUP_30Rnd_556x45_G36","",10},
+                        
+                        {"CUP_arifle_MG36","",200},
+                        {"CUP_100Rnd_556x45_BetaCMag","",10},
+                        
+                        {"CUP_srifle_Mk12SPR","",200},
+                        {"CUP_20Rnd_556x45_Stanag","",10},
+                        
+                        {"CUP_lmg_M249","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M24","",10},
+                        
+                        {"CUP_srifle_DMR","",200},
+                        {"CUP_20Rnd_762x51_DMR","",10},
+                        
+                        {"CUP_arifle_Mk17_STD_FG","",200},
+                        {"CUP_arifle_Mk17_STD_EGLM","",200},
+                        {"CUP_arifle_Mk20","",200},
+                        {"CUP_20Rnd_762x51_B_SCAR","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_lmg_L110A1","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249","",10},
+                        
+                        {"CUP_srifle_M24_des","",200},
+                        {"CUP_5Rnd_762x51_M24","",10},                    
+                        
+                        {"CUP_lmg_M60A4","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_glaunch_Mk13","",200},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_srifle_M40A3","",200},
+                        {"CUP_5Rnd_762x51_M24","",10},
+                        
+                        {"CUP_lmg_Mk48_des","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_srifle_M110","",200},
+                        {"CUP_20Rnd_762x51_B_M110","",10},
+                        
+                        {"CUP_launch_Mk153Mod0","",200},
+                        {"CUP_SMAW_HEDP_M","",10},
+                        
+                        {"CUP_hgun_Duty","",200},
+												{"16Rnd_9x21_Mag","",10},
+                       	{"CUP_hgun_M9","",200},
+                        {"CUP_15Rnd_9x19_M9","",10},
+                        
+                                                                                                  
                         {"NONE","Aufsätze",0},
-                        {"FHQ_optic_MicroCCO_tan","",50},
-                        {"FHQ_optic_AIM_tan","",50},
+                        {"CUP_optic_CompM2_Black","",50},
+                        {"CUP_optic_RCO","",50},
+                        {"optic_NVS","",50},
+                        {"CUP_optic_ACOG","",50},
                         {"FHQ_optic_AimM_TAN","",50},
-                        {"FHQ_optic_HWS_tan","",50},
-                        {"FHQ_optic_ACOG","", 50},
-                        {"FHQ_optic_HWS_G33_tan","",50},
+                        {"CUP_optic_SB_11_4x20_PM","",50},
+                        {"CUP_optic_SB_3_12x50_PMII","",50},
+                        {"CUP_optic_ELCAN_SpecterDR","",50},
                         {"FHQ_optic_ACOG_tan","",50},
+                        {"CUP_optic_Leupold_VX3","",50},
                         {"optic_AMS_snd","",50},
-                        {"optic_SOS","",50},
+                        {"optic_LRPS","",50},
+                        
 
-                        {"NONE","Equipment",0},  
-												{"ACE_RangeCard","",50},
+                        {"NONE","Equipment",0},
                         {"MiniGrenade","",50},
-                        {"1Rnd_HE_Grenade_shell","",50},
                         {"HandGrenade","",50},
-                        {"rhs_mag_mk84","",50},
-                        {"bipod_01_F_snd","",50},
-                        {"ACE_Vector","",50},
-                        {"Rangefinder","",50},                        
                         {"NVGoggles","",50},
-												{"ACE_HuntIR_monitor","",50},
-												{"ACE_HuntIR_M203","",50}
+                        {"CUP_bipod_VLTOR_Modpod","",10},
+                        {"CUP_Vector21N","",50},
+                        {"Rangefinder","",50},
+                        {"ACE_RangeCard","",50},
+                        {"ACE_ATragMX","",50},
+                        {"ACE_Kestrel4500","",50},
+                        {"ACE_HuntIR_monitor","",50},
+                        {"ACE_HuntIR_M203","",50}
         };
     };
 
@@ -433,63 +709,102 @@ class WeaponShops {
         msg = "Du bist hier falsch!";
         items[] = {
           							{"NONE","Waffen",0},
-                        {"arifle_mas_m16","",200},
-                        {"arifle_mas_m4c","",200},
-                        {"arifle_mas_m4","",200},
-                        {"arifle_mas_g36c","",200},
-                        {"arifle_mas_m4_m203_d","",200},
-                        {"arifle_mas_mk16_l_gl","",200},
-                        {"30Rnd_mas_556x45_Stanag","",10},
+                        {"CUP_arifle_M16A4_Base","",200},
+												{"CUP_arifle_M16A4_GL","",200},
+                        {"CUP_arifle_M4A1_desert","",200},
+												{"CUP_arifle_M4A1_BUIS_desert_GL","",200},
+                        {"CUP_arifle_Mk16_STD_FG","",200},
+                        {"CUP_arifle_Mk16_STD_EGLM","",200},
+												{"CUP_arifle_Mk16_SV","",200},
+                       	{"CUP_30Rnd_556x45_Stanag","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+						
+												{"CUP_arifle_G36A_camo","",200},
+                        {"CUP_arifle_G36C_camo","",200},
+                        {"CUP_arifle_G36K_camo","",200},
+                        {"CUP_30Rnd_556x45_G36","",10},
+                        
+                        {"CUP_arifle_MG36","",200},
+                        {"CUP_100Rnd_556x45_BetaCMag","",10},
+                        
+                        {"CUP_srifle_Mk12SPR","",200},
+                        {"CUP_20Rnd_556x45_Stanag","",10},
+                        
+                        {"CUP_lmg_M249","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M24","",10},
+                        
+                        {"CUP_srifle_DMR","",200},
+                        {"CUP_20Rnd_762x51_DMR","",10},
+                        
+                        {"CUP_arifle_Mk17_STD_FG","",200},
+                        {"CUP_arifle_Mk17_STD_EGLM","",200},
+                        {"CUP_arifle_Mk20","",200},
+                        {"CUP_20Rnd_762x51_B_SCAR","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_lmg_L110A1","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249","",10},
+                        
+                        {"CUP_srifle_M24_des","",200},
+                        {"CUP_5Rnd_762x51_M24","",10},                    
+                        
+                        {"CUP_lmg_M60A4","",200},
+												{"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
 
-                        {"LMG_mas_M249_F","",200},
-                        {"200Rnd_mas_556x45_Stanag","",10},
-
-                        {"hlc_rifle_SAMR","",200},
-                        {"30Rnd_556x45_Stanag","",10},
-
-                        {"arifle_mas_g3","",200},
-                        {"arifle_mas_g3_m203","",200},
-                        {"arifle_mas_mk17","",200},
-                        {"arifle_mas_mk17_gl","",200},
-                        {"srifle_mas_sr25_d","",200},
-                        {"arifle_mas_hk417c_d","",200},
-                        {"20Rnd_mas_762x51_Stanag","",10},
-
-                        {"LMG_mas_mk48_F_d","",200},
-                        {"100Rnd_mas_762x51_Stanag","",10},
-
-                        {"rhs_weap_M136_hedp","",200},
-                        {"rhs_m136_hedp_mag","",10},
-
-                        {"hgun_mas_bhp_F","",200},
-                        {"15Rnd_mas_9x21_Mag","",10},
-                          
-												{"NONE","Aufsätze",0},
-                        {"FHQ_optic_MicroCCO_tan","",50},
-                        {"FHQ_optic_AIM_tan","",50},
+                        {"CUP_glaunch_Mk13","",200},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_srifle_M40A3","",200},
+                        {"CUP_5Rnd_762x51_M24","",10},
+                        
+                        {"CUP_lmg_Mk48_des","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_srifle_M110","",200},
+                        {"CUP_20Rnd_762x51_B_M110","",10},
+                        
+                        {"CUP_lmg_M240","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_srifle_G22_des","",200},
+                        {"CUP_5Rnd_762x67_G22","",10},
+                        
+                        {"CUP_launch_Mk153Mod0","",200},
+                        {"CUP_SMAW_HEDP_M","",10},
+                        
+                        {"CUP_hgun_Duty","",200},
+												{"16Rnd_9x21_Mag","",10},
+                       	{"CUP_hgun_M9","",200},
+                        {"CUP_15Rnd_9x19_M9","",10},
+                        
+                        
+                        {"NONE","Aufsätze",0},
+                        {"CUP_optic_CompM2_Black","",50},
+                        {"CUP_optic_RCO","",50},
+                        {"optic_NVS","",50},
+                        {"CUP_optic_ACOG","",50},
                         {"FHQ_optic_AimM_TAN","",50},
-                        {"FHQ_optic_HWS_tan","",50},
-                        {"FHQ_optic_ACOG","", 50},
-                        {"FHQ_optic_HWS_G33_tan","",50},
+                        {"CUP_optic_SB_11_4x20_PM","",50},
+                        {"CUP_optic_SB_3_12x50_PMII","",50},
+                        {"CUP_optic_ELCAN_SpecterDR","",50},
                         {"FHQ_optic_ACOG_tan","",50},
+                        {"CUP_optic_Leupold_VX3","",50},
                         {"optic_AMS_snd","",50},
-                        {"optic_SOS","",50},
+                        {"optic_LRPS","",50},
+                        
 
-                        {"NONE","Equipment",0},   
-                        {"ACE_RangeCard","",50},
+                        {"NONE","Equipment",0},
                         {"MiniGrenade","",50},
-                        {"1Rnd_HE_Grenade_shell","",50},
                         {"HandGrenade","",50},
-                        {"rhs_mag_mk84","",50},
-                        {"bipod_01_F_snd","",50},
-                        {"ACE_Vector","",50},
-                        {"Rangefinder","",50}, 
-                        {"ACE_Yardage450","",50},
                         {"NVGoggles","",50},
-												{"ACE_ATragMX","",50},
-												{"ACE_Kestrel4500","",50},
-												{"ACE_HuntIR_monitor","",50},
-												{"ACE_HuntIR_M203","",50}
+                        {"CUP_bipod_VLTOR_Modpod","",10},
+                        {"CUP_Vector21N","",50},
+                        {"Rangefinder","",50},
+                        {"ACE_RangeCard","",50},
+                        {"ACE_ATragMX","",50},
+                        {"ACE_Kestrel4500","",50},
+                        {"ACE_HuntIR_monitor","",50},
+                        {"ACE_HuntIR_M203","",50}
         };
     };
 
@@ -502,68 +817,105 @@ class WeaponShops {
         msg = "Du bist hier falsch!";
         items[] = {
           							{"NONE","Waffen",0},
-                        {"arifle_mas_m16","",200},
-                        {"arifle_mas_m4c","",200},
-                        {"arifle_mas_m4","",200},
-                        {"arifle_mas_g36c","",200},
-                        {"arifle_mas_m4_m203_d","",200},
-                        {"arifle_mas_mk16_l_gl","",200},
-                        {"30Rnd_mas_556x45_Stanag","",10},
-
-                        {"LMG_mas_M249_F","",200},
-                        {"200Rnd_mas_556x45_Stanag","",10},
-
-                        {"hlc_rifle_SAMR","",200},
-                        {"30Rnd_556x45_Stanag","",10},
-
-                        {"arifle_mas_g3","",200},
-                        {"arifle_mas_g3_m203","",200},
-                        {"arifle_mas_mk17","",200},
-                        {"arifle_mas_mk17_gl","",200},
-                        {"srifle_mas_sr25_d","",200},
-                        {"arifle_mas_hk417c_d","",200},
-                        {"srifle_mas_hk417_d","",200},
-                        {"20Rnd_mas_762x51_Stanag","",10},
-
-                        {"LMG_mas_mk48_F_d","",200},
-                        {"100Rnd_mas_762x51_Stanag","",10},
-
-                        {"srifle_mas_m24_d","",200},
-                        {"5Rnd_mas_762x51_Stanag","",10},
-
-                        {"rhs_weap_M136_hedp","",200},
-                        {"rhs_m136_hedp_mag","",10},
-
-                        {"hgun_mas_bhp_F","",200},
-                        {"15Rnd_mas_9x21_Mag","",10},
-                          
-												{"NONE","Aufsätze",0},
-                        {"FHQ_optic_MicroCCO_tan","",50},
-                        {"FHQ_optic_AIM_tan","",50},
+                        {"CUP_arifle_M16A4_Base","",200},
+												{"CUP_arifle_M16A4_GL","",200},
+                        {"CUP_arifle_M4A1_desert","",200},
+												{"CUP_arifle_M4A1_BUIS_desert_GL","",200},
+                        {"CUP_arifle_Mk16_STD_FG","",200},
+                        {"CUP_arifle_Mk16_STD_EGLM","",200},
+												{"CUP_arifle_Mk16_SV","",200},
+                       	{"CUP_30Rnd_556x45_Stanag","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+						
+												{"CUP_arifle_G36A_camo","",200},
+                        {"CUP_arifle_G36C_camo","",200},
+                        {"CUP_arifle_G36K_camo","",200},
+                        {"CUP_30Rnd_556x45_G36","",10},
+                        
+                        {"CUP_arifle_MG36","",200},
+                        {"CUP_100Rnd_556x45_BetaCMag","",10},
+                        
+                        {"CUP_srifle_Mk12SPR","",200},
+                        {"CUP_20Rnd_556x45_Stanag","",10},
+                        
+                        {"CUP_lmg_M249","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M24","",10},
+                        
+                        {"CUP_srifle_DMR","",200},
+                        {"CUP_20Rnd_762x51_DMR","",10},
+                        
+                        {"CUP_arifle_Mk17_STD_FG","",200},
+                        {"CUP_arifle_Mk17_STD_EGLM","",200},
+                        {"CUP_arifle_Mk20","",200},
+                        {"CUP_20Rnd_762x51_B_SCAR","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_lmg_L110A1","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249","",10},
+                        
+                        {"CUP_srifle_M24_des","",200},
+                        {"CUP_5Rnd_762x51_M24","",10},                    
+                        
+                        {"CUP_lmg_M60A4","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_glaunch_Mk13","",200},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_srifle_M40A3","",200},
+                        {"CUP_5Rnd_762x51_M24","",10},
+                        
+                        {"CUP_lmg_Mk48_des","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_srifle_M110","",200},
+                        {"CUP_20Rnd_762x51_B_M110","",10},
+                        
+                        {"CUP_lmg_M240","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_srifle_G22_des","",200},
+                        {"CUP_5Rnd_762x67_G22","",10},
+                        
+                        {"CUP_srifle_AWM_des","",200},
+                        {"CUP_5Rnd_86x70_L115A1","",10},
+                        
+                        {"CUP_launch_Mk153Mod0","",200},
+                        {"CUP_SMAW_HEDP_M","",10},
+                        
+                        {"CUP_hgun_Duty","",200},
+												{"16Rnd_9x21_Mag","",10},
+                       	{"CUP_hgun_M9","",200},
+                        {"CUP_15Rnd_9x19_M9","",10},
+                        
+                        
+                        {"NONE","Aufsätze",0},
+                        {"CUP_optic_CompM2_Black","",50},
+                        {"CUP_optic_RCO","",50},
+                        {"optic_NVS","",50},
+                        {"CUP_optic_ACOG","",50},
                         {"FHQ_optic_AimM_TAN","",50},
-                        {"FHQ_optic_HWS_tan","",50},
-                        {"FHQ_optic_ACOG","", 50},
-                        {"FHQ_optic_HWS_G33_tan","",50},
+                        {"CUP_optic_SB_11_4x20_PM","",50},
+                        {"CUP_optic_SB_3_12x50_PMII","",50},
+                        {"CUP_optic_ELCAN_SpecterDR","",50},
                         {"FHQ_optic_ACOG_tan","",50},
+                        {"CUP_optic_Leupold_VX3","",50},
                         {"optic_AMS_snd","",50},
-                        {"optic_SOS","",50},
-                        {"FHQ_optic_LeupoldERT_tan","",50},
+                        {"optic_LRPS","",50},
+                        
                           
-												{"NONE","Equipment",0},  
-                        {"ACE_RangeCard","",50},
+												{"NONE","Equipment",0},
                         {"MiniGrenade","",50},
-                        {"1Rnd_HE_Grenade_shell","",50},
                         {"HandGrenade","",50},
-                        {"rhs_mag_mk84","",50},
-                        {"bipod_01_F_snd","",50},
-                        {"ACE_Vector","",50},
-                        {"Rangefinder","",50}, 
-												{"ACE_Yardage450","",50},
                         {"NVGoggles","",50},
-												{"ACE_ATragMX","",50},
-												{"ACE_Kestrel4500","",50},
+                        {"CUP_bipod_VLTOR_Modpod","",10},
+                        {"CUP_Vector21N","",50},
+                        {"Rangefinder","",50},
+                        {"ACE_RangeCard","",50},
+                        {"ACE_ATragMX","",50},
+                        {"ACE_Kestrel4500","",50},
                         {"ACE_HuntIR_monitor","",50},
-												{"ACE_HuntIR_M203","",50}
+                        {"ACE_HuntIR_M203","",50}
         };
     };
 	
@@ -575,69 +927,108 @@ class WeaponShops {
         msg = "Du bist hier falsch!";
         items[] = {
                         {"NONE","Waffen",0},
-                        {"arifle_mas_m16","",200},
-                        {"arifle_mas_m4c","",200},
-                        {"arifle_mas_m4","",200},
-                        {"arifle_mas_g36c","",200},
-                        {"arifle_mas_m4_m203_d","",200},
-                        {"arifle_mas_mk16_l_gl","",200},
-                        {"30Rnd_mas_556x45_Stanag","",10},
-
-                        {"LMG_mas_M249_F","",200},
-                        {"200Rnd_mas_556x45_Stanag","",200},
-
-                        {"hlc_rifle_SAMR","",200},
-                        {"30Rnd_556x45_Stanag","",10},
-
-                        {"arifle_mas_g3","",200},
-                        {"arifle_mas_g3_m203","",200},
-                        {"arifle_mas_mk17","",200},
-                        {"arifle_mas_mk17_gl","",200},
-                        {"srifle_mas_sr25_d","",200},
-                        {"arifle_mas_hk417c_d","",200},
-                        {"srifle_mas_hk417_d","",200},
-                        {"srifle_mas_ebr","",200},
-                        {"20Rnd_mas_762x51_Stanag","",10},
-
-                        {"LMG_mas_mk48_F_d","",200},
-                        {"100Rnd_mas_762x51_Stanag","",10},
-
-                        {"srifle_mas_m24_d","",200},
-                        {"5Rnd_mas_762x51_Stanag","",10},
-    
-                        {"rhs_weap_M136_hedp","",200},
-                        {"rhs_m136_hedp_mag","",10},
-
-                        {"hgun_mas_bhp_F","",200},
-                        {"15Rnd_mas_9x21_Mag","",10},
-                          
-												{"NONE","Aufsätze",0},
-                        {"FHQ_optic_MicroCCO_tan","",50},
-                        {"FHQ_optic_AIM_tan","",50},
+                        {"CUP_arifle_M16A4_Base","",200},
+												{"CUP_arifle_M16A4_GL","",200},
+                        {"CUP_arifle_M4A1_desert","",200},
+												{"CUP_arifle_M4A1_BUIS_desert_GL","",200},
+                        {"CUP_arifle_Mk16_STD_FG","",200},
+                        {"CUP_arifle_Mk16_STD_EGLM","",200},
+												{"CUP_arifle_Mk16_SV","",200},
+                       	{"CUP_30Rnd_556x45_Stanag","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+						
+												{"CUP_arifle_G36A_camo","",200},
+                        {"CUP_arifle_G36C_camo","",200},
+                        {"CUP_arifle_G36K_camo","",200},
+                        {"CUP_30Rnd_556x45_G36","",10},
+                        
+                        {"CUP_arifle_MG36","",200},
+                        {"CUP_100Rnd_556x45_BetaCMag","",10},
+                        
+                        {"CUP_srifle_Mk12SPR","",200},
+                        {"CUP_20Rnd_556x45_Stanag","",10},
+                        
+                        {"CUP_lmg_M249","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M24","",10},
+                        
+                        {"CUP_srifle_DMR","",200},
+                        {"CUP_20Rnd_762x51_DMR","",10},
+                        
+                        {"CUP_arifle_Mk17_STD_FG","",200},
+                        {"CUP_arifle_Mk17_STD_EGLM","",200},
+                        {"CUP_arifle_Mk20","",200},
+                        {"CUP_20Rnd_762x51_B_SCAR","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_lmg_L110A1","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249","",10},
+                        
+                        {"CUP_srifle_M24_des","",200},
+                        {"CUP_5Rnd_762x51_M24","",10},                    
+                        
+                        {"CUP_lmg_M60A4","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_glaunch_Mk13","",200},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_srifle_M40A3","",200},
+                        {"CUP_5Rnd_762x51_M24","",10},
+                        
+                        {"CUP_lmg_Mk48_des","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_srifle_M110","",200},
+                        {"CUP_20Rnd_762x51_B_M110","",10},
+                        
+                        {"CUP_lmg_M240","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_srifle_G22_des","",200},
+                        {"CUP_5Rnd_762x67_G22","",10},
+                        
+                        {"CUP_srifle_AWM_des","",200},
+                        {"CUP_5Rnd_86x70_L115A1","",10},
+                        
+                        {"CUP_srifle_M14","",200},
+                        {"CUP_20Rnd_762x51_DMR","",10},
+                        
+                        {"CUP_launch_Mk153Mod0","",200},
+                        {"CUP_SMAW_HEDP_M","",10},
+                        
+                        {"CUP_hgun_Duty","",200},
+												{"16Rnd_9x21_Mag","",10},
+                       	{"CUP_hgun_M9","",200},
+                        {"CUP_15Rnd_9x19_M9","",10},
+                        
+                        
+                        {"NONE","Aufsätze",0},
+                        {"CUP_optic_CompM2_Black","",50},
+                        {"CUP_optic_RCO","",50},
+                        {"optic_NVS","",50},
+                        {"CUP_optic_ACOG","",50},
                         {"FHQ_optic_AimM_TAN","",50},
-                        {"FHQ_optic_HWS_tan","",50},
-                        {"FHQ_optic_ACOG","", 50},
-                        {"FHQ_optic_HWS_G33_tan","",50},
+                        {"CUP_optic_SB_11_4x20_PM","",50},
+                        {"CUP_optic_SB_3_12x50_PMII","",50},
+                        {"CUP_optic_ELCAN_SpecterDR","",50},
                         {"FHQ_optic_ACOG_tan","",50},
+                        {"CUP_optic_Leupold_VX3","",50},
                         {"optic_AMS_snd","",50},
-                        {"optic_SOS","",50},
-                        {"FHQ_optic_LeupoldERT_tan","",50},
+                        {"optic_LRPS","",50},
+                        
 
-                        {"NONE","Equipment",0},  
-												{"ACE_RangeCard","",50},
+                        {"NONE","Equipment",0},
                         {"MiniGrenade","",50},
-                        {"1Rnd_HE_Grenade_shell","",50},
                         {"HandGrenade","",50},
-                        {"rhs_mag_mk84","",50},
-                        {"bipod_01_F_snd","",50},
-                        {"ACE_Vector","",50},
-                        {"Rangefinder","",50}, 
-												{"ACE_Yardage450","",50},
                         {"NVGoggles","",50},
-												{"ACE_ATragMX","",50},
-												{"ACE_Kestrel4500","",50},
-												{"ACE_HuntIR_monitor","",50},
-												{"ACE_HuntIR_M203","",50}
+                        {"CUP_bipod_VLTOR_Modpod","",10},
+                        {"CUP_Vector21N","",50},
+                        {"Rangefinder","",50},
+                        {"ACE_RangeCard","",50},
+                        {"ACE_ATragMX","",50},
+                        {"ACE_Kestrel4500","",50},
+                        {"ACE_HuntIR_monitor","",50},
+                        {"ACE_HuntIR_M203","",50}
         };
     };
 	
@@ -649,71 +1040,112 @@ class WeaponShops {
         msg = "Du bist hier falsch!";
         items[] = {
           							{"NONE","Waffen",0},
-                        {"arifle_mas_m16","",200},
-                        {"arifle_mas_m4c","",200},
-                        {"arifle_mas_m4","",200},
-                        {"arifle_mas_g36c","",200},
-                        {"arifle_mas_m4_m203_d","",200},
-                        {"arifle_mas_mk16_l_gl","",200},
-                        {"30Rnd_mas_556x45_Stanag","",10},
-
-                        {"LMG_mas_M249_F","",200},
-                        {"200Rnd_mas_556x45_Stanag","",200},
-
-                        {"hlc_rifle_SAMR","",200},
-                        {"30Rnd_556x45_Stanag","",10},
-
-                        {"arifle_mas_g3","",200},
-                        {"arifle_mas_g3_m203","",200},
-                        {"arifle_mas_mk17","",200},
-                        {"arifle_mas_mk17_gl","",200},
-                        {"srifle_mas_sr25_d","",200},
-                        {"arifle_mas_hk417c_d","",200},
-                        {"srifle_mas_hk417_d","",200},
-                        {"srifle_mas_ebr","",200},
-                        {"srifle_mas_m110","",200},
-                        {"20Rnd_mas_762x51_Stanag","",10},
-
-                        {"LMG_mas_mk48_F_d","",200},
-                        {"100Rnd_mas_762x51_Stanag","",10},
-
-                        {"srifle_mas_m24_d","",200},
-                        {"5Rnd_mas_762x51_Stanag","",10},
-
-                        {"rhs_weap_M136_hedp","",200},
-                        {"rhs_m136_hedp_mag","",10},
-
-                        {"hgun_mas_bhp_F","",200},
-                        {"15Rnd_mas_9x21_Mag","",10},
-                          
-												{"NONE","Aufsätze",0},
-                        {"FHQ_optic_MicroCCO_tan","",50},
-                        {"FHQ_optic_AIM_tan","",50},
+                        {"CUP_arifle_M16A4_Base","",200},
+												{"CUP_arifle_M16A4_GL","",200},
+                        {"CUP_arifle_M4A1_desert","",200},
+												{"CUP_arifle_M4A1_BUIS_desert_GL","",200},
+                        {"CUP_arifle_Mk16_STD_FG","",200},
+                        {"CUP_arifle_Mk16_STD_EGLM","",200},
+												{"CUP_arifle_Mk16_SV","",200},
+                       	{"CUP_30Rnd_556x45_Stanag","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+						
+												{"CUP_arifle_G36A_camo","",200},
+                        {"CUP_arifle_G36C_camo","",200},
+                        {"CUP_arifle_G36K_camo","",200},
+                        {"CUP_30Rnd_556x45_G36","",10},
+                        
+                        {"CUP_arifle_MG36","",200},
+                        {"CUP_100Rnd_556x45_BetaCMag","",10},
+                        
+                        {"CUP_srifle_Mk12SPR","",200},
+                        {"CUP_20Rnd_556x45_Stanag","",10},
+                        
+                        {"CUP_lmg_M249","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M24","",10},
+                        
+                        {"CUP_srifle_DMR","",200},
+                        {"CUP_20Rnd_762x51_DMR","",10},
+                        
+                        {"CUP_arifle_Mk17_STD_FG","",200},
+                        {"CUP_arifle_Mk17_STD_EGLM","",200},
+                        {"CUP_arifle_Mk20","",200},
+                        {"CUP_20Rnd_762x51_B_SCAR","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_lmg_L110A1","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249","",10},
+                        
+                        {"CUP_srifle_M24_des","",200},
+                        {"CUP_5Rnd_762x51_M24","",10},                    
+                        
+                        {"CUP_lmg_M60A4","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_glaunch_Mk13","",200},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_srifle_M40A3","",200},
+                        {"CUP_5Rnd_762x51_M24","",10},
+                        
+                        {"CUP_lmg_Mk48_des","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_srifle_M110","",200},
+                        {"CUP_20Rnd_762x51_B_M110","",10},
+                        
+                        {"CUP_lmg_M240","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_srifle_G22_des","",200},
+                        {"CUP_5Rnd_762x67_G22","",10},
+                        
+                        {"CUP_srifle_AWM_des","",200},
+                        {"CUP_5Rnd_86x70_L115A1","",10},
+                        
+                        {"CUP_srifle_M14","",200},
+                        {"CUP_20Rnd_762x51_DMR","",10},
+                        
+                        {"srifle_DMR_05_tan_f","",200},
+                        {"10Rnd_93x64_DMR_05_Mag","",10},
+                        
+                        {"CUP_launch_Mk153Mod0","",200},
+                        {"CUP_SMAW_HEDP_M","",10},
+                        
+                        {"CUP_hgun_Duty","",200},
+												{"16Rnd_9x21_Mag","",10},
+                       	{"CUP_hgun_M9","",200},
+                        {"CUP_15Rnd_9x19_M9","",10},
+                        
+                        
+                        {"NONE","Aufsätze",0},
+                        {"CUP_optic_CompM2_Black","",50},
+                        {"CUP_optic_RCO","",50},
+                        {"optic_NVS","",50},
+                        {"CUP_optic_ACOG","",50},
                         {"FHQ_optic_AimM_TAN","",50},
-                        {"FHQ_optic_HWS_tan","",50},
-                        {"FHQ_optic_ACOG","", 50},
-                        {"FHQ_optic_HWS_G33_tan","",50},
+                        {"CUP_optic_SB_11_4x20_PM","",50},
+                        {"CUP_optic_SB_3_12x50_PMII","",50},
+                        {"CUP_optic_ELCAN_SpecterDR","",50},
                         {"FHQ_optic_ACOG_tan","",50},
+                        {"CUP_optic_Leupold_VX3","",50},
                         {"optic_AMS_snd","",50},
-                        {"optic_SOS","",50},
-                        {"FHQ_optic_LeupoldERT_tan","",50},
                         {"optic_LRPS","",50},
+                        
 
-                        {"NONE","Equipment",0},   
-												{"ACE_RangeCard","",50},
+                        {"NONE","Equipment",0},
                         {"MiniGrenade","",50},
-                        {"1Rnd_HE_Grenade_shell","",50},
                         {"HandGrenade","",50},
-                        {"rhs_mag_mk84","",50},
-                        {"bipod_01_F_snd","",50},
-                        {"ACE_Vector","",50},
-                        {"Rangefinder","",50}, 
-												{"ACE_Yardage450","",50},
                         {"NVGoggles","",50},
-												{"ACE_ATragMX","",50},
+                        {"CUP_bipod_VLTOR_Modpod","",10},
+                        {"CUP_Vector21N","",50},
+                        {"Rangefinder","",50},
+                        {"ACE_RangeCard","",50},
+                        {"ACE_ATragMX","",50},
                         {"ACE_Kestrel4500","",50},
-												{"ACE_HuntIR_monitor","",50},
-												{"ACE_HuntIR_M203","",50}
+                        {"ACE_HuntIR_monitor","",50},
+                        {"ACE_HuntIR_M203","",50}
+                                              
         };
     };
 	
@@ -725,76 +1157,111 @@ class WeaponShops {
         msg = "Du bist hier falsch!";
         items[] = {
           							{"NONE","Waffen",0},
-                        {"arifle_mas_m16","",200},
-                        {"arifle_mas_m4c","",200},
-                        {"arifle_mas_m4","",200},
-                        {"arifle_mas_g36c","",200},
-                        {"arifle_mas_m4_m203_d","",200},
-                        {"arifle_mas_mk16_l_gl","",200},
-                        {"30Rnd_mas_556x45_Stanag","",10},
-
-                        {"LMG_mas_M249_F","",200},
-                        {"200Rnd_mas_556x45_Stanag","",200},
-
-                        {"hlc_rifle_SAMR","",200},
-                        {"30Rnd_556x45_Stanag","",10},
-
-                        {"arifle_mas_g3","",200},
-                        {"arifle_mas_g3_m203","",200},
-                        {"arifle_mas_mk17","",200},
-                        {"arifle_mas_mk17_gl","",200},
-                        {"srifle_mas_sr25_d","",200},
-                        {"arifle_mas_hk417c_d","",200},
-                        {"srifle_mas_hk417_d","",200},
-                        {"srifle_mas_ebr","",200},
-                        {"srifle_mas_m110","",200},
-                        {"20Rnd_mas_762x51_Stanag","",10},
-
-                        {"LMG_mas_mk48_F_d","",200},
-                        {"100Rnd_mas_762x51_Stanag","",10},
-
-                        {"srifle_mas_m24_d","",200},
-                        {"5Rnd_mas_762x51_Stanag","",10},
-
-                        {"rhs_weap_XM2010_d","",200},
-                        {"rhsusf_5Rnd_300winmag_xm2010","",10},
-
-                        {"rhs_weap_M136_hedp","",200},
-                        {"rhs_m136_hedp_mag","",10},
-
-                        {"hgun_mas_bhp_F","",200},
-                        {"15Rnd_mas_9x21_Mag","",10},
+                        {"CUP_arifle_M16A4_Base","",200},
+												{"CUP_arifle_M16A4_GL","",200},
+                        {"CUP_arifle_M4A1_desert","",200},
+												{"CUP_arifle_M4A1_BUIS_desert_GL","",200},
+                        {"CUP_arifle_Mk16_STD_FG","",200},
+                        {"CUP_arifle_Mk16_STD_EGLM","",200},
+												{"CUP_arifle_Mk16_SV","",200},
+                       	{"CUP_30Rnd_556x45_Stanag","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+						
+												{"CUP_arifle_G36A_camo","",200},
+                        {"CUP_arifle_G36C_camo","",200},
+                        {"CUP_arifle_G36K_camo","",200},
+                        {"CUP_30Rnd_556x45_G36","",10},
+                        
+                        {"CUP_arifle_MG36","",200},
+                        {"CUP_100Rnd_556x45_BetaCMag","",10},
+                        
+                        {"CUP_srifle_Mk12SPR","",200},
+                        {"CUP_20Rnd_556x45_Stanag","",10},
+                        
+                        {"CUP_lmg_M249","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M24","",10},
+                        
+                        {"CUP_srifle_DMR","",200},
+                        {"CUP_20Rnd_762x51_DMR","",10},
+                        
+                        {"CUP_arifle_Mk17_STD_FG","",200},
+                        {"CUP_arifle_Mk17_STD_EGLM","",200},
+                        {"CUP_arifle_Mk20","",200},
+                        {"CUP_20Rnd_762x51_B_SCAR","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_lmg_L110A1","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249","",10},
+                        
+                        {"CUP_srifle_M24_des","",200},
+                        {"CUP_5Rnd_762x51_M24","",10},                    
+                        
+                        {"CUP_lmg_M60A4","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_glaunch_Mk13","",200},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_srifle_M40A3","",200},
+                        {"CUP_5Rnd_762x51_M24","",10},
+                        
+                        {"CUP_lmg_Mk48_des","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_srifle_M110","",200},
+                        {"CUP_20Rnd_762x51_B_M110","",10},
+                        
+                        {"CUP_lmg_M240","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_srifle_G22_des","",200},
+                        {"CUP_5Rnd_762x67_G22","",10},
+                        
+                        {"CUP_srifle_AWM_des","",200},
+                        {"CUP_5Rnd_86x70_L115A1","",10},
+                        
+                        {"CUP_srifle_M14","",200},
+                        {"CUP_20Rnd_762x51_DMR","",10},
+                        
+                        {"srifle_DMR_05_tan_f","",200},
+                        {"10Rnd_93x64_DMR_05_Mag","",10},
+                        
+                        {"CUP_launch_Mk153Mod0","",200},
+                        {"CUP_SMAW_HEDP_M","",10},
+                        
+                        {"CUP_hgun_Duty","",200},
+												{"16Rnd_9x21_Mag","",10},
+                       	{"CUP_hgun_M9","",200},
+                        {"CUP_15Rnd_9x19_M9","",10},
+                        
                           
 												{"NONE","Aufsätze",0},
-                        {"FHQ_optic_MicroCCO_tan","",50},
-                        {"FHQ_optic_AIM_tan","",50},
+                        {"CUP_optic_CompM2_Black","",50},
+                        {"CUP_optic_RCO","",50},
+                        {"optic_NVS","",50},
+                        {"CUP_optic_ACOG","",50},
                         {"FHQ_optic_AimM_TAN","",50},
-                        {"FHQ_optic_HWS_tan","",50},
-                        {"FHQ_optic_ACOG","", 50},
-                        {"FHQ_optic_HWS_G33_tan","",50},
+                        {"CUP_optic_SB_11_4x20_PM","",50},
+                        {"CUP_optic_SB_3_12x50_PMII","",50},
+                        {"CUP_optic_ELCAN_SpecterDR","",50},
                         {"FHQ_optic_ACOG_tan","",50},
+                        {"CUP_optic_Leupold_VX3","",50},
                         {"optic_AMS_snd","",50},
-												{"rhsusf_acc_ACOG3","",50},
-												{"rhsusf_acc_LEUPOLDMK4_2","",50},
-                        {"optic_SOS","",50},
-                        {"FHQ_optic_LeupoldERT_tan","",50},
                         {"optic_LRPS","",50},
+                        
                           
 												{"NONE","Equipment",0},
-												{"ACE_RangeCard","",50},
                         {"MiniGrenade","",50},
-                        {"1Rnd_HE_Grenade_shell","",50},
                         {"HandGrenade","",50},
-                        {"rhs_mag_mk84","",50},
-                        {"bipod_01_F_snd","",50},
-                        {"ACE_Vector","",50},
-                        {"Rangefinder","",50}, 
-												{"ACE_Yardage450","",50},
                         {"NVGoggles","",50},
-												{"ACE_ATragMX","",50},
-												{"ACE_Kestrel4500","",50},
+                        {"CUP_bipod_VLTOR_Modpod","",10},
+                        {"CUP_Vector21N","",50},
+                        {"Rangefinder","",50},
+                        {"ACE_RangeCard","",50},
+                        {"ACE_ATragMX","",50},
+                        {"ACE_Kestrel4500","",50},
                         {"ACE_HuntIR_monitor","",50},
-												{"ACE_HuntIR_M203","",50}
+                        {"ACE_HuntIR_M203","",50}
         };
     };
 	
@@ -806,79 +1273,111 @@ class WeaponShops {
         msg = "Du bist hier falsch!";
         items[] = {
           							{"NONE","Waffen",0},
-                        {"arifle_mas_m16","",200},
-                        {"arifle_mas_m4c","",200},
-                        {"arifle_mas_m4","",200},
-                        {"arifle_mas_g36c","",200},
-                        {"arifle_mas_m4_m203_d","",200},
-                        {"arifle_mas_mk16_l_gl","",200},
-                        {"30Rnd_mas_556x45_Stanag","",10},
-
-                        {"LMG_mas_M249_F","",200},
-                        {"200Rnd_mas_556x45_Stanag","",200},
-
-                        {"hlc_rifle_SAMR","",200},
-                        {"30Rnd_556x45_Stanag","",10},
-
-                        {"arifle_mas_g3","",200},
-                        {"arifle_mas_g3_m203","",200},
-                        {"arifle_mas_mk17","",200},
-                        {"arifle_mas_mk17_gl","",200},
-                        {"srifle_mas_sr25_d","",200},
-                        {"arifle_mas_hk417c_d","",200},
-                        {"srifle_mas_hk417_d","",200},
-                        {"srifle_mas_ebr","",200},
-                        {"srifle_mas_m110","",200},
-                        {"20Rnd_mas_762x51_Stanag","",10},
-
-                        {"LMG_mas_mk48_F_d","",200},
-                        {"100Rnd_mas_762x51_Stanag","",10},
-
-                        {"srifle_mas_m24_d","",200},
-                        {"5Rnd_mas_762x51_Stanag","",10},
-
-                        {"rhs_weap_XM2010_d","",200},
-                        {"rhsusf_5Rnd_300winmag_xm2010","",10},
-
-                        {"srifle_mas_lrr","",200},
-                        {"10Rnd_mas_338_Stanag","",10},
-
-                        {"rhs_weap_M136_hedp","",200},
-                        {"rhs_m136_hedp_mag","",10},
-
-                        {"hgun_mas_bhp_F","",200},
-                        {"15Rnd_mas_9x21_Mag","",10},
+                        {"CUP_arifle_M16A4_Base","",200},
+												{"CUP_arifle_M16A4_GL","",200},
+                        {"CUP_arifle_M4A1_desert","",200},
+												{"CUP_arifle_M4A1_BUIS_desert_GL","",200},
+                        {"CUP_arifle_Mk16_STD_FG","",200},
+                        {"CUP_arifle_Mk16_STD_EGLM","",200},
+												{"CUP_arifle_Mk16_SV","",200},
+                       	{"CUP_30Rnd_556x45_Stanag","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+						
+												{"CUP_arifle_G36A_camo","",200},
+                        {"CUP_arifle_G36C_camo","",200},
+                        {"CUP_arifle_G36K_camo","",200},
+                        {"CUP_30Rnd_556x45_G36","",10},
+                        
+                        {"CUP_arifle_MG36","",200},
+                        {"CUP_100Rnd_556x45_BetaCMag","",10},
+                        
+                        {"CUP_srifle_Mk12SPR","",200},
+                        {"CUP_20Rnd_556x45_Stanag","",10},
+                        
+                        {"CUP_lmg_M249","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M24","",10},
+                        
+                        {"CUP_srifle_DMR","",200},
+                        {"CUP_20Rnd_762x51_DMR","",10},
+                        
+                        {"CUP_arifle_Mk17_STD_FG","",200},
+                        {"CUP_arifle_Mk17_STD_EGLM","",200},
+                        {"CUP_arifle_Mk20","",200},
+                        {"CUP_20Rnd_762x51_B_SCAR","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_lmg_L110A1","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249","",10},
+                        
+                        {"CUP_srifle_M24_des","",200},
+                        {"CUP_5Rnd_762x51_M24","",10},                    
+                        
+                        {"CUP_lmg_M60A4","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_glaunch_Mk13","",200},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_srifle_M40A3","",200},
+                        {"CUP_5Rnd_762x51_M24","",10},
+                        
+                        {"CUP_lmg_Mk48_des","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_srifle_M110","",200},
+                        {"CUP_20Rnd_762x51_B_M110","",10},
+                        
+                        {"CUP_lmg_M240","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_srifle_G22_des","",200},
+                        {"CUP_5Rnd_762x67_G22","",10},
+                        
+                        {"CUP_srifle_AWM_des","",200},
+                        {"CUP_5Rnd_86x70_L115A1","",10},
+                        
+                        {"CUP_srifle_M14","",200},
+                        {"CUP_20Rnd_762x51_DMR","",10},
+                        
+                        {"srifle_DMR_05_tan_f","",200},
+                        {"10Rnd_93x64_DMR_05_Mag","",10},
+                        
+                        {"CUP_launch_Mk153Mod0","",200},
+                        {"CUP_SMAW_HEDP_M","",10},
+                        
+                        {"CUP_hgun_Duty","",200},
+												{"16Rnd_9x21_Mag","",10},
+                       	{"CUP_hgun_M9","",200},
+                        {"CUP_15Rnd_9x19_M9","",10},
+                        
                           
                         {"NONE","Aufsätze",0},
-                        {"FHQ_optic_MicroCCO_tan","",50},
-                        {"FHQ_optic_AIM_tan","",50},
+                        {"CUP_optic_CompM2_Black","",50},
+                        {"CUP_optic_RCO","",50},
+                        {"optic_NVS","",50},
+                        {"CUP_optic_ACOG","",50},
                         {"FHQ_optic_AimM_TAN","",50},
-                        {"FHQ_optic_HWS_tan","",50},
-                        {"FHQ_optic_ACOG","", 50},
-                        {"FHQ_optic_HWS_G33_tan","",50},
+                        {"CUP_optic_SB_11_4x20_PM","",50},
+                        {"CUP_optic_SB_3_12x50_PMII","",50},
+                        {"CUP_optic_ELCAN_SpecterDR","",50},
                         {"FHQ_optic_ACOG_tan","",50},
-                        {"rhsusf_acc_ACOG3","",50},
-												{"rhsusf_acc_LEUPOLDMK4_2","",50},
+                        {"CUP_optic_Leupold_VX3","",50},
                         {"optic_AMS_snd","",50},
-                        {"optic_SOS","",50},
-                        {"FHQ_optic_LeupoldERT_tan","",50},
                         {"optic_LRPS","",50},
                           
+                          
 												{"NONE","Equipment",0},
-                        {"ACE_RangeCard","",50},
                         {"MiniGrenade","",50},
-                        {"1Rnd_HE_Grenade_shell","",50},
                         {"HandGrenade","",50},
-                        {"rhs_mag_mk84","",50},
-                        {"bipod_01_F_snd","",50},
-                        {"ACE_Vector","",50},
-                        {"Rangefinder","",50}, 
-												{"ACE_Yardage450","",50},
                         {"NVGoggles","",50},
-												{"ACE_ATragMX","",50},
+                        {"CUP_bipod_VLTOR_Modpod","",10},
+                        {"CUP_Vector21N","",50},
+                        {"Rangefinder","",50},
+                        {"ACE_RangeCard","",50},
+                        {"ACE_ATragMX","",50},
                         {"ACE_Kestrel4500","",50},
-												{"ACE_HuntIR_monitor","",50},
-												{"ACE_HuntIR_M203","",50}
+                        {"ACE_HuntIR_monitor","",50},
+                        {"ACE_HuntIR_M203","",50}
         };
     };
 	
@@ -890,83 +1389,111 @@ class WeaponShops {
         msg = "Du bist hier falsch!";
         items[] = {
           							{"NONE","Waffen",0},
-                        {"arifle_mas_m16","",200},
-                        {"arifle_mas_m4c","",200},
-                        {"arifle_mas_m4","",200},
-                        {"arifle_mas_g36c","",200},
-                        {"arifle_mas_m4_m203_d","",200},
-                        {"arifle_mas_mk16_l_gl","",200},
-                        {"30Rnd_mas_556x45_Stanag","",10},
-
-                        {"LMG_mas_M249_F","",200},
-                        {"200Rnd_mas_556x45_Stanag","",200},
-
-                        {"hlc_rifle_SAMR","",200},
-                        {"30Rnd_556x45_Stanag","",10},
-
-                        {"arifle_mas_g3","",200},
-                        {"arifle_mas_g3_m203","",200},
-                        {"arifle_mas_mk17","",200},
-                        {"arifle_mas_mk17_gl","",200},
-                        {"srifle_mas_sr25_d","",200},
-                        {"arifle_mas_hk417c_d","",200},
-                        {"srifle_mas_hk417_d","",200},
-                        {"srifle_mas_ebr","",200},
-                        {"srifle_mas_m110","",200},
-                        {"20Rnd_mas_762x51_Stanag","",10},
-
-                        {"LMG_mas_mk48_F_d","",200},
-                        {"100Rnd_mas_762x51_Stanag","",10},
-
-                        {"srifle_mas_m24_d","",200},
-                        {"5Rnd_mas_762x51_Stanag","",10},
-
-                        {"rhs_weap_XM2010_d","",200},
-                        {"rhsusf_5Rnd_300winmag_xm2010","",10},
-
-                        {"srifle_mas_lrr","",200},
-                        {"10Rnd_mas_338_Stanag","",10},
-
-                        {"MMG_02_sand_F","",200},
-                        {"130Rnd_338_Mag","",10},
-
-                        {"rhs_weap_M136_hedp","",200},
-                        {"rhs_m136_hedp_mag","",10},
-
-                        {"hgun_mas_bhp_F","",200},
-                        {"15Rnd_mas_9x21_Mag","",10},
+                        {"CUP_arifle_M16A4_Base","",200},
+												{"CUP_arifle_M16A4_GL","",200},
+                        {"CUP_arifle_M4A1_desert","",200},
+												{"CUP_arifle_M4A1_BUIS_desert_GL","",200},
+                        {"CUP_arifle_Mk16_STD_FG","",200},
+                        {"CUP_arifle_Mk16_STD_EGLM","",200},
+												{"CUP_arifle_Mk16_SV","",200},
+                       	{"CUP_30Rnd_556x45_Stanag","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+						
+												{"CUP_arifle_G36A_camo","",200},
+                        {"CUP_arifle_G36C_camo","",200},
+                        {"CUP_arifle_G36K_camo","",200},
+                        {"CUP_30Rnd_556x45_G36","",10},
+                        
+                        {"CUP_arifle_MG36","",200},
+                        {"CUP_100Rnd_556x45_BetaCMag","",10},
+                        
+                        {"CUP_srifle_Mk12SPR","",200},
+                        {"CUP_20Rnd_556x45_Stanag","",10},
+                        
+                        {"CUP_lmg_M249","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M24","",10},
+                        
+                        {"CUP_srifle_DMR","",200},
+                        {"CUP_20Rnd_762x51_DMR","",10},
+                        
+                        {"CUP_arifle_Mk17_STD_FG","",200},
+                        {"CUP_arifle_Mk17_STD_EGLM","",200},
+                        {"CUP_arifle_Mk20","",200},
+                        {"CUP_20Rnd_762x51_B_SCAR","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_lmg_L110A1","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249","",10},
+                        
+                        {"CUP_srifle_M24_des","",200},
+                        {"CUP_5Rnd_762x51_M24","",10},                    
+                        
+                        {"CUP_lmg_M60A4","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_glaunch_Mk13","",200},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_srifle_M40A3","",200},
+                        {"CUP_5Rnd_762x51_M24","",10},
+                        
+                        {"CUP_lmg_Mk48_des","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_srifle_M110","",200},
+                        {"CUP_20Rnd_762x51_B_M110","",10},
+                        
+                        {"CUP_lmg_M240","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_srifle_G22_des","",200},
+                        {"CUP_5Rnd_762x67_G22","",10},
+                        
+                        {"CUP_srifle_AWM_des","",200},
+                        {"CUP_5Rnd_86x70_L115A1","",10},
+                        
+                        {"CUP_srifle_M14","",200},
+                        {"CUP_20Rnd_762x51_DMR","",10},
+                        
+                        {"srifle_DMR_05_tan_f","",200},
+                        {"10Rnd_93x64_DMR_05_Mag","",10},
+                        
+                        {"CUP_launch_Mk153Mod0","",200},
+                        {"CUP_SMAW_HEDP_M","",10},
+                        
+                        {"CUP_hgun_Duty","",200},
+												{"16Rnd_9x21_Mag","",10},
+                       	{"CUP_hgun_M9","",200},
+                        {"CUP_15Rnd_9x19_M9","",10},
+                        
                           
 												{"NONE","Aufsätze",0},
-                        {"FHQ_optic_MicroCCO_tan","",50},
-                        {"FHQ_optic_AIM_tan","",50},
+                        {"CUP_optic_CompM2_Black","",50},
+                        {"CUP_optic_RCO","",50},
+                        {"optic_NVS","",50},
+                        {"CUP_optic_ACOG","",50},
                         {"FHQ_optic_AimM_TAN","",50},
-                        {"FHQ_optic_HWS_tan","",50},
-                        {"FHQ_optic_ACOG","", 50},
-                        {"FHQ_optic_HWS_G33_tan","",50},
+                        {"CUP_optic_SB_11_4x20_PM","",50},
+                        {"CUP_optic_SB_3_12x50_PMII","",50},
+                        {"CUP_optic_ELCAN_SpecterDR","",50},
                         {"FHQ_optic_ACOG_tan","",50},
-												{"rhsusf_acc_ACOG3","",50},
-												{"rhsusf_acc_LEUPOLDMK4_2","",50},
+                        {"CUP_optic_Leupold_VX3","",50},
                         {"optic_AMS_snd","",50},
-                        {"optic_SOS","",50},
-                        {"FHQ_optic_LeupoldERT_tan","",50},
                         {"optic_LRPS","",50},
+                        
                           
 												{"NONE","Equipment",0},
-                        {"ACE_RangeCard","",50},
                         {"MiniGrenade","",50},
-                        {"1Rnd_HE_Grenade_shell","",50},
                         {"HandGrenade","",50},
-                        {"rhs_mag_mk84","",50},
-                        {"bipod_01_F_snd","",50},
-                        {"ACE_Vector","",50},
-                        {"Rangefinder","",50}, 
-                        {"ACE_Yardage450","",50},
                         {"NVGoggles","",50},
-												{"ACE_ATragMX","",50},
-												{"ACE_Banana","",100},
-												{"ACE_Kestrel4500","",50},
-												{"ACE_HuntIR_monitor","",50},
-												{"ACE_HuntIR_M203","",50}
+                        {"CUP_bipod_VLTOR_Modpod","",10},
+                        {"CUP_Vector21N","",50},
+                        {"Rangefinder","",50},
+                        {"ACE_RangeCard","",50},
+                        {"ACE_ATragMX","",50},
+                        {"ACE_Kestrel4500","",50},
+                        {"ACE_HuntIR_monitor","",50},
+                        {"ACE_HuntIR_M203","",50}
         };
     };
 
@@ -978,89 +1505,117 @@ class WeaponShops {
         msg = "Du bist hier falsch!";
         items[] = {
           							{"NONE","Waffen",0},
-                        {"arifle_mas_m16","",200},
-                        {"arifle_mas_m4c","",200},
-                        {"arifle_mas_m4","",200},
-                        {"arifle_mas_g36c","",200},
-                        {"arifle_mas_m4_m203_d","",200},
-                        {"arifle_mas_mk16_l_gl","",200},
-                        {"30Rnd_mas_556x45_Stanag","",10},
-
-                        {"LMG_mas_M249_F","",200},
-                        {"200Rnd_mas_556x45_Stanag","",200},
-
-                        {"hlc_rifle_SAMR","",200},
-                        {"30Rnd_556x45_Stanag","",10},
-
-                        {"arifle_mas_g3","",200},
-                        {"arifle_mas_g3_m203","",200},
-                        {"arifle_mas_mk17","",200},
-                        {"arifle_mas_mk17_gl","",200},
-                        {"srifle_mas_sr25_d","",200},
-                        {"arifle_mas_hk417c_d","",200},
-                        {"srifle_mas_hk417_d","",200},
-                        {"srifle_mas_ebr","",200},
-                        {"srifle_mas_m110","",200},
-                        {"20Rnd_mas_762x51_Stanag","",10},
-
-                        {"LMG_mas_mk48_F_d","",200},
-                        {"100Rnd_mas_762x51_Stanag","",10},
-
-                        {"srifle_mas_m24_d","",200},
-                        {"5Rnd_mas_762x51_Stanag","",10},
-
-                        {"rhs_weap_XM2010_d","",200},
-                        {"rhsusf_5Rnd_300winmag_xm2010","",10},
-
-                        {"srifle_mas_lrr","",200},
-                        {"10Rnd_mas_338_Stanag","",10},
-
+                        {"CUP_arifle_M16A4_Base","",200},
+												{"CUP_arifle_M16A4_GL","",200},
+                        {"CUP_arifle_M4A1_desert","",200},
+												{"CUP_arifle_M4A1_BUIS_desert_GL","",200},
+                        {"CUP_arifle_Mk16_STD_FG","",200},
+                        {"CUP_arifle_Mk16_STD_EGLM","",200},
+												{"CUP_arifle_Mk16_SV","",200},
+                       	{"CUP_30Rnd_556x45_Stanag","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+						
+												{"CUP_arifle_G36A_camo","",200},
+                        {"CUP_arifle_G36C_camo","",200},
+                        {"CUP_arifle_G36K_camo","",200},
+                        {"CUP_30Rnd_556x45_G36","",10},
+                        
+                        {"CUP_arifle_MG36","",200},
+                        {"CUP_100Rnd_556x45_BetaCMag","",10},
+                        
+                        {"CUP_srifle_Mk12SPR","",200},
+                        {"CUP_20Rnd_556x45_Stanag","",10},
+                        
+                        {"CUP_lmg_M249","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M24","",10},
+                        
+                        {"CUP_srifle_DMR","",200},
+                        {"CUP_20Rnd_762x51_DMR","",10},
+                        
+                        {"CUP_arifle_Mk17_STD_FG","",200},
+                        {"CUP_arifle_Mk17_STD_EGLM","",200},
+                        {"CUP_arifle_Mk20","",200},
+                        {"CUP_20Rnd_762x51_B_SCAR","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_lmg_L110A1","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249","",10},
+                        
+                        {"CUP_srifle_M24_des","",200},
+                        {"CUP_5Rnd_762x51_M24","",10},                    
+                        
+                        {"CUP_lmg_M60A4","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_glaunch_Mk13","",200},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_srifle_M40A3","",200},
+                        {"CUP_5Rnd_762x51_M24","",10},
+                        
+                        {"CUP_lmg_Mk48_des","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_srifle_M110","",200},
+                        {"CUP_20Rnd_762x51_B_M110","",10},
+                        
+                        {"CUP_lmg_M240","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_srifle_G22_des","",200},
+                        {"CUP_5Rnd_762x67_G22","",10},
+                        
+                        {"CUP_srifle_AWM_des","",200},
+                        {"CUP_5Rnd_86x70_L115A1","",10},
+                        
+                        {"CUP_srifle_M14","",200},
+                        {"CUP_20Rnd_762x51_DMR","",10},
+                        
                         {"srifle_DMR_05_tan_f","",200},
                         {"10Rnd_93x64_DMR_05_Mag","",10},
-
-                        {"srifle_LRR_camo_F","",200},
-                        {"7Rnd_408_Mag","",10},
-
-                        {"MMG_02_sand_F","",200},
-                        {"130Rnd_338_Mag","",10},
-
-                        {"rhs_weap_M136_hedp","",200},
-                        {"rhs_m136_hedp_mag","",10},
-
-                        {"hgun_mas_bhp_F","",200},
-                        {"15Rnd_mas_9x21_Mag","",10},
-                          
-												{"NONE","Aufsätze",0},
-                        {"FHQ_optic_MicroCCO_tan","",50},
-                        {"FHQ_optic_AIM_tan","",50},
+                        
+                        {"CUP_srifle_AS50","",200},
+                        {"CUP_5Rnd_127x99_as50_M","",10},
+                        
+                        {"CUP_srifle_M107_Base","",200},
+                        {"CUP_10Rnd_127x99_M107","",10},
+                        
+                        {"CUP_launch_Mk153Mod0","",200},
+                        {"CUP_SMAW_HEDP_M","",10},
+                        
+                        {"CUP_hgun_Duty","",200},
+												{"16Rnd_9x21_Mag","",10},
+                       	{"CUP_hgun_M9","",200},
+                        {"CUP_15Rnd_9x19_M9","",10},
+                        
+                        
+                        {"NONE","Aufsätze",0},
+                        {"CUP_optic_CompM2_Black","",50},
+                        {"CUP_optic_RCO","",50},
+                        {"optic_NVS","",50},
+                        {"CUP_optic_ACOG","",50},
                         {"FHQ_optic_AimM_TAN","",50},
-                        {"FHQ_optic_HWS_tan","",50},
-                        {"FHQ_optic_ACOG","", 50},
-                        {"FHQ_optic_HWS_G33_tan","",50},
+                        {"CUP_optic_SB_11_4x20_PM","",50},
+                        {"CUP_optic_SB_3_12x50_PMII","",50},
+                        {"CUP_optic_ELCAN_SpecterDR","",50},
                         {"FHQ_optic_ACOG_tan","",50},
-												{"rhsusf_acc_ACOG3","",50},
-												{"rhsusf_acc_LEUPOLDMK4_2","",50},
+                        {"CUP_optic_Leupold_VX3","",50},
                         {"optic_AMS_snd","",50},
-                        {"optic_SOS","",50},
-                        {"FHQ_optic_LeupoldERT_tan","",50},
                         {"optic_LRPS","",50},
+                        
                           
 												{"NONE","Equipment",0},
-												{"ACE_RangeCard","",50},
                         {"MiniGrenade","",50},
-                        {"1Rnd_HE_Grenade_shell","",50},
                         {"HandGrenade","",50},
-                        {"rhs_mag_mk84","",50},
-                        {"bipod_01_F_snd","",50},
-                        {"ACE_Vector","",50},
-                        {"Rangefinder","",50}, 
-												{"ACE_Yardage450","",50},
                         {"NVGoggles","",50},
+                        {"CUP_bipod_VLTOR_Modpod","",10},
+                        {"CUP_Vector21N","",50},
+                        {"Rangefinder","",50},
+                        {"ACE_RangeCard","",50},
                         {"ACE_ATragMX","",50},
-                        {"ACE_Banana","",100},
-												{"ACE_Kestrel4500","",50},
+                        {"ACE_Kestrel4500","",50},
                         {"ACE_HuntIR_monitor","",50},
-												{"ACE_HuntIR_M203","",50}
+                        {"ACE_HuntIR_M203","",50}
         };
     };
 	
@@ -1072,92 +1627,111 @@ class WeaponShops {
         msg = "Du bist hier falsch!";
         items[] = {
           							{"NONE","Waffen",0},
-                        {"arifle_mas_m16","",200},
-                        {"arifle_mas_m4c","",200},
-                        {"arifle_mas_m4","",200},
-                        {"arifle_mas_g36c","",200},
-                        {"arifle_mas_m4_m203_d","",200},
-                        {"arifle_mas_mk16_l_gl","",200},
-                        {"30Rnd_mas_556x45_Stanag","",10},
-
-                        {"LMG_mas_M249_F","",200},
-                        {"200Rnd_mas_556x45_Stanag","",200},
-
-                        {"hlc_rifle_SAMR","",200},
-                        {"30Rnd_556x45_Stanag","",10},
-
-                        {"arifle_mas_g3","",200},
-                        {"arifle_mas_g3_m203","",200},
-                        {"arifle_mas_mk17","",200},
-                        {"arifle_mas_mk17_gl","",200},
-                        {"srifle_mas_sr25_d","",200},
-                        {"arifle_mas_hk417c_d","",200},
-                        {"srifle_mas_hk417_d","",200},
-                        {"srifle_mas_ebr","",200},
-                        {"srifle_mas_m110","",200},
-                        {"20Rnd_mas_762x51_Stanag","",10},
-
-                        {"LMG_mas_mk48_F_d","",200},
-                        {"100Rnd_mas_762x51_Stanag","",10},
-
-                        {"srifle_mas_m24_d","",200},
-                        {"5Rnd_mas_762x51_Stanag","",10},
-
-                        {"rhs_weap_XM2010_d","",200},
-                        {"rhsusf_5Rnd_300winmag_xm2010","",10},
-
-                        {"srifle_mas_lrr","",200},
-                        {"10Rnd_mas_338_Stanag","",10},
-
+                        {"CUP_arifle_M16A4_Base","",200},
+												{"CUP_arifle_M16A4_GL","",200},
+                        {"CUP_arifle_M4A1_desert","",200},
+												{"CUP_arifle_M4A1_BUIS_desert_GL","",200},
+                        {"CUP_arifle_Mk16_STD_FG","",200},
+                        {"CUP_arifle_Mk16_STD_EGLM","",200},
+												{"CUP_arifle_Mk16_SV","",200},
+                       	{"CUP_30Rnd_556x45_Stanag","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+						
+												{"CUP_arifle_G36A_camo","",200},
+                        {"CUP_arifle_G36C_camo","",200},
+                        {"CUP_arifle_G36K_camo","",200},
+                        {"CUP_30Rnd_556x45_G36","",10},
+                        
+                        {"CUP_arifle_MG36","",200},
+                        {"CUP_100Rnd_556x45_BetaCMag","",10},
+                        
+                        {"CUP_srifle_Mk12SPR","",200},
+                        {"CUP_20Rnd_556x45_Stanag","",10},
+                        
+                        {"CUP_lmg_M249","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M24","",10},
+                        
+                        {"CUP_srifle_DMR","",200},
+                        {"CUP_20Rnd_762x51_DMR","",10},
+                        
+                        {"CUP_arifle_Mk17_STD_FG","",200},
+                        {"CUP_arifle_Mk17_STD_EGLM","",200},
+                        {"CUP_arifle_Mk20","",200},
+                        {"CUP_20Rnd_762x51_B_SCAR","",10},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_lmg_L110A1","",200},
+                        {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249","",10},
+                        
+                        {"CUP_srifle_M24_des","",200},
+                        {"CUP_5Rnd_762x51_M24","",10},                    
+                        
+                        {"CUP_lmg_M60A4","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_glaunch_Mk13","",200},
+                        {"CUP_1Rnd_HE_M203","",10},
+                        
+                        {"CUP_srifle_M40A3","",200},
+                        {"CUP_5Rnd_762x51_M24","",10},
+                        
+                        {"CUP_lmg_Mk48_des","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_srifle_M110","",200},
+                        {"CUP_20Rnd_762x51_B_M110","",10},
+                        
+                        {"CUP_lmg_M240","",200},
+                        {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",10},
+                        
+                        {"CUP_srifle_G22_des","",200},
+                        {"CUP_5Rnd_762x67_G22","",10},
+                        
+                        {"CUP_srifle_AWM_des","",200},
+                        {"CUP_5Rnd_86x70_L115A1","",10},
+                        
+                        {"CUP_srifle_M14","",200},
+                        {"CUP_20Rnd_762x51_DMR","",10},
+                        
                         {"srifle_DMR_05_tan_f","",200},
                         {"10Rnd_93x64_DMR_05_Mag","",10},
-
-                        {"srifle_LRR_camo_F","",200},
-                        {"7Rnd_408_Mag","",10},
-
-                        {"srifle_DMR_04_Tan_F","",200},
-                        {"10Rnd_127x54_Mag","",10},
-
-                        {"MMG_02_sand_F","",200},
-                        {"130Rnd_338_Mag","",10},
-
-                        {"rhs_weap_M136_hedp","",200},
-                        {"rhs_m136_hedp_mag","",10},
-
-                        {"hgun_mas_bhp_F","",200},
-                        {"15Rnd_mas_9x21_Mag","",10},
+                        
+                        {"CUP_launch_Mk153Mod0","",200},
+                        {"CUP_SMAW_HEDP_M","",10},
+                        
+                        {"CUP_hgun_Duty","",200},
+												{"16Rnd_9x21_Mag","",10},
+                       	{"CUP_hgun_M9","",200},
+                        {"CUP_15Rnd_9x19_M9","",10},
+                        
                           
 												{"NONE","Aufsätze",0},
-                        {"FHQ_optic_MicroCCO_tan","",50},
-                        {"FHQ_optic_AIM_tan","",50},
+                        {"CUP_optic_CompM2_Black","",50},
+                        {"CUP_optic_RCO","",50},
+                        {"optic_NVS","",50},
+                        {"CUP_optic_ACOG","",50},
                         {"FHQ_optic_AimM_TAN","",50},
-                        {"FHQ_optic_HWS_tan","",50},
-                        {"FHQ_optic_ACOG","", 50},
-                        {"FHQ_optic_HWS_G33_tan","",50},
+                        {"CUP_optic_SB_11_4x20_PM","",50},
+                        {"CUP_optic_SB_3_12x50_PMII","",50},
+                        {"CUP_optic_ELCAN_SpecterDR","",50},
                         {"FHQ_optic_ACOG_tan","",50},
-                        {"rhsusf_acc_ACOG3","",50},
-												{"rhsusf_acc_LEUPOLDMK4_2","",50},
+                        {"CUP_optic_Leupold_VX3","",50},
                         {"optic_AMS_snd","",50},
-                        {"optic_SOS","",50},
-                        {"FHQ_optic_LeupoldERT_tan","",50},
                         {"optic_LRPS","",50},
+                        
                           
 												{"NONE","Equipment",0},
-												{"ACE_RangeCard","",50},
                         {"MiniGrenade","",50},
-                        {"1Rnd_HE_Grenade_shell","",50},
                         {"HandGrenade","",50},
-                        {"rhs_mag_mk84","",50},
-                        {"bipod_01_F_snd","",50},
-                        {"ACE_Vector","",50},
-                        {"Rangefinder","",50}, 
-                        {"ACE_Yardage450","",50},
                         {"NVGoggles","",50},
-												{"ACE_ATragMX","",50},
-												{"ACE_Banana","",100},
-												{"ACE_Kestrel4500","",50},
+                        {"CUP_bipod_VLTOR_Modpod","",10},
+                        {"CUP_Vector21N","",50},
+                        {"Rangefinder","",50},
+                        {"ACE_RangeCard","",50},
+                        {"ACE_ATragMX","",50},
+                        {"ACE_Kestrel4500","",50},
                         {"ACE_HuntIR_monitor","",50},
-              					{"ACE_HuntIR_M203","",50}
+                        {"ACE_HuntIR_M203","",50}
         };
     };
 	
@@ -1169,8 +1743,8 @@ class WeaponShops {
         msg = "Du hast noch nicht das richtige Level";
         items[] = {
            {"NONE","Waffen",0},
-		   {"hgun_mas_mak_F","",300},
-           {"8Rnd_mas_9x18_Mag","",20},
+		       {"CUP_hgun_Makarov","",300},
+           {"CUP_8Rnd_9x18_Makarov_M","",20},
              
            {"NONE","Equipment",0},
            {"Binocular","",200},  
@@ -1187,10 +1761,10 @@ class WeaponShops {
         msg = "Du hast noch nicht das richtige Level";
         items[] = {
              {"NONE","Waffen",0},
-			 {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
+			       {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
                
              {"NONE","Equipment",0},
              {"Binocular","",200},  
@@ -1207,12 +1781,12 @@ class WeaponShops {
         msg = "Du hast noch nicht das richtige Level";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
+					   {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
                
              {"NONE","Equipment",0},
              {"Binocular","",200},
@@ -1231,14 +1805,14 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"30Rnd_mas_545x39_mag","",55},
+					   {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_30Rnd_545x39_AK_M","",55},
                
              {"NONE","Equipment",0},
              {"rhsusf_ANPVS_14","",400},  
@@ -1257,15 +1831,15 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-			{"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"30Rnd_mas_545x39_mag","",55},
+             {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350},
+             {"CUP_30Rnd_545x39_AK_M","",55},
                
              {"NONE","Equipment",0},
              {"rhsusf_ANPVS_14","",400},  
@@ -1284,17 +1858,17 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-			 {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"30Rnd_mas_545x39_mag","",55},
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350},
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
                
              {"NONE","Equipment",0},
              {"rhsusf_ANPVS_14","",400},  
@@ -1314,21 +1888,25 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-			 {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},  
-             {"30Rnd_mas_545x39_mag","",55},
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150}, 
+             {"CUP_optic_Kobra","",150}, 
                
              {"NONE","Equipment",0},
              {"ACE_DeadManSwitch","",500},  
@@ -1349,22 +1927,25 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},  
-             {"30Rnd_mas_545x39_mag","",55},
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150}, 
-             {"FHQ_optic_AC12136","",200},  
+             {"CUP_optic_Kobra","",150}, 
+             
                
              {"NONE","Equipment",0},
              {"ACE_DeadManSwitch","",500},  
@@ -1385,22 +1966,25 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},  
-             {"30Rnd_mas_545x39_mag","",55},
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150}, 
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -1427,23 +2011,28 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},  
-             {"30Rnd_mas_545x39_mag","",55},
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_30Rnd_556x45_Stanag","",60},
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150}, 
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -1471,24 +2060,31 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},
-             {"arifle_mas_ak_74m_sf","",1500},  
-             {"30Rnd_mas_545x39_mag","",55},
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
-               
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150}, 
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
+             {"optic_mas_acog","",300},
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -1517,25 +2113,32 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},
-             {"arifle_mas_ak_74m_sf","",1500},  
-             {"30Rnd_mas_545x39_mag","",55},
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150}, 
-             {"FHQ_optic_AC12136","",200},
-             {"optic_mas_acog","",300},  
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
+             {"optic_mas_acog","",300},
+               
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -1564,28 +2167,32 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-			 {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},
-             {"arifle_mas_ak_74m_sf","",1500},
-             {"arifle_mas_ak_74m_gl","",1800},  
-             {"30Rnd_mas_545x39_mag","",55},
-             {"1Rnd_HE_Grenade_shell","",450},  
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+                                    
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150}, 
-             {"FHQ_optic_AC12136","",200},
-             {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},  
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
+             {"optic_mas_acog","",300}, 
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -1614,29 +2221,32 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},
-             {"arifle_mas_ak_74m_sf","",1500},
-             {"arifle_mas_ak_74m_gl","",1800},
-             {"arifle_mas_ak_74m_sf_gl","",1950},  
-             {"30Rnd_mas_545x39_mag","",55},
-             {"1Rnd_HE_Grenade_shell","",450},  
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"UP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150}, 
-             {"FHQ_optic_AC12136","",200},
-             {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},  
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
+             {"optic_mas_acog","",300}, 
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -1665,32 +2275,39 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},
-             {"arifle_mas_ak_74m_sf","",1500},
-             {"arifle_mas_ak_74m_gl","",1800},
-             {"arifle_mas_ak_74m_sf_gl","",1950},  
-             {"30Rnd_mas_545x39_mag","",55},
-             {"1Rnd_HE_Grenade_shell","",450},  
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
-             {"LMG_mas_rpk_F","",2250},
-             {"100Rnd_mas_545x39_mag","",300},  
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2500},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150}, 
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},  
+             {"CUP_optic_PSO_1","",500},
+             
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -1719,32 +2336,36 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},
-             {"arifle_mas_ak_74m_sf","",1500},
-             {"arifle_mas_ak_74m_gl","",1800},
-             {"arifle_mas_ak_74m_sf_gl","",1950},  
-             {"30Rnd_mas_545x39_mag","",55},
-             {"1Rnd_HE_Grenade_shell","",450},  
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
-             {"LMG_mas_rpk_F","",2250},
-             {"100Rnd_mas_545x39_mag","",300},  
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2500},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150}, 
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150}, 
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},  
+             {"CUP_optic_PSO_1","",500}, 
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -1774,34 +2395,41 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},
-             {"arifle_mas_ak_74m_sf","",1500},
-             {"arifle_mas_ak_74m_gl","",1800},
-             {"arifle_mas_ak_74m_sf_gl","",1950},  
-             {"30Rnd_mas_545x39_mag","",55},
-             {"1Rnd_HE_Grenade_shell","",450},  
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
-             {"LMG_mas_rpk_F","",2250},
-             {"100Rnd_mas_545x39_mag","",300},
-             {"srifle_DMR_01_F","",2750},
-             {"10Rnd_762x54_Mag","",250},  
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150}, 
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},  
+             {"CUP_optic_PSO_1","",500},
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -1831,34 +2459,40 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},
-             {"arifle_mas_ak_74m_sf","",1500},
-             {"arifle_mas_ak_74m_gl","",1800},
-             {"arifle_mas_ak_74m_sf_gl","",1950},  
-             {"30Rnd_mas_545x39_mag","",55},
-             {"1Rnd_HE_Grenade_shell","",450},  
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
-             {"LMG_mas_rpk_F","",2250},
-             {"100Rnd_mas_545x39_mag","",300},
-             {"srifle_DMR_01_F","",2750},
-             {"10Rnd_762x54_Mag","",250},  
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150}, 
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},  
+             {"CUP_optic_PSO_1","",500},  
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -1889,36 +2523,43 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},
-             {"arifle_mas_ak_74m_sf","",1500},
-             {"arifle_mas_ak_74m_gl","",1800},
-             {"arifle_mas_ak_74m_sf_gl","",1950},  
-             {"30Rnd_mas_545x39_mag","",55},
-             {"1Rnd_HE_Grenade_shell","",450},  
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
-             {"LMG_mas_rpk_F","",2250},
-             {"100Rnd_mas_545x39_mag","",300},
-             {"srifle_DMR_01_F","",2750},
-             {"10Rnd_762x54_Mag","",250},
-             {"arifle_mas_fal_m203","",3250},
-             {"20Rnd_mas_762x51_Stanag","",300},  
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150}, 
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},  
+             {"CUP_optic_PSO_1","",500}, 
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -1949,36 +2590,42 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},
-             {"arifle_mas_ak_74m_sf","",1500},
-             {"arifle_mas_ak_74m_gl","",1800},
-             {"arifle_mas_ak_74m_sf_gl","",1950},
-             {"30Rnd_mas_545x39_mag","",55},
-             {"1Rnd_HE_Grenade_shell","",450},
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
-             {"LMG_mas_rpk_F","",2250},
-             {"100Rnd_mas_545x39_mag","",300},
-             {"srifle_DMR_01_F","",2750},
-             {"10Rnd_762x54_Mag","",250},
-             {"arifle_mas_fal_m203","",3250},
-             {"20Rnd_mas_762x51_Stanag","",300},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
+             {"CUP_optic_PSO_1","",500},
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -2010,36 +2657,44 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},
-             {"arifle_mas_ak_74m_sf","",1500},
-             {"arifle_mas_ak_74m_gl","",1800},
-             {"arifle_mas_ak_74m_sf_gl","",1950},
-             {"30Rnd_mas_545x39_mag","",55},
-             {"1Rnd_HE_Grenade_shell","",450},
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
-             {"LMG_mas_rpk_F","",2250},
-             {"100Rnd_mas_545x39_mag","",300},
-             {"srifle_DMR_01_F","",2750},
-             {"10Rnd_762x54_Mag","",250},
-             {"arifle_mas_fal_m203","",3250},
-             {"20Rnd_mas_762x51_Stanag","",300},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
+             
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -2074,39 +2729,46 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},
-             {"arifle_mas_ak_74m_sf","",1500},
-             {"arifle_mas_ak_74m_gl","",1800},
-             {"arifle_mas_ak_74m_sf_gl","",1950},
-             {"30Rnd_mas_545x39_mag","",55},
-             {"1Rnd_HE_Grenade_shell","",450},
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
-             {"LMG_mas_rpk_F","",2250},
-             {"100Rnd_mas_545x39_mag","",300},
-             {"srifle_DMR_01_F","",2750},
-             {"10Rnd_762x54_Mag","",250},
-             {"arifle_mas_fal_m203","",3250},
-             {"20Rnd_mas_762x51_Stanag","",300},
-             {"rhs_weap_svdp","",3750},
-             {"rhs_10Rnd_762x54mmR_7N1","",300},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_glaunch_M79","",1000},
+             {"CUP_1Rnd_HE_GP25_M","",450},
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
-             {"rhs_acc_pso1m2","",600},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -2141,40 +2803,46 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},
-             {"arifle_mas_ak_74m_sf","",1500},
-             {"arifle_mas_ak_74m_gl","",1800},
-             {"arifle_mas_ak_74m_sf_gl","",1950},
-             {"30Rnd_mas_545x39_mag","",55},
-             {"1Rnd_HE_Grenade_shell","",450},
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
-             {"LMG_mas_rpk_F","",2250},
-             {"100Rnd_mas_545x39_mag","",300},
-             {"srifle_DMR_01_F","",2750},
-             {"10Rnd_762x54_Mag","",250},
-             {"arifle_mas_fal_m203","",3250},
-             {"20Rnd_mas_762x51_Stanag","",300},
-             {"rhs_weap_svdp","",3750},
-             {"rhs_10Rnd_762x54mmR_7N1","",300},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_glaunch_M79","",1000},
+             {"CUP_1Rnd_HE_GP25_M","",450},
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
-             {"rhs_acc_pso1m2","",600},
-             {"optic_mas_PSO_nv_day","",850},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -2209,42 +2877,50 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},
-             {"arifle_mas_ak_74m_sf","",1500},
-             {"arifle_mas_ak_74m_gl","",1800},
-             {"arifle_mas_ak_74m_sf_gl","",1950},
-             {"30Rnd_mas_545x39_mag","",55},
-             {"1Rnd_HE_Grenade_shell","",450},
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
-             {"LMG_mas_rpk_F","",2250},
-             {"100Rnd_mas_545x39_mag","",300},
-             {"srifle_DMR_01_F","",2750},
-             {"10Rnd_762x54_Mag","",250},
-             {"arifle_mas_fal_m203","",3250},
-             {"20Rnd_mas_762x51_Stanag","",300},
-             {"rhs_weap_svdp","",3750},
-             {"rhs_10Rnd_762x54mmR_7N1","",300},
-             {"srifle_mas_svd","",4250},
-             {"10Rnd_mas_762x54_mag","",300},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_glaunch_M79","",1000},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_SVD","",4250},
+             {"CUP_10Rnd_762x54_SVD_M","",450},
+             
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
-             {"rhs_acc_pso1m2","",600},
-             {"optic_mas_PSO_nv_day","",850},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -2280,44 +2956,52 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},
-             {"arifle_mas_ak_74m_sf","",1500},
-             {"arifle_mas_ak_74m_gl","",1800},
-             {"arifle_mas_ak_74m_sf_gl","",1950},
-             {"30Rnd_mas_545x39_mag","",55},
-             {"1Rnd_HE_Grenade_shell","",450},
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
-             {"LMG_mas_rpk_F","",2250},
-             {"100Rnd_mas_545x39_mag","",300},
-             {"srifle_DMR_01_F","",2750},
-             {"10Rnd_762x54_Mag","",250},
-             {"arifle_mas_fal_m203","",3250},
-             {"20Rnd_mas_762x51_Stanag","",300},
-             {"rhs_weap_svdp","",3750},
-             {"rhs_10Rnd_762x54mmR_7N1","",300},
-             {"srifle_mas_svd","",4250},
-             {"10Rnd_mas_762x54_mag","",300},
-             {"rhs_weap_rpg7","",7500},
-             {"rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",1250},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_glaunch_M79","",1000},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_SVD","",4250},
+             {"CUP_10Rnd_762x54_SVD_M","",450},
+             
+             {"CUP_launch_RPG7V","",7500},
+             {"CUP_PG7V_M","",1250},
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
-             {"rhs_acc_pso1m2","",600},
-             {"optic_mas_PSO_nv_day","",850},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -2353,44 +3037,52 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},
-             {"arifle_mas_ak_74m_sf","",1500},
-             {"arifle_mas_ak_74m_gl","",1800},
-             {"arifle_mas_ak_74m_sf_gl","",1950},
-             {"30Rnd_mas_545x39_mag","",55},
-             {"1Rnd_HE_Grenade_shell","",450},
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
-             {"LMG_mas_rpk_F","",2250},
-             {"100Rnd_mas_545x39_mag","",300},
-             {"srifle_DMR_01_F","",2750},
-             {"10Rnd_762x54_Mag","",250},
-             {"arifle_mas_fal_m203","",3250},
-             {"20Rnd_mas_762x51_Stanag","",300},
-             {"rhs_weap_svdp","",3750},
-             {"rhs_10Rnd_762x54mmR_7N1","",300},
-             {"srifle_mas_svd","",4250},
-             {"10Rnd_mas_762x54_mag","",300},
-             {"rhs_weap_rpg7","",7500},
-             {"rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",1250},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_glaunch_M79","",1000},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_SVD","",4250},
+             {"CUP_10Rnd_762x54_SVD_M","",450},
+             
+             {"CUP_launch_RPG7V","",7500},
+             {"CUP_PG7V_M","",1250},
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
-             {"rhs_acc_pso1m2","",600},
-             {"optic_mas_PSO_nv_day","",850},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -2426,46 +3118,56 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},
-             {"arifle_mas_ak_74m_sf","",1500},
-             {"arifle_mas_ak_74m_gl","",1800},
-             {"arifle_mas_ak_74m_sf_gl","",1950},
-             {"30Rnd_mas_545x39_mag","",55},
-             {"1Rnd_HE_Grenade_shell","",450},
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
-             {"LMG_mas_rpk_F","",2250},
-             {"100Rnd_mas_545x39_mag","",300},
-             {"srifle_DMR_01_F","",2750},
-             {"10Rnd_762x54_Mag","",250},
-             {"arifle_mas_fal_m203","",3250},
-             {"20Rnd_mas_762x51_Stanag","",300},
-             {"rhs_weap_svdp","",3750},
-             {"rhs_10Rnd_762x54mmR_7N1","",300},
-             {"srifle_mas_svd","",4250},
-             {"10Rnd_mas_762x54_mag","",300},
-             {"rhs_weap_rpg7","",7500},
-             {"rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",1250},
-             {"arifle_mas_akm","",5500},
-             {"30Rnd_mas_762x39_mag","",250},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_glaunch_M79","",1000},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_SVD","",4250},
+             {"CUP_10Rnd_762x54_SVD_M","",450},
+             
+             {"CUP_launch_RPG7V","",7500},
+             {"CUP_PG7V_M","",1250},
+             
+             {"CUP_arifle_AKM","",5500},
+             {"CUP_30Rnd_762x39_AK47_M","",250},
+             
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
-             {"rhs_acc_pso1m2","",600},
-             {"optic_mas_PSO_nv_day","",850},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -2503,47 +3205,60 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},
-             {"arifle_mas_ak_74m_sf","",1500},
-             {"arifle_mas_ak_74m_gl","",1800},
-             {"arifle_mas_ak_74m_sf_gl","",1950},
-             {"30Rnd_mas_545x39_mag","",55},
-             {"1Rnd_HE_Grenade_shell","",450},
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
-             {"LMG_mas_rpk_F","",2250},
-             {"100Rnd_mas_545x39_mag","",300},
-             {"srifle_DMR_01_F","",2750},
-             {"10Rnd_762x54_Mag","",250},
-             {"arifle_mas_fal_m203","",3250},
-             {"20Rnd_mas_762x51_Stanag","",300},
-             {"rhs_weap_svdp","",3750},
-             {"rhs_10Rnd_762x54mmR_7N1","",300},
-             {"srifle_mas_svd","",4250},
-             {"srifle_mas_m91","",4750},
-             {"10Rnd_mas_762x54_mag","",300},
-             {"rhs_weap_rpg7","",7500},
-             {"rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",1250},
-             {"arifle_mas_akm","",5500},
-             {"30Rnd_mas_762x39_mag","",250},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_glaunch_M79","",1000},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_SVD","",4250},
+             {"CUP_10Rnd_762x54_SVD_M","",450},
+             
+             {"CUP_launch_RPG7V","",7500},
+             {"CUP_PG7V_M","",1250},
+             
+             {"CUP_arifle_AKM","",5500},
+             {"CUP_30Rnd_762x39_AK47_M","",250},
+             
+             {"CUP_srifle_CZ550","",4750},
+             {"CUP_5x_22_LR_17_HMR_M","",300},
+             
+             
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
-             {"rhs_acc_pso1m2","",600},
-             {"optic_mas_PSO_nv_day","",850},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -2581,48 +3296,59 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},
-             {"arifle_mas_ak_74m_sf","",1500},
-             {"arifle_mas_ak_74m_gl","",1800},
-             {"arifle_mas_ak_74m_sf_gl","",1950},
-             {"30Rnd_mas_545x39_mag","",55},
-             {"1Rnd_HE_Grenade_shell","",450},
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
-             {"LMG_mas_rpk_F","",2250},
-             {"100Rnd_mas_545x39_mag","",300},
-             {"srifle_DMR_01_F","",2750},
-             {"10Rnd_762x54_Mag","",250},
-             {"arifle_mas_fal_m203","",3250},
-             {"20Rnd_mas_762x51_Stanag","",300},
-             {"rhs_weap_svdp","",3750},
-             {"rhs_10Rnd_762x54mmR_7N1","",300},
-             {"srifle_mas_svd","",4250},
-             {"srifle_mas_m91","",4750},
-             {"10Rnd_mas_762x54_mag","",300},
-             {"rhs_weap_rpg7","",7500},
-             {"rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",1250},
-             {"arifle_mas_akm","",5500},
-             {"30Rnd_mas_762x39_mag","",250},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_glaunch_M79","",1000},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_SVD","",4250},
+             {"CUP_10Rnd_762x54_SVD_M","",450},
+             
+             {"CUP_launch_RPG7V","",7500},
+             {"CUP_PG7V_M","",1250},
+             
+             {"CUP_arifle_AKM","",5500},
+             {"CUP_30Rnd_762x39_AK47_M","",250},
+             
+             {"CUP_srifle_CZ550","",4750},
+             {"CUP_5x_22_LR_17_HMR_M","",300},
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
-             {"rhs_acc_pso1m2","",600},
-             {"optic_mas_PSO_nv_day","",850},
-             {"optic_mas_PSO_nv","",1250},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
+             {"CUP_optic_NSPU","",1000},
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -2660,49 +3386,64 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},
-             {"arifle_mas_ak_74m_sf","",1500},
-             {"arifle_mas_ak_74m_gl","",1800},
-             {"arifle_mas_ak_74m_sf_gl","",1950},
-             {"30Rnd_mas_545x39_mag","",55},
-             {"1Rnd_HE_Grenade_shell","",450},
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
-             {"LMG_mas_rpk_F","",2250},
-             {"100Rnd_mas_545x39_mag","",300},
-             {"srifle_DMR_01_F","",2750},
-             {"10Rnd_762x54_Mag","",250},
-             {"arifle_mas_fal_m203","",3250},
-             {"20Rnd_mas_762x51_Stanag","",300},
-             {"rhs_weap_svdp","",3750},
-             {"rhs_10Rnd_762x54mmR_7N1","",300},
-             {"srifle_mas_svd","",4250},
-             {"srifle_mas_m91","",4750},
-             {"10Rnd_mas_762x54_mag","",300},
-             {"rhs_weap_rpg7","",7500},
-             {"rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",1250},
-             {"arifle_mas_akm","",5500},
-             {"arifle_mas_akm_gl","",6500},
-             {"30Rnd_mas_762x39_mag","",250},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_glaunch_M79","",1000},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_SVD","",4250},
+             {"CUP_10Rnd_762x54_SVD_M","",450},
+             
+             {"CUP_launch_RPG7V","",7500},
+             {"CUP_PG7V_M","",1250},
+             
+             {"CUP_arifle_AKM","",5500},
+             {"CUP_30Rnd_762x39_AK47_M","",250},
+             
+             {"CUP_srifle_CZ550","",4750},
+             {"CUP_5x_22_LR_17_HMR_M","",300},
+             
+             {"CUP_srifle_LeeEnfield_rail","",4750},
+             {"CUP_10x_303_M","",75},
+             
+             
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
-             {"rhs_acc_pso1m2","",600},
-             {"optic_mas_PSO_nv_day","",850},
-             {"optic_mas_PSO_nv","",1250},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
+             {"CUP_optic_NSPU","",1000},
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -2741,51 +3482,65 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},
-             {"arifle_mas_ak_74m_sf","",1500},
-             {"arifle_mas_ak_74m_gl","",1800},
-             {"arifle_mas_ak_74m_sf_gl","",1950},
-             {"30Rnd_mas_545x39_mag","",55},
-             {"1Rnd_HE_Grenade_shell","",450},
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
-             {"LMG_mas_rpk_F","",2250},
-             {"100Rnd_mas_545x39_mag","",300},
-             {"srifle_DMR_01_F","",2750},
-             {"10Rnd_762x54_Mag","",250},
-             {"arifle_mas_fal_m203","",3250},
-             {"20Rnd_mas_762x51_Stanag","",300},
-             {"rhs_weap_svdp","",3750},
-             {"rhs_10Rnd_762x54mmR_7N1","",300},
-             {"srifle_mas_svd","",4250},
-             {"srifle_mas_m91","",4750},
-             {"10Rnd_mas_762x54_mag","",300},
-             {"rhs_weap_rpg7","",7500},
-             {"rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",1250},
-             {"arifle_mas_akm","",5500},
-             {"arifle_mas_akm_gl","",6500},
-             {"30Rnd_mas_762x39_mag","",250},
-             {"LMG_mas_pkm_F","",7250},
-             {"100Rnd_mas_762x54_mag","",550},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_glaunch_M79","",1000},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_SVD","",4250},
+             {"CUP_10Rnd_762x54_SVD_M","",450},
+             
+             {"CUP_launch_RPG7V","",7500},
+             {"CUP_PG7V_M","",1250},
+             
+             {"CUP_arifle_AKM","",5500},
+             {"CUP_30Rnd_762x39_AK47_M","",250},
+             
+             {"CUP_srifle_CZ550","",4750},
+             {"CUP_5x_22_LR_17_HMR_M","",300},
+             
+             {"CUP_srifle_LeeEnfield_rail","",4750},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_lmg_Pecheneg","",7250},
+             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M","",250},
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
-             {"rhs_acc_pso1m2","",600},
-             {"optic_mas_PSO_nv_day","",850},
-             {"optic_mas_PSO_nv","",1250},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
+             {"CUP_optic_NSPU","",1000},
              {"optic_KHS_old","",1750},
                
              {"NONE","Aufstellbare Geschütze",0},  
@@ -2825,52 +3580,67 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},
-             {"arifle_mas_ak_74m_sf","",1500},
-             {"arifle_mas_ak_74m_gl","",1800},
-             {"arifle_mas_ak_74m_sf_gl","",1950},
-             {"30Rnd_mas_545x39_mag","",55},
-             {"1Rnd_HE_Grenade_shell","",450},
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
-             {"LMG_mas_rpk_F","",2250},
-             {"100Rnd_mas_545x39_mag","",300},
-             {"srifle_DMR_01_F","",2750},
-             {"10Rnd_762x54_Mag","",250},
-             {"arifle_mas_fal_m203","",3250},
-             {"20Rnd_mas_762x51_Stanag","",300},
-             {"rhs_weap_svdp","",3750},
-             {"rhs_10Rnd_762x54mmR_7N1","",300},
-             {"srifle_mas_svd","",4250},
-             {"srifle_mas_m91","",4750},
-             {"10Rnd_mas_762x54_mag","",300},
-             {"rhs_weap_rpg7","",7500},
-             {"rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",1250},
-             {"rhs_rpg7_OG7V_mag","Anti-Personen Munition I",2500},
-             {"arifle_mas_akm","",5500},
-             {"arifle_mas_akm_gl","",6500},
-             {"30Rnd_mas_762x39_mag","",250},
-             {"LMG_mas_pkm_F","",7250},
-             {"100Rnd_mas_762x54_mag","",550},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_glaunch_M79","",1000},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_SVD","",4250},
+             {"CUP_10Rnd_762x54_SVD_M","",450},
+             
+             {"CUP_launch_RPG7V","",7500},
+             {"CUP_PG7V_M","",1250},
+             {"CUP_PG7VR_M","",1750},
+             
+             
+             {"CUP_arifle_AKM","",5500},
+             {"CUP_30Rnd_762x39_AK47_M","",250},
+             
+             {"CUP_srifle_CZ550","",4750},
+             {"CUP_5x_22_LR_17_HMR_M","",300},
+             
+             {"CUP_srifle_LeeEnfield_rail","",4750},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_lmg_Pecheneg","",7250},
+             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M","",250},
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
-             {"rhs_acc_pso1m2","",600},
-             {"optic_mas_PSO_nv_day","",850},
-             {"optic_mas_PSO_nv","",1250},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
+             {"CUP_optic_NSPU","",1000},
              {"optic_KHS_old","",1750},
                
              {"NONE","Aufstellbare Geschütze",0},  
@@ -2910,53 +3680,69 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					   {"hgun_mas_mak_F","",300},
-             {"8Rnd_mas_9x18_Mag","",20},
-             {"hgun_mas_acp_F","",350},
-             {"12Rnd_mas_45acp_Mag","",20},
-             {"hgun_mas_sa61_F","",425},
-             {"20Rnd_mas_765x17_Mag","",30},
-             {"arifle_mas_aks74u","",1100},
-             {"arifle_mas_ak74","",1350},
-             {"arifle_mas_aks_74_sf","",1250},
-             {"arifle_mas_ak_74m","",1400},
-             {"arifle_mas_ak_74m_sf","",1500},
-             {"arifle_mas_ak_74m_gl","",1800},
-             {"arifle_mas_ak_74m_sf_gl","",1950},
-             {"30Rnd_mas_545x39_mag","",55},
-             {"1Rnd_HE_Grenade_shell","",450},
-             {"arifle_mas_lee","",1850},
-             {"5Rnd_mas_762x51_Stanag","",75},
-             {"LMG_mas_rpk_F","",2250},
-             {"100Rnd_mas_545x39_mag","",300},
-             {"srifle_DMR_01_F","",2750},
-             {"10Rnd_762x54_Mag","",250},
-             {"arifle_mas_fal_m203","",3250},
-             {"20Rnd_mas_762x51_Stanag","",300},
-             {"rhs_weap_svdp","",3750},
-             {"rhs_10Rnd_762x54mmR_7N1","",300},
-             {"srifle_mas_svd","",4250},
-             {"srifle_mas_m91","",4750},
-             {"10Rnd_mas_762x54_mag","",300},
-             {"rhs_weap_rpg7","",7500},
-             {"rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",1250},
-             {"rhs_rpg7_OG7V_mag","Anti-Personen Munition I",2500},
-             {"arifle_mas_akm","",5500},
-             {"arifle_mas_akm_gl","",6500},
-             {"arifle_mas_m70_gl","",7250},
-             {"30Rnd_mas_762x39_mag","",250},
-             {"LMG_mas_pkm_F","",7250},
-             {"100Rnd_mas_762x54_mag","",550},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_glaunch_M79","",1000},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_SVD","",4250},
+             {"CUP_10Rnd_762x54_SVD_M","",450},
+             
+             {"CUP_launch_RPG7V","",7500},
+             {"CUP_PG7V_M","",1250},
+             {"CUP_PG7VR_M","",1750},
+             
+             {"CUP_arifle_AKM","",5500},
+             {"CUP_30Rnd_762x39_AK47_M","",250},
+             
+             {"CUP_srifle_CZ550","",4750},
+             {"CUP_5x_22_LR_17_HMR_M","",300},
+             
+             {"CUP_srifle_LeeEnfield_rail","",4750},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_lmg_Pecheneg","",7250},
+             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M","",250},
+             
+             {"CUP_arifle_Sa58RIS2","",7250},
+             {"CUP_30Rnd_Sa58_M_TracerG","",250},
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
-             {"rhs_acc_pso1m2","",600},
-             {"optic_mas_PSO_nv_day","",850},
-             {"optic_mas_PSO_nv","",1250},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
+             {"CUP_optic_NSPU","",1000},
              {"optic_KHS_old","",1750},
                
              {"NONE","Aufstellbare Geschütze",0},  
@@ -2996,53 +3782,69 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					  {"hgun_mas_mak_F","",300},
-            {"8Rnd_mas_9x18_Mag","",20},
-            {"hgun_mas_acp_F","",350},
-            {"12Rnd_mas_45acp_Mag","",20},
-            {"hgun_mas_sa61_F","",425},
-            {"20Rnd_mas_765x17_Mag","",30},
-            {"arifle_mas_aks74u","",1100},
-            {"arifle_mas_ak74","",1350},
-            {"arifle_mas_aks_74_sf","",1250},
-            {"arifle_mas_ak_74m","",1400},
-            {"arifle_mas_ak_74m_sf","",1500},
-            {"arifle_mas_ak_74m_gl","",1800},
-            {"arifle_mas_ak_74m_sf_gl","",1950},
-            {"30Rnd_mas_545x39_mag","",55},
-            {"1Rnd_HE_Grenade_shell","",450},
-            {"arifle_mas_lee","",1850},
-            {"5Rnd_mas_762x51_Stanag","",75},
-            {"LMG_mas_rpk_F","",2250},
-            {"100Rnd_mas_545x39_mag","",300},
-            {"srifle_DMR_01_F","",2750},
-            {"10Rnd_762x54_Mag","",250},
-            {"arifle_mas_fal_m203","",3250},
-            {"20Rnd_mas_762x51_Stanag","",300},
-            {"rhs_weap_svdp","",3750},
-            {"rhs_10Rnd_762x54mmR_7N1","",300},
-            {"srifle_mas_svd","",4250},
-            {"srifle_mas_m91","",4750},
-            {"10Rnd_mas_762x54_mag","",300},
-            {"rhs_weap_rpg7","",7500},
-            {"rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",1250},
-            {"rhs_rpg7_OG7V_mag","Anti-Personen Munition I",2500},
-            {"arifle_mas_akm","",5500},
-            {"arifle_mas_akm_gl","",6500},
-            {"arifle_mas_m70_gl","",7250},
-            {"30Rnd_mas_762x39_mag","",250},
-            {"LMG_mas_pkm_F","",7250},
-            {"100Rnd_mas_762x54_mag","",550},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_glaunch_M79","",1000},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_SVD","",4250},
+             {"CUP_10Rnd_762x54_SVD_M","",450},
+             
+             {"CUP_launch_RPG7V","",7500},
+             {"CUP_PG7V_M","",1250},
+             {"CUP_PG7VR_M","",1750},
+             
+             {"CUP_arifle_AKM","",5500},
+             {"CUP_30Rnd_762x39_AK47_M","",250},
+             
+             {"CUP_srifle_CZ550","",4750},
+             {"CUP_5x_22_LR_17_HMR_M","",300},
+             
+             {"CUP_srifle_LeeEnfield_rail","",4750},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_lmg_Pecheneg","",7250},
+             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M","",250},
+             
+             {"CUP_arifle_Sa58RIS2","",7250},
+             {"CUP_30Rnd_Sa58_M_TracerG","",250},
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
-             {"rhs_acc_pso1m2","",600},
-             {"optic_mas_PSO_nv_day","",850},
-             {"optic_mas_PSO_nv","",1250},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
+             {"CUP_optic_NSPU","",1000},
              {"optic_KHS_old","",1750},
                
              {"NONE","Aufstellbare Geschütze",0},  
@@ -3082,56 +3884,73 @@ class WeaponShops {
         level = 41;
         msg = "";
         items[] = {
-             {"NONE","Waffen",0},
-					  {"hgun_mas_mak_F","",300},
-            {"8Rnd_mas_9x18_Mag","",20},
-            {"hgun_mas_acp_F","",350},
-            {"12Rnd_mas_45acp_Mag","",20},
-            {"hgun_mas_sa61_F","",425},
-            {"20Rnd_mas_765x17_Mag","",30},
-            {"arifle_mas_aks74u","",1100},
-            {"arifle_mas_ak74","",1350},
-            {"arifle_mas_aks_74_sf","",1250},
-            {"arifle_mas_ak_74m","",1400},
-            {"arifle_mas_ak_74m_sf","",1500},
-            {"arifle_mas_ak_74m_gl","",1800},
-            {"arifle_mas_ak_74m_sf_gl","",1950},
-            {"30Rnd_mas_545x39_mag","",55},
-            {"1Rnd_HE_Grenade_shell","",450},
-            {"arifle_mas_lee","",1850},
-            {"5Rnd_mas_762x51_Stanag","",75},
-            {"LMG_mas_rpk_F","",2250},
-            {"100Rnd_mas_545x39_mag","",300},
-            {"srifle_DMR_01_F","",2750},
-            {"10Rnd_762x54_Mag","",250},
-            {"arifle_mas_fal_m203","",3250},
-            {"20Rnd_mas_762x51_Stanag","",300},
-            {"rhs_weap_svdp","",3750},
-            {"rhs_10Rnd_762x54mmR_7N1","",300},
-            {"srifle_mas_svd","",4250},
-            {"srifle_mas_m91","",4750},
-            {"10Rnd_mas_762x54_mag","",300},
-            {"rhs_weap_rpg7","",7500},
-            {"rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",1250},
-            {"rhs_rpg7_OG7V_mag","Anti-Personen Munition I",2500},
-            {"arifle_mas_akm","",5500},
-            {"arifle_mas_akm_gl","",6500},
-            {"arifle_mas_m70_gl","",7250},
-            {"30Rnd_mas_762x39_mag","",250},
-            {"LMG_mas_pkm_F","",7250},
-            {"100Rnd_mas_762x54_mag","",550},
-            {"srifle_DMR_06_olive_F","",7250},
-            {"20Rnd_762x51_Mag","",350},
+            {"NONE","Waffen",0},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_glaunch_M79","",1000},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_SVD","",4250},
+             {"CUP_10Rnd_762x54_SVD_M","",450},
+             
+             {"CUP_launch_RPG7V","",7500},
+             {"CUP_PG7V_M","",1250},
+             {"CUP_PG7VR_M","",1750},
+             
+             {"CUP_arifle_AKM","",5500},
+             {"CUP_30Rnd_762x39_AK47_M","",250},
+             
+             {"CUP_srifle_CZ550","",4750},
+             {"CUP_5x_22_LR_17_HMR_M","",300},
+             
+             {"CUP_srifle_LeeEnfield_rail","",4750},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_lmg_Pecheneg","",7250},
+             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M","",250},
+             
+             {"CUP_arifle_Sa58RIS2","",7250},
+             {"CUP_30Rnd_Sa58_M_TracerG","",250},
+             
+             {"CUP_srifle_CZ750","",7500},
+             {"CUP_10Rnd_762x51_CZ750_Tracer","",350},
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
-             {"rhs_acc_pso1m2","",600},
-             {"optic_mas_PSO_nv_day","",850},
-             {"optic_mas_PSO_nv","",1250},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
+             {"CUP_optic_NSPU","",1000},
              {"optic_KHS_old","",1750},
              {"ACE_optic_LRPS_PIP","",2250},
                
@@ -3173,56 +3992,74 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					  {"hgun_mas_mak_F","",300},
-            {"8Rnd_mas_9x18_Mag","",20},
-            {"hgun_mas_acp_F","",350},
-            {"12Rnd_mas_45acp_Mag","",20},
-            {"hgun_mas_sa61_F","",425},
-            {"20Rnd_mas_765x17_Mag","",30},
-            {"arifle_mas_aks74u","",1100},
-            {"arifle_mas_ak74","",1350},
-            {"arifle_mas_aks_74_sf","",1250},
-            {"arifle_mas_ak_74m","",1400},
-            {"arifle_mas_ak_74m_sf","",1500},
-            {"arifle_mas_ak_74m_gl","",1800},
-            {"arifle_mas_ak_74m_sf_gl","",1950},
-            {"30Rnd_mas_545x39_mag","",55},
-            {"1Rnd_HE_Grenade_shell","",450},
-            {"arifle_mas_lee","",1850},
-            {"5Rnd_mas_762x51_Stanag","",75},
-            {"LMG_mas_rpk_F","",2250},
-            {"100Rnd_mas_545x39_mag","",300},
-            {"srifle_DMR_01_F","",2750},
-            {"10Rnd_762x54_Mag","",250},
-            {"arifle_mas_fal_m203","",3250},
-            {"20Rnd_mas_762x51_Stanag","",300},
-            {"rhs_weap_svdp","",3750},
-            {"rhs_10Rnd_762x54mmR_7N1","",300},
-            {"srifle_mas_svd","",4250},
-            {"srifle_mas_m91","",4750},
-            {"10Rnd_mas_762x54_mag","",300},
-            {"rhs_weap_rpg7","",7500},
-            {"rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",1250},
-            {"rhs_rpg7_OG7V_mag","Anti-Personen Munition I",2500},
-            {"rhs_rpg7_PG7VR_mag","Anti-Fahrzeug Munition II",3000},
-            {"arifle_mas_akm","",5500},
-            {"arifle_mas_akm_gl","",6500},
-            {"arifle_mas_m70_gl","",7250},
-            {"30Rnd_mas_762x39_mag","",250},
-            {"LMG_mas_pkm_F","",7250},
-            {"100Rnd_mas_762x54_mag","",550},
-            {"srifle_DMR_06_olive_F","",7250},
-            {"20Rnd_762x51_Mag","",350},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_glaunch_M79","",1000},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_SVD","",4250},
+             {"CUP_10Rnd_762x54_SVD_M","",450},
+             
+             {"CUP_launch_RPG7V","",7500},
+             {"CUP_PG7V_M","",1250},
+             {"CUP_PG7VR_M","",1750},
+             {"CUP_PG7VM_M","",2250},
+             
+             {"CUP_arifle_AKM","",5500},
+             {"CUP_30Rnd_762x39_AK47_M","",250},
+             
+             {"CUP_srifle_CZ550","",4750},
+             {"CUP_5x_22_LR_17_HMR_M","",300},
+             
+             {"CUP_srifle_LeeEnfield_rail","",4750},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_lmg_Pecheneg","",7250},
+             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M","",250},
+             
+             {"CUP_arifle_Sa58RIS2","",7250},
+             {"CUP_30Rnd_Sa58_M_TracerG","",250},
+             
+             {"CUP_srifle_CZ750","",7500},
+             {"CUP_10Rnd_762x51_CZ750_Tracer","",350},
+             
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
-             {"rhs_acc_pso1m2","",600},
-             {"optic_mas_PSO_nv_day","",850},
-             {"optic_mas_PSO_nv","",1250},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
+             {"CUP_optic_NSPU","",1000},
              {"optic_KHS_old","",1750},
              {"ACE_optic_LRPS_PIP","",2250},
                
@@ -3265,58 +4102,77 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					  {"hgun_mas_mak_F","",300},
-            {"8Rnd_mas_9x18_Mag","",20},
-            {"hgun_mas_acp_F","",350},
-            {"12Rnd_mas_45acp_Mag","",20},
-            {"hgun_mas_sa61_F","",425},
-            {"20Rnd_mas_765x17_Mag","",30},
-            {"arifle_mas_aks74u","",1100},
-            {"arifle_mas_ak74","",1350},
-            {"arifle_mas_aks_74_sf","",1250},
-            {"arifle_mas_ak_74m","",1400},
-            {"arifle_mas_ak_74m_sf","",1500},
-            {"arifle_mas_ak_74m_gl","",1800},
-            {"arifle_mas_ak_74m_sf_gl","",1950},
-            {"30Rnd_mas_545x39_mag","",55},
-            {"1Rnd_HE_Grenade_shell","",450},
-            {"arifle_mas_lee","",1850},
-            {"5Rnd_mas_762x51_Stanag","",75},
-            {"LMG_mas_rpk_F","",2250},
-            {"100Rnd_mas_545x39_mag","",300},
-            {"srifle_DMR_01_F","",2750},
-            {"10Rnd_762x54_Mag","",250},
-            {"arifle_mas_fal_m203","",3250},
-            {"20Rnd_mas_762x51_Stanag","",300},
-            {"rhs_weap_svdp","",3750},
-            {"rhs_10Rnd_762x54mmR_7N1","",300},
-            {"srifle_mas_svd","",4250},
-            {"srifle_mas_m91","",4750},
-            {"10Rnd_mas_762x54_mag","",300},
-            {"rhs_weap_rpg7","",7500},
-            {"rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",1250},
-            {"rhs_rpg7_OG7V_mag","Anti-Personen Munition I",2500},
-            {"rhs_rpg7_PG7VR_mag","Anti-Fahrzeug Munition II",3000},
-            {"arifle_mas_akm","",5500},
-            {"arifle_mas_akm_gl","",6500},
-            {"arifle_mas_m70_gl","",7250},
-            {"30Rnd_mas_762x39_mag","",250},
-            {"LMG_mas_pkm_F","",7250},
-            {"100Rnd_mas_762x54_mag","",550},
-            {"srifle_DMR_06_olive_F","",7250},
-            {"20Rnd_762x51_Mag","",350},
-            {"LMG_mas_m72_F","",8500},
-            {"100Rnd_mas_762x39_mag","",600},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_glaunch_M79","",1000},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_SVD","",4250},
+             {"CUP_10Rnd_762x54_SVD_M","",450},
+             
+             {"CUP_launch_RPG7V","",7500},
+             {"CUP_PG7V_M","",1250},
+             {"CUP_PG7VR_M","",1750},
+             {"CUP_PG7VM_M","",2250},
+             
+             {"CUP_arifle_AKM","",5500},
+             {"CUP_30Rnd_762x39_AK47_M","",250},
+             
+             {"CUP_srifle_CZ550","",4750},
+             {"CUP_5x_22_LR_17_HMR_M","",300},
+             
+             {"CUP_srifle_LeeEnfield_rail","",4750},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_lmg_Pecheneg","",7250},
+             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M","",250},
+             
+             {"CUP_arifle_Sa58RIS2","",7250},
+             {"CUP_30Rnd_Sa58_M_TracerG","",250},
+             
+             {"CUP_srifle_CZ750","",7500},
+             {"CUP_10Rnd_762x51_CZ750_Tracer","",350},
+             
+             {"CUP_srifle_M14","",8000},
+             {"CUP_20Rnd_762x51_DMR","",400},
+                         
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
-             {"rhs_acc_pso1m2","",600},
-             {"optic_mas_PSO_nv_day","",850},
-             {"optic_mas_PSO_nv","",1250},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
+             {"CUP_optic_NSPU","",1000},
              {"optic_KHS_old","",1750},
              {"ACE_optic_LRPS_PIP","",2250},
                
@@ -3359,61 +4215,78 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					  {"hgun_mas_mak_F","",300},
-            {"8Rnd_mas_9x18_Mag","",20},
-            {"hgun_mas_acp_F","",350},
-            {"12Rnd_mas_45acp_Mag","",20},
-            {"hgun_mas_sa61_F","",425},
-            {"20Rnd_mas_765x17_Mag","",30},
-            {"arifle_mas_aks74u","",1100},
-            {"arifle_mas_ak74","",1350},
-            {"arifle_mas_aks_74_sf","",1250},
-            {"arifle_mas_ak_74m","",1400},
-            {"arifle_mas_ak_74m_sf","",1500},
-            {"arifle_mas_ak_74m_gl","",1800},
-            {"arifle_mas_ak_74m_sf_gl","",1950},
-            {"30Rnd_mas_545x39_mag","",55},
-            {"1Rnd_HE_Grenade_shell","",450},
-            {"arifle_mas_lee","",1850},
-            {"5Rnd_mas_762x51_Stanag","",75},
-            {"LMG_mas_rpk_F","",2250},
-            {"100Rnd_mas_545x39_mag","",300},
-            {"srifle_DMR_01_F","",2750},
-            {"10Rnd_762x54_Mag","",250},
-            {"arifle_mas_fal_m203","",3250},
-            {"20Rnd_mas_762x51_Stanag","",300},
-            {"rhs_weap_svdp","",3750},
-            {"rhs_10Rnd_762x54mmR_7N1","",300},
-            {"srifle_mas_svd","",4250},
-            {"srifle_mas_m91","",4750},
-            {"10Rnd_mas_762x54_mag","",300},
-            {"rhs_weap_rpg7","",7500},
-            {"rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",1250},
-            {"rhs_rpg7_OG7V_mag","Anti-Personen Munition I",2500},
-            {"rhs_rpg7_PG7VR_mag","Anti-Fahrzeug Munition II",3000},
-            {"arifle_mas_akm","",5500},
-            {"arifle_mas_akm_gl","",6500},
-            {"arifle_mas_m70_gl","",7250},
-            {"30Rnd_mas_762x39_mag","",250},
-            {"LMG_mas_pkm_F","",7250},
-            {"100Rnd_mas_762x54_mag","",550},
-            {"srifle_DMR_06_olive_F","",7250},
-            {"20Rnd_762x51_Mag","",350},
-            {"LMG_mas_m72_F","",8500},
-            {"100Rnd_mas_762x39_mag","",600},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_glaunch_M79","",1000},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_SVD","",4250},
+             {"CUP_10Rnd_762x54_SVD_M","",450},
+             
+             {"CUP_launch_RPG7V","",7500},
+             {"CUP_PG7V_M","",1250},
+             {"CUP_PG7VR_M","",1750},
+             {"CUP_PG7VM_M","",2250},
+             
+             {"CUP_arifle_AKM","",5500},
+             {"CUP_30Rnd_762x39_AK47_M","",250},
+             
+             {"CUP_srifle_CZ550","",4750},
+             {"CUP_5x_22_LR_17_HMR_M","",300},
+             
+             {"CUP_srifle_LeeEnfield_rail","",4750},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_lmg_Pecheneg","",7250},
+             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M","",250},
+             
+             {"CUP_arifle_Sa58RIS2","",7250},
+             {"CUP_30Rnd_Sa58_M_TracerG","",250},
+             
+             {"CUP_srifle_CZ750","",7500},
+             {"CUP_10Rnd_762x51_CZ750_Tracer","",350},
+             
+             {"CUP_srifle_M14","",8000},
+             {"CUP_20Rnd_762x51_DMR","",400},
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
-             {"rhs_acc_pso1m2","",600},
-             {"optic_mas_PSO_nv_day","",850},
-             {"optic_mas_PSO_nv","",1250},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
+             {"CUP_optic_NSPU","",1000},
              {"optic_KHS_old","",1750},
              {"ACE_optic_LRPS_PIP","",2250},
-             {"muzzle_mas_snds_SVD","",2250},
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -3455,63 +4328,81 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					  {"hgun_mas_mak_F","",300},
-            {"8Rnd_mas_9x18_Mag","",20},
-            {"hgun_mas_acp_F","",350},
-            {"12Rnd_mas_45acp_Mag","",20},
-            {"hgun_mas_sa61_F","",425},
-            {"20Rnd_mas_765x17_Mag","",30},
-            {"arifle_mas_aks74u","",1100},
-            {"arifle_mas_ak74","",1350},
-            {"arifle_mas_aks_74_sf","",1250},
-            {"arifle_mas_ak_74m","",1400},
-            {"arifle_mas_ak_74m_sf","",1500},
-            {"arifle_mas_ak_74m_gl","",1800},
-            {"arifle_mas_ak_74m_sf_gl","",1950},
-            {"30Rnd_mas_545x39_mag","",55},
-            {"1Rnd_HE_Grenade_shell","",450},
-            {"arifle_mas_lee","",1850},
-            {"5Rnd_mas_762x51_Stanag","",75},
-            {"LMG_mas_rpk_F","",2250},
-            {"100Rnd_mas_545x39_mag","",300},
-            {"srifle_DMR_01_F","",2750},
-            {"10Rnd_762x54_Mag","",250},
-            {"arifle_mas_fal_m203","",3250},
-            {"20Rnd_mas_762x51_Stanag","",300},
-            {"rhs_weap_svdp","",3750},
-            {"rhs_10Rnd_762x54mmR_7N1","",300},
-            {"srifle_mas_svd","",4250},
-            {"srifle_mas_m91","",4750},
-            {"10Rnd_mas_762x54_mag","",300},
-            {"rhs_weap_rpg7","",7500},
-            {"rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",1250},
-            {"rhs_rpg7_OG7V_mag","Anti-Personen Munition I",2500},
-            {"rhs_rpg7_PG7VR_mag","Anti-Fahrzeug Munition II",3000},
-            {"arifle_mas_akm","",5500},
-            {"arifle_mas_akm_gl","",6500},
-            {"arifle_mas_m70_gl","",7250},
-            {"30Rnd_mas_762x39_mag","",250},
-            {"LMG_mas_pkm_F","",7250},
-            {"100Rnd_mas_762x54_mag","",550},
-            {"srifle_DMR_06_olive_F","",7250},
-            {"20Rnd_762x51_Mag","",350},
-            {"LMG_mas_m72_F","",8500},
-            {"100Rnd_mas_762x39_mag","",600},
-            {"srifle_mas_ksvk","",8750},
-            {"5Rnd_mas_127x108_T_mag","",850},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_glaunch_M79","",1000},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_SVD","",4250},
+             {"CUP_10Rnd_762x54_SVD_M","",450},
+             
+             {"CUP_launch_RPG7V","",7500},
+             {"CUP_PG7V_M","",1250},
+             {"CUP_PG7VR_M","",1750},
+             {"CUP_PG7VM_M","",2250},
+             
+             {"CUP_arifle_AKM","",5500},
+             {"CUP_30Rnd_762x39_AK47_M","",250},
+             
+             {"CUP_srifle_CZ550","",4750},
+             {"CUP_5x_22_LR_17_HMR_M","",300},
+             
+             {"CUP_srifle_LeeEnfield_rail","",4750},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_lmg_Pecheneg","",7250},
+             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M","",250},
+             
+             {"CUP_arifle_Sa58RIS2","",7250},
+             {"CUP_30Rnd_Sa58_M_TracerG","",250},
+             
+             {"CUP_srifle_CZ750","",7500},
+             {"CUP_10Rnd_762x51_CZ750_Tracer","",350},
+             
+             {"CUP_srifle_M14","",8000},
+             {"CUP_20Rnd_762x51_DMR","",400},
+             
+             {"CUP_srifle_ksvk","",8750},
+             {"CUP_5Rnd_127x108_KSVK_M","",875},
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
-             {"rhs_acc_pso1m2","",600},
-             {"optic_mas_PSO_nv_day","",850},
-             {"optic_mas_PSO_nv","",1250},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
+             {"CUP_optic_NSPU","",1000},
              {"optic_KHS_old","",1750},
              {"ACE_optic_LRPS_PIP","",2250},
-             {"muzzle_mas_snds_SVD","",2250},
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -3553,66 +4444,84 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					  {"hgun_mas_mak_F","",300},
-            {"8Rnd_mas_9x18_Mag","",20},
-            {"hgun_mas_acp_F","",350},
-            {"12Rnd_mas_45acp_Mag","",20},
-            {"hgun_mas_sa61_F","",425},
-            {"20Rnd_mas_765x17_Mag","",30},
-            {"arifle_mas_aks74u","",1100},
-            {"arifle_mas_ak74","",1350},
-            {"arifle_mas_aks_74_sf","",1250},
-            {"arifle_mas_ak_74m","",1400},
-            {"arifle_mas_ak_74m_sf","",1500},
-            {"arifle_mas_ak_74m_gl","",1800},
-            {"arifle_mas_ak_74m_sf_gl","",1950},
-            {"30Rnd_mas_545x39_mag","",55},
-            {"1Rnd_HE_Grenade_shell","",450},
-            {"arifle_mas_lee","",1850},
-            {"5Rnd_mas_762x51_Stanag","",75},
-            {"LMG_mas_rpk_F","",2250},
-            {"100Rnd_mas_545x39_mag","",300},
-            {"srifle_DMR_01_F","",2750},
-            {"10Rnd_762x54_Mag","",250},
-            {"arifle_mas_fal_m203","",3250},
-            {"20Rnd_mas_762x51_Stanag","",300},
-            {"rhs_weap_svdp","",3750},
-            {"rhs_10Rnd_762x54mmR_7N1","",300},
-            {"srifle_mas_svd","",4250},
-            {"srifle_mas_m91","",4750},
-            {"10Rnd_mas_762x54_mag","",300},
-            {"rhs_weap_rpg7","",7500},
-            {"rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",1250},
-            {"rhs_rpg7_OG7V_mag","Anti-Personen Munition I",2500},
-            {"rhs_rpg7_PG7VR_mag","Anti-Fahrzeug Munition II",3000},
-            {"arifle_mas_akm","",5500},
-            {"arifle_mas_akm_gl","",6500},
-            {"arifle_mas_m70_gl","",7250},
-            {"30Rnd_mas_762x39_mag","",250},
-            {"LMG_mas_pkm_F","",7250},
-            {"100Rnd_mas_762x54_mag","",550},
-            {"srifle_DMR_06_olive_F","",7250},
-            {"20Rnd_762x51_Mag","",350},
-            {"LMG_mas_m72_F","",8500},
-            {"100Rnd_mas_762x39_mag","",600},
-            {"srifle_mas_ksvk","",8750},
-            {"5Rnd_mas_127x108_T_mag","",850},
-            {"srifle_DMR_04_Tan_F","",8500},
-            {"10Rnd_127x54_Mag","",700},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_glaunch_M79","",1000},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_SVD","",4250},
+             {"CUP_10Rnd_762x54_SVD_M","",450},
+             
+             {"CUP_launch_RPG7V","",7500},
+             {"CUP_PG7V_M","",1250},
+             {"CUP_PG7VR_M","",1750},
+             {"CUP_PG7VM_M","",2250},
+             
+             {"CUP_arifle_AKM","",5500},
+             {"CUP_30Rnd_762x39_AK47_M","",250},
+             
+             {"CUP_srifle_CZ550","",4750},
+             {"CUP_5x_22_LR_17_HMR_M","",300},
+             
+             {"CUP_srifle_LeeEnfield_rail","",4750},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_lmg_Pecheneg","",7250},
+             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M","",250},
+             
+             {"CUP_arifle_Sa58RIS2","",7250},
+             {"CUP_30Rnd_Sa58_M_TracerG","",250},
+             
+             {"CUP_srifle_CZ750","",7500},
+             {"CUP_10Rnd_762x51_CZ750_Tracer","",350},
+             
+             {"CUP_srifle_M14","",8000},
+             {"CUP_20Rnd_762x51_DMR","",400},
+             
+             {"CUP_srifle_ksvk","",8750},
+             {"CUP_5Rnd_127x108_KSVK_M","",875},
+             
+             {"CUP_srifle_VSSVintorez","",8500},
+             {"CUP_10Rnd_9x39_SP5_VSS_M","",700},
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
-             {"rhs_acc_pso1m2","",600},
-             {"optic_mas_PSO_nv_day","",850},
-             {"optic_mas_PSO_nv","",1250},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
+             {"CUP_optic_NSPU","",1000},
              {"optic_KHS_old","",1750},
              {"ACE_optic_LRPS_PIP","",2250},
-             {"muzzle_mas_snds_SVD","",2250},
-             {"optic_ACO_grn_smg","",400},
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -3653,67 +4562,85 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					  {"hgun_mas_mak_F","",300},
-            {"8Rnd_mas_9x18_Mag","",20},
-            {"hgun_mas_acp_F","",350},
-            {"12Rnd_mas_45acp_Mag","",20},
-            {"hgun_mas_sa61_F","",425},
-            {"20Rnd_mas_765x17_Mag","",30},
-            {"arifle_mas_aks74u","",1100},
-            {"arifle_mas_ak74","",1350},
-            {"arifle_mas_aks_74_sf","",1250},
-            {"arifle_mas_ak_74m","",1400},
-            {"arifle_mas_ak_74m_sf","",1500},
-            {"arifle_mas_ak_74m_gl","",1800},
-            {"arifle_mas_ak_74m_sf_gl","",1950},
-            {"30Rnd_mas_545x39_mag","",55},
-            {"1Rnd_HE_Grenade_shell","",450},
-            {"arifle_mas_lee","",1850},
-            {"5Rnd_mas_762x51_Stanag","",75},
-            {"LMG_mas_rpk_F","",2250},
-            {"100Rnd_mas_545x39_mag","",300},
-            {"srifle_DMR_01_F","",2750},
-            {"10Rnd_762x54_Mag","",250},
-            {"arifle_mas_fal_m203","",3250},
-            {"20Rnd_mas_762x51_Stanag","",300},
-            {"rhs_weap_svdp","",3750},
-            {"rhs_10Rnd_762x54mmR_7N1","",300},
-            {"srifle_mas_svd","",4250},
-            {"srifle_mas_m91","",4750},
-            {"10Rnd_mas_762x54_mag","",300},
-            {"rhs_weap_rpg7","",7500},
-            {"rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",1250},
-            {"rhs_rpg7_OG7V_mag","Anti-Personen Munition I",2500},
-            {"rhs_rpg7_PG7VR_mag","Anti-Fahrzeug Munition II",3000},
-            {"arifle_mas_akm","",5500},
-            {"arifle_mas_akm_gl","",6500},
-            {"arifle_mas_m70_gl","",7250},
-            {"30Rnd_mas_762x39_mag","",250},
-            {"LMG_mas_pkm_F","",7250},
-            {"100Rnd_mas_762x54_mag","",550},
-            {"srifle_DMR_06_olive_F","",7250},
-            {"20Rnd_762x51_Mag","",350},
-            {"LMG_mas_m72_F","",8500},
-            {"100Rnd_mas_762x39_mag","",600},
-            {"srifle_mas_ksvk","",8750},
-            {"5Rnd_mas_127x108_T_mag","",850},
-            {"5Rnd_mas_127x108_mag","",950},
-            {"srifle_DMR_04_Tan_F","",8500},
-            {"10Rnd_127x54_Mag","",700},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_glaunch_M79","",1000},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_SVD","",4250},
+             {"CUP_10Rnd_762x54_SVD_M","",450},
+             
+             {"CUP_launch_RPG7V","",7500},
+             {"CUP_PG7V_M","",1250},
+             {"CUP_PG7VR_M","",1750},
+             {"CUP_PG7VM_M","",2250},
+             
+             {"CUP_arifle_AKM","",5500},
+             {"CUP_30Rnd_762x39_AK47_M","",250},
+             
+             {"CUP_srifle_CZ550","",4750},
+             {"CUP_5x_22_LR_17_HMR_M","",300},
+             
+             {"CUP_srifle_LeeEnfield_rail","",4750},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_lmg_Pecheneg","",7250},
+             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M","",250},
+             
+             {"CUP_arifle_Sa58RIS2","",7250},
+             {"CUP_30Rnd_Sa58_M_TracerG","",250},
+             
+             {"CUP_srifle_CZ750","",7500},
+             {"CUP_10Rnd_762x51_CZ750_Tracer","",350},
+             
+             {"CUP_srifle_M14","",8000},
+             {"CUP_20Rnd_762x51_DMR","",400},
+             
+             {"CUP_srifle_ksvk","",8750},
+             {"CUP_5Rnd_127x108_KSVK_M","",875},
+             
+             {"CUP_srifle_VSSVintorez","",8500},
+             {"CUP_10Rnd_9x39_SP5_VSS_M","",700},
+             {"CUP_20Rnd_9x39_SP5_VSS_M","",700},
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
-             {"rhs_acc_pso1m2","",600},
-             {"optic_mas_PSO_nv_day","",850},
-             {"optic_mas_PSO_nv","",1250},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
+             {"CUP_optic_NSPU","",1000},
              {"optic_KHS_old","",1750},
              {"ACE_optic_LRPS_PIP","",2250},
-             {"muzzle_mas_snds_SVD","",2250},
-             {"optic_ACO_grn_smg","",400},
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -3755,69 +4682,88 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					  {"hgun_mas_mak_F","",300},
-            {"8Rnd_mas_9x18_Mag","",20},
-            {"hgun_mas_acp_F","",350},
-            {"12Rnd_mas_45acp_Mag","",20},
-            {"hgun_mas_sa61_F","",425},
-            {"20Rnd_mas_765x17_Mag","",30},
-            {"arifle_mas_aks74u","",1100},
-            {"arifle_mas_ak74","",1350},
-            {"arifle_mas_aks_74_sf","",1250},
-            {"arifle_mas_ak_74m","",1400},
-            {"arifle_mas_ak_74m_sf","",1500},
-            {"arifle_mas_ak_74m_gl","",1800},
-            {"arifle_mas_ak_74m_sf_gl","",1950},
-            {"30Rnd_mas_545x39_mag","",55},
-            {"1Rnd_HE_Grenade_shell","",450},
-            {"arifle_mas_lee","",1850},
-            {"5Rnd_mas_762x51_Stanag","",75},
-            {"LMG_mas_rpk_F","",2250},
-            {"100Rnd_mas_545x39_mag","",300},
-            {"srifle_DMR_01_F","",2750},
-            {"10Rnd_762x54_Mag","",250},
-            {"arifle_mas_fal_m203","",3250},
-            {"20Rnd_mas_762x51_Stanag","",300},
-            {"rhs_weap_svdp","",3750},
-            {"rhs_10Rnd_762x54mmR_7N1","",300},
-            {"srifle_mas_svd","",4250},
-            {"srifle_mas_m91","",4750},
-            {"10Rnd_mas_762x54_mag","",300},
-            {"rhs_weap_rpg7","",7500},
-            {"rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",1250},
-            {"rhs_rpg7_OG7V_mag","Anti-Personen Munition I",2500},
-            {"rhs_rpg7_PG7VR_mag","Anti-Fahrzeug Munition II",3000},
-            {"arifle_mas_akm","",5500},
-            {"arifle_mas_akm_gl","",6500},
-            {"arifle_mas_m70_gl","",7250},
-            {"30Rnd_mas_762x39_mag","",250},
-            {"LMG_mas_pkm_F","",7250},
-            {"100Rnd_mas_762x54_mag","",550},
-            {"srifle_DMR_06_olive_F","",7250},
-            {"20Rnd_762x51_Mag","",350},
-            {"LMG_mas_m72_F","",8500},
-            {"100Rnd_mas_762x39_mag","",600},
-            {"srifle_mas_ksvk","",8750},
-            {"5Rnd_mas_127x108_T_mag","",850},
-            {"5Rnd_mas_127x108_mag","",950},
-            {"srifle_DMR_04_Tan_F","",8500},
-            {"10Rnd_127x54_Mag","",700},
-            {"LMG_mas_mg3_F","",8750},
-            {"150Rnd_762x51_Box","",1000},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_glaunch_M79","",1000},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_SVD","",4250},
+             {"CUP_10Rnd_762x54_SVD_M","",450},
+             
+             {"CUP_launch_RPG7V","",7500},
+             {"CUP_PG7V_M","",1250},
+             {"CUP_PG7VR_M","",1750},
+             {"CUP_PG7VM_M","",2250},
+             
+             {"CUP_arifle_AKM","",5500},
+             {"CUP_30Rnd_762x39_AK47_M","",250},
+             
+             {"CUP_srifle_CZ550","",4750},
+             {"CUP_5x_22_LR_17_HMR_M","",300},
+             
+             {"CUP_srifle_LeeEnfield_rail","",4750},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_lmg_Pecheneg","",7250},
+             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M","",250},
+             
+             {"CUP_arifle_Sa58RIS2","",7250},
+             {"CUP_30Rnd_Sa58_M_TracerG","",250},
+             
+             {"CUP_srifle_CZ750","",7500},
+             {"CUP_10Rnd_762x51_CZ750_Tracer","",350},
+             
+             {"CUP_srifle_M14","",8000},
+             {"CUP_20Rnd_762x51_DMR","",400},
+             
+             {"CUP_srifle_ksvk","",8750},
+             {"CUP_5Rnd_127x108_KSVK_M","",875},
+             
+             {"CUP_srifle_VSSVintorez","",8500},
+             {"CUP_10Rnd_9x39_SP5_VSS_M","",700},
+             {"CUP_20Rnd_9x39_SP5_VSS_M","",700},
+             
+             {"CUP_lmg_L7A2","",8750},
+             {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",700},
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
-             {"rhs_acc_pso1m2","",600},
-             {"optic_mas_PSO_nv_day","",850},
-             {"optic_mas_PSO_nv","",1250},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
+             {"CUP_optic_NSPU","",1000},
              {"optic_KHS_old","",1750},
              {"ACE_optic_LRPS_PIP","",2250},
-             {"muzzle_mas_snds_SVD","",2250},
-             {"optic_ACO_grn_smg","",400},
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -3858,70 +4804,88 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					  {"hgun_mas_mak_F","",300},
-            {"8Rnd_mas_9x18_Mag","",20},
-            {"hgun_mas_acp_F","",350},
-            {"12Rnd_mas_45acp_Mag","",20},
-            {"hgun_mas_sa61_F","",425},
-            {"20Rnd_mas_765x17_Mag","",30},
-            {"arifle_mas_aks74u","",1100},
-            {"arifle_mas_ak74","",1350},
-            {"arifle_mas_aks_74_sf","",1250},
-            {"arifle_mas_ak_74m","",1400},
-            {"arifle_mas_ak_74m_sf","",1500},
-            {"arifle_mas_ak_74m_gl","",1800},
-            {"arifle_mas_ak_74m_sf_gl","",1950},
-            {"30Rnd_mas_545x39_mag","",55},
-            {"1Rnd_HE_Grenade_shell","",450},
-            {"arifle_mas_lee","",1850},
-            {"5Rnd_mas_762x51_Stanag","",75},
-            {"LMG_mas_rpk_F","",2250},
-            {"100Rnd_mas_545x39_mag","",300},
-            {"srifle_DMR_01_F","",2750},
-            {"10Rnd_762x54_Mag","",250},
-            {"arifle_mas_fal_m203","",3250},
-            {"20Rnd_mas_762x51_Stanag","",300},
-            {"rhs_weap_svdp","",3750},
-            {"rhs_10Rnd_762x54mmR_7N1","",300},
-            {"srifle_mas_svd","",4250},
-            {"srifle_mas_m91","",4750},
-            {"10Rnd_mas_762x54_mag","",300},
-            {"rhs_weap_rpg7","",7500},
-            {"rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",1250},
-            {"rhs_rpg7_OG7V_mag","Anti-Personen Munition I",2500},
-            {"rhs_rpg7_PG7VR_mag","Anti-Fahrzeug Munition II",3000},
-            {"arifle_mas_akm","",5500},
-            {"arifle_mas_akm_gl","",6500},
-            {"arifle_mas_m70_gl","",7250},
-            {"30Rnd_mas_762x39_mag","",250},
-            {"LMG_mas_pkm_F","",7250},
-            {"100Rnd_mas_762x54_mag","",550},
-            {"srifle_DMR_06_olive_F","",7250},
-            {"20Rnd_762x51_Mag","",350},
-            {"LMG_mas_m72_F","",8500},
-            {"100Rnd_mas_762x39_mag","",600},
-            {"srifle_mas_ksvk","",8750},
-            {"5Rnd_mas_127x108_T_mag","",850},
-            {"5Rnd_mas_127x108_mag","",950},
-            {"5Rnd_mas_127x108_dem_mag","",2000},
-            {"srifle_DMR_04_Tan_F","",8500},
-            {"10Rnd_127x54_Mag","",700},
-            {"LMG_mas_mg3_F","",8750},
-            {"150Rnd_762x51_Box","",1000},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_glaunch_M79","",1000},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_SVD","",4250},
+             {"CUP_10Rnd_762x54_SVD_M","",450},
+             
+             {"CUP_launch_RPG7V","",7500},
+             {"CUP_PG7V_M","",1250},
+             {"CUP_PG7VR_M","",1750},
+             {"CUP_PG7VM_M","",2250},
+             
+             {"CUP_arifle_AKM","",5500},
+             {"CUP_30Rnd_762x39_AK47_M","",250},
+             
+             {"CUP_srifle_CZ550","",4750},
+             {"CUP_5x_22_LR_17_HMR_M","",300},
+             
+             {"CUP_srifle_LeeEnfield_rail","",4750},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_lmg_Pecheneg","",7250},
+             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M","",250},
+             
+             {"CUP_arifle_Sa58RIS2","",7250},
+             {"CUP_30Rnd_Sa58_M_TracerG","",250},
+             
+             {"CUP_srifle_CZ750","",7500},
+             {"CUP_10Rnd_762x51_CZ750_Tracer","",350},
+             
+             {"CUP_srifle_M14","",8000},
+             {"CUP_20Rnd_762x51_DMR","",400},
+             
+             {"CUP_srifle_ksvk","",8750},
+             {"CUP_5Rnd_127x108_KSVK_M","",875},
+             
+             {"CUP_srifle_VSSVintorez","",8500},
+             {"CUP_10Rnd_9x39_SP5_VSS_M","",700},
+             {"CUP_20Rnd_9x39_SP5_VSS_M","",700},
+             
+             {"CUP_lmg_L7A2","",8750},
+             {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",700},
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
-             {"rhs_acc_pso1m2","",600},
-             {"optic_mas_PSO_nv_day","",850},
-             {"optic_mas_PSO_nv","",1250},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
+             {"CUP_optic_NSPU","",1000},
              {"optic_KHS_old","",1750},
              {"ACE_optic_LRPS_PIP","",2250},
-             {"muzzle_mas_snds_SVD","",2250},
-             {"optic_ACO_grn_smg","",400},
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
@@ -3962,71 +4926,89 @@ class WeaponShops {
         msg = "";
         items[] = {
              {"NONE","Waffen",0},
-					  {"hgun_mas_mak_F","",300},
-            {"8Rnd_mas_9x18_Mag","",20},
-            {"hgun_mas_acp_F","",350},
-            {"12Rnd_mas_45acp_Mag","",20},
-            {"hgun_mas_sa61_F","",425},
-            {"20Rnd_mas_765x17_Mag","",30},
-            {"arifle_mas_aks74u","",1100},
-            {"arifle_mas_ak74","",1350},
-            {"arifle_mas_aks_74_sf","",1250},
-            {"arifle_mas_ak_74m","",1400},
-            {"arifle_mas_ak_74m_sf","",1500},
-            {"arifle_mas_ak_74m_gl","",1800},
-            {"arifle_mas_ak_74m_sf_gl","",1950},
-            {"30Rnd_mas_545x39_mag","",55},
-            {"1Rnd_HE_Grenade_shell","",450},
-            {"arifle_mas_lee","",1850},
-            {"5Rnd_mas_762x51_Stanag","",75},
-            {"LMG_mas_rpk_F","",2250},
-            {"100Rnd_mas_545x39_mag","",300},
-            {"srifle_DMR_01_F","",2750},
-            {"10Rnd_762x54_Mag","",250},
-            {"arifle_mas_fal_m203","",3250},
-            {"20Rnd_mas_762x51_Stanag","",300},
-            {"rhs_weap_svdp","",3750},
-            {"rhs_10Rnd_762x54mmR_7N1","",300},
-            {"srifle_mas_svd","",4250},
-            {"srifle_mas_m91","",4750},
-            {"10Rnd_mas_762x54_mag","",300},
-            {"rhs_weap_rpg7","",7500},
-            {"rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",1250},
-            {"rhs_rpg7_OG7V_mag","Anti-Personen Munition I",2500},
-            {"rhs_rpg7_PG7VR_mag","Anti-Fahrzeug Munition II",3000},
-            {"rhs_rpg7_TBG7V_mag","Anti-Personen NUKE",4000},
-            {"arifle_mas_akm","",5500},
-            {"arifle_mas_akm_gl","",6500},
-            {"arifle_mas_m70_gl","",7250},
-            {"30Rnd_mas_762x39_mag","",250},
-            {"LMG_mas_pkm_F","",7250},
-            {"100Rnd_mas_762x54_mag","",550},
-            {"srifle_DMR_06_olive_F","",7250},
-            {"20Rnd_762x51_Mag","",350},
-            {"LMG_mas_m72_F","",8500},
-            {"100Rnd_mas_762x39_mag","",600},
-            {"srifle_mas_ksvk","",8750},
-            {"5Rnd_mas_127x108_T_mag","",850},
-            {"5Rnd_mas_127x108_mag","",950},
-            {"5Rnd_mas_127x108_dem_mag","",2000},
-            {"srifle_DMR_04_Tan_F","",8500},
-            {"10Rnd_127x54_Mag","",700},
-            {"LMG_mas_mg3_F","",8750},
-            {"150Rnd_762x51_Box","",1000},
+		      	 {"CUP_hgun_Makarov","",300},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_PB6P9","",350},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_hgun_SA61","",425},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_arifle_AKS74U","",1100},
+             {"CUP_arifle_AK74","",1350}, 
+             {"CUP_arifle_AK74M_GL","",1500}, 
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_LeeEnfield","",1850},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_arifle_CZ805_A1","",1650},
+             {"CUP_arifle_L85A2","",1800},
+             {"CUP_arifle_XM8_Carbine","",1950},
+             {"CUP_arifle_xm8_sharpshooter","",2200},
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_arifle_RPK74_45","",2250},
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_arifle_CZ805_B","",2750},
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_arifle_FNFAL_railed","",3250},
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_glaunch_M79","",1000},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_srifle_SVD","",4250},
+             {"CUP_10Rnd_762x54_SVD_M","",450},
+             
+             {"CUP_launch_RPG7V","",7500},
+             {"CUP_PG7V_M","",1250},
+             {"CUP_PG7VR_M","",1750},
+             {"CUP_PG7VM_M","",2250},
+             {"CUP_TBG7V_M","",4000},
+             
+             {"CUP_arifle_AKM","",5500},
+             {"CUP_30Rnd_762x39_AK47_M","",250},
+             
+             {"CUP_srifle_CZ550","",4750},
+             {"CUP_5x_22_LR_17_HMR_M","",300},
+             
+             {"CUP_srifle_LeeEnfield_rail","",4750},
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_lmg_Pecheneg","",7250},
+             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M","",250},
+             
+             {"CUP_arifle_Sa58RIS2","",7250},
+             {"CUP_30Rnd_Sa58_M_TracerG","",250},
+             
+             {"CUP_srifle_CZ750","",7500},
+             {"CUP_10Rnd_762x51_CZ750_Tracer","",350},
+             
+             {"CUP_srifle_M14","",8000},
+             {"CUP_20Rnd_762x51_DMR","",400},
+             
+             {"CUP_srifle_ksvk","",8750},
+             {"CUP_5Rnd_127x108_KSVK_M","",875},
+             
+             {"CUP_srifle_VSSVintorez","",8500},
+             {"CUP_10Rnd_9x39_SP5_VSS_M","",700},
+             {"CUP_20Rnd_9x39_SP5_VSS_M","",700},
+             
+             {"CUP_lmg_L7A2","",8750},
+             {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",700},
                
              {"NONE","Aufsätze",0},
-             {"optic_ACO_grn","",150},
-             {"FHQ_optic_AC12136","",200},
+             {"CUP_optic_Kobra","",150}, 
+             {"optic_ACO_grn","",200},
              {"optic_mas_acog","",300},
-             {"optic_mas_PSO_day","",400},
-             {"optic_mas_PSO_eo","",500},
-             {"rhs_acc_pso1m2","",600},
-             {"optic_mas_PSO_nv_day","",850},
-             {"optic_mas_PSO_nv","",1250},
+             {"CUP_optic_PSO_1","",500},
+             {"CUP_optic_PSO_3","",750},
+             {"CUP_optic_NSPU","",1000},
              {"optic_KHS_old","",1750},
              {"ACE_optic_LRPS_PIP","",2250},
-             {"muzzle_mas_snds_SVD","",2250},
-             {"optic_ACO_grn_smg","",400},
                
              {"NONE","Aufstellbare Geschütze",0},  
              {"I_mas_DShkM_h_Gun_Bag","",400},
