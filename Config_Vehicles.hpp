@@ -85,13 +85,13 @@ class CarShops {
 	class cop_car {
 		side = "cop";
 		vehicles[] = {
-	  { "rhsusf_m998_d_2dr", 100, "", { "life_coplevel", 1 }},
+	    { "rhsusf_m998_d_2dr", 100, "", { "life_coplevel", 1 }},
       { "rhsusf_m998_d_4dr", 125, "", { "life_coplevel", 2 }},
       { "DAR_M1152", 150, "", { "life_coplevel", 3 }},
       { "rhsusf_m1025_d", 175, "", { "life_coplevel", 4 }},
       { "rhsusf_m1025_d_m2", 200, "", { "life_coplevel", 5 }},
       { "DAR_M1165_GMV", 225, "", { "life_coplevel", 6 }},
-	  { "DAR_MK23ADT", 1000, "", { "life_coplevel", 6 } },
+	    { "DAR_MK23ADT", 1000, "", { "life_coplevel", 6 } },
       { "DAR_M1151", 250, "", { "life_coplevel", 8 }},
       { "DAR_M1151_Deploy", 250, "", { "life_coplevel", 10 }},
       { "DAR_M1167", 275, "", { "life_coplevel", 12 }},

@@ -2,7 +2,6 @@
 /*
 	File: fn_repairTruck.sqf
 	Author: Bryan "Tonic" Boardwine
-
 	Description:
 	Main functionality for toolkits, to be revised in later version.
 */
@@ -10,7 +9,7 @@ private["_veh","_upp","_ui","_progress","_pgText","_cP","_displayName","_test"];
 _veh = cursorTarget;
 life_interrupted = false;
 if(isNull _veh) exitwith {};
-if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) then {
+if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air") OR (_veh isKindOf "RDS_Lada_Civ_01") OR (_veh isKindOf "RDS_Gaz24_Civ_01") OR (_veh isKindOf "RDS_Octavia_Civ_01")) then {
 	if("ToolKit" in (items player)) then {
 		life_action_inUse = true;
 		_displayName = FETCH_CONFIG2(getText,CONFIG_VEHICLES,(typeOf _veh),"displayName");
@@ -48,6 +47,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 		player playActionNow "stop";
 		if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 		if(player != vehicle player) exitWith {titleText[localize "STR_NOTF_RepairingInVehicle","PLAIN"];};
+		player removeItem "ToolKit";
 		_veh setDamage 0;
 		titleText[localize "STR_NOTF_RepairedVehicle","PLAIN"];
 	};

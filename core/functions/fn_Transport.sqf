@@ -516,6 +516,7 @@ if (3 == _paket) then // Schwere Jobs
 								{
 									if ([false,"koran",1] call life_fnc_handleInv) then
 										{
+											if (life_quest == 67) then {ADD(life_questinfo,1);};
 											life_transport_in_progress = false;
 											_user setVariable ["transport", 0, false];
 											playSound "transport_3_1_1";
@@ -526,9 +527,9 @@ if (3 == _paket) then // Schwere Jobs
 											ADD(life_gesamtexp,_level);
 											[] call life_fnc_SetupLevel;
 											[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 800$ <br /> + 500 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
-                      player createDiaryRecord["transportbuch",
-					[
-							"Transport-Buch",
+                      						player createDiaryRecord["transportbuch",
+											[
+											"Transport-Buch",
 								"
 
              Der Heilige Krieg
@@ -613,6 +614,7 @@ if (3 == _paket) then // Schwere Jobs
 								{
 									if ([false,"kondome",1] call life_fnc_handleInv) then
 									{
+										if (life_quest == 67) then {ADD(life_questinfo,1);};
 										life_transport_in_progress = false;
 										_user setVariable ["transport", 0, false];
 										playSound "transport_3_2_2";
@@ -622,17 +624,7 @@ if (3 == _paket) then // Schwere Jobs
 										ADD(life_gesamtexp,400);
 										[] call life_fnc_SetupLevel;
 										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 1000$ <br /> + 400 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
-                    player createDiaryRecord["transportbuch",
-					[
-							"Transport-Buch",
-								"
-
-             Niemand möchte Tripper
-                                                Transport abgegeben
-								"
-						]
-								];
-
+                    					player createDiaryRecord["transportbuch",["Transport-Buch","Niemand möchte Tripper Transport abgegeben"]];
 									};
 								}
 								else

@@ -747,37 +747,28 @@ if("abhoeren" == _reihe) then { // Abhören
 				};
 				if(_progress == 1) then {
 					if(life_quest == 39) then {
-						_cars = position player nearObjects ["rhsusf_m998_d_2dr", 50];
-						_vehiclecount = count _cars;
-						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
-						_cars = position player nearObjects ["rhsusf_m998_d_4dr", 50];
-						_vehiclecount = count _cars;
-						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
-						_cars = position player nearObjects ["DAR_M1152", 50];
-						_vehiclecount = count _cars;
-						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
-						_cars = position player nearObjects ["rhsusf_m1025_d", 50];
-						_vehiclecount = count _cars;
-						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
-						_cars = position player nearObjects ["rhsusf_m1025_d_m2", 50];
-						_vehiclecount = count _cars;
-						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
-						_cars = position player nearObjects ["DAR_M1165_GMV", 50];
-						_vehiclecount = count _cars;
-						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
-						_cars = position player nearObjects ["DAR_M1151", 50];
-						_vehiclecount = count _cars;
-						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
-						_cars = position player nearObjects ["DAR_M1151_Deploy", 50];
-						_vehiclecount = count _cars;
-						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
-						_cars = position player nearObjects ["DAR_M1167", 50];
-						_vehiclecount = count _cars;
-						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
-						_cars = position player nearObjects ["rhsusf_m113d_usarmy", 50];
-						_vehiclecount = count _cars;
-						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
-						if (player getVariable ["armyvehquest",false]) then {
+						_counter = 0;
+						_armycars = position player nearObjects ["rhsusf_m998_d_2dr", 20];
+						_counter = _counter + count _armycars;
+						_armycars = position player nearObjects ["rhsusf_m998_d_4dr", 20];
+						_counter = _counter + count _armycars;
+						_armycars = position player nearObjects ["DAR_M1152", 20];
+						_counter = _counter + count _armycars;
+						_armycars = position player nearObjects ["rhsusf_m1025_d", 20];
+						_counter = _counter + count _armycars;
+						_armycars = position player nearObjects ["rhsusf_m1025_d_m2", 20];
+						_counter = _counter + count _armycars;
+						_armycars = position player nearObjects ["DAR_M1165_GMV", 20];
+						_counter = _counter + count _armycars;
+						_armycars = position player nearObjects ["DAR_M1151", 20];
+						_counter = _counter + count _armycars;
+						_armycars = position player nearObjects ["DAR_M1151_Deploy", 20];
+						_counter = _counter + count _armycars;
+						_armycars = position player nearObjects ["DAR_M1167", 20];
+						_counter = _counter + count _armycars;
+						_armycars = position player nearObjects ["rhsusf_m113d_usarmy", 20];
+						_counter = _counter + count _armycars;
+						if (_counter > 0) then {
 							playSound "abhoeren_1_3_1";
 							ADD(life_quest,1);
               				ADD(life_gesamtexp,2000);
@@ -1009,37 +1000,28 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 				};
 				if(_progress == 1) then {
 					if(life_quest == 55) then {
-						_cars = position player nearObjects ["rhsusf_m998_d_2dr", 50];
-						_vehiclecount = count _cars;
-						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
-						_cars = position player nearObjects ["rhsusf_m998_d_4dr", 50];
-						_vehiclecount = count _cars;
-						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
-						_cars = position player nearObjects ["DAR_M1152", 50];
-						_vehiclecount = count _cars;
-						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
-						_cars = position player nearObjects ["rhsusf_m1025_d", 50];
-						_vehiclecount = count _cars;
-						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
-						_cars = position player nearObjects ["rhsusf_m1025_d_m2", 50];
-						_vehiclecount = count _cars;
-						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
-						_cars = position player nearObjects ["DAR_M1165_GMV", 50];
-						_vehiclecount = count _cars;
-						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
-						_cars = position player nearObjects ["DAR_M1151", 50];
-						_vehiclecount = count _cars;
-						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
-						_cars = position player nearObjects ["DAR_M1151_Deploy", 50];
-						_vehiclecount = count _cars;
-						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
-						_cars = position player nearObjects ["DAR_M1167", 50];
-						_vehiclecount = count _cars;
-						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
-						_cars = position player nearObjects ["rhsusf_m113d_usarmy", 50];
-						_vehiclecount = count _cars;
-						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
-						if (player getVariable ["armyvehquest",false]) then {
+						_counter = 0;
+						_armycars = position player nearObjects ["rhsusf_m998_d_2dr", 20];
+						_counter = _counter + count _armycars;
+						_armycars = position player nearObjects ["rhsusf_m998_d_4dr", 20];
+						_counter = _counter + count _armycars;
+						_armycars = position player nearObjects ["DAR_M1152", 20];
+						_counter = _counter + count _armycars;
+						_armycars = position player nearObjects ["rhsusf_m1025_d", 20];
+						_counter = _counter + count _armycars;
+						_armycars = position player nearObjects ["rhsusf_m1025_d_m2", 20];
+						_counter = _counter + count _armycars;
+						_armycars = position player nearObjects ["DAR_M1165_GMV", 20];
+						_counter = _counter + count _armycars;
+						_armycars = position player nearObjects ["DAR_M1151", 20];
+						_counter = _counter + count _armycars;
+						_armycars = position player nearObjects ["DAR_M1151_Deploy", 20];
+						_counter = _counter + count _armycars;
+						_armycars = position player nearObjects ["DAR_M1167", 20];
+						_counter = _counter + count _armycars;
+						_armycars = position player nearObjects ["rhsusf_m113d_usarmy", 20];
+						_counter = _counter + count _armycars;
+						if (_counter > 0) then {
 							playSound "hoellenfeuer_1_4_1";
 							ADD(life_quest,1);
 							ADD(life_gesamtexp,2250);
@@ -1101,6 +1083,8 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 						// Zündername?
 
 						if ([false,"battery",1] call life_fnc_handleInv AND [false,"behaelter",1] call life_fnc_handleInv) then {
+							[true,"battery",1] call life_fnc_handleInv;
+							[true,"behaelter",1] call life_fnc_handleInv;
 							playSound "hoellenfeuer_1_6_1";
 							ADD(life_quest,1);
 							ADD(life_gesamtexp,500);
@@ -1130,6 +1114,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 				if(_progress == 1) then {
 					if(life_quest == 61) then {
 						if ([false,"explosive",1] call life_fnc_handleInv) then {
+							[true,"explosive",1] call life_fnc_handleInv;
 							playSound "hoellenfeuer_1_7_1";
 							ADD(life_quest,1);
 							ADD(CASH,500);
@@ -1161,7 +1146,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 					if(life_quest == 63) then {
 
 						// Small IED Bug IN Arma oder Z-Item?
-							if ("IEDLandSmall_Remote_Mag" in items player) then {
+							if ("IEDLandSmall_Remote_Mag" in backpackItems player  or "IEDLandSmall_Remote_Mag" in vestItems player) then {
 							playSound "hoellenfeuer_1_8_1";
 							ADD(life_quest,1);
 							ADD(CASH,250);
@@ -1190,7 +1175,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 				if(_progress == 1) then {
 					if(life_quest == 65) then {
 
-						if ("IEDLandSmall_Remote_Mag" in items player) then {
+						if (!("IEDLandSmall_Remote_Mag" in backpackItems player  or "IEDLandSmall_Remote_Mag" in vestItems player)) then {
 
 							playSound "hoellenfeuer_1_9_1";
 							ADD(life_quest,1);
@@ -1208,13 +1193,13 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 		};
 };
 // Ab hier TO DO
+comment "
 if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 	if (life_level < 26) exitWith {hint "Diese Quest ist erst ab Level 26 verfügbar"};
 		if((side _user) == civilian) then {
 			if(_nr == 1) then {						//Kondome für die Alte neben mir und Unsere Heiligen Schriften.
 				if(_progress == 0) then {
 					if(life_quest == 66) then {
-						//Irgendwelche Missions abschließen?
 						playSound "schakalvier_1_1_0";
 						ADD(life_quest,1);
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Kondome für die Alte neben mir und Unsere Heiligen Schriften. <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> Gehe zu Abduls Elektronikladen"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
@@ -1224,9 +1209,8 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 67) then {
-
-						//Irgendwelche Missions abschließen?
+					if(life_quest == 67 AND (life_questinfo >= 2)) then {
+						life_questinfo = 0;
 						playSound "schakalvier_1_1_1";
 						ADD(life_quest,1);
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Kondome für die Alte neben mir und Unsere Heiligen Schriften. - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+ 100 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
@@ -1275,8 +1259,9 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 71) then {
+					if(life_quest == 71 AND (life_questinfo >= 3)) then {
 							//Gewinne 3 Gebietskämpfe Check
+							life_questinfo = 0;
 							playSound "schakalvier_1_3_1";
 							ADD(life_quest,1);
 							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Der Befreiungsschlag - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+5000$ <br/> + 200 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
@@ -1364,6 +1349,7 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 				};
 			};
 		};
-};
 
+};
+";
 [] call life_fnc_SetupLevel;
